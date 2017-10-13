@@ -1,55 +1,30 @@
-/* line 25, sass/var.scss */
+/* line 53, sass/var.scss */
 .text-center {
   text-align: center;
 }
 
-/* line 28, sass/var.scss */
+/* line 56, sass/var.scss */
 .text-left {
   text-align: left;
 }
 
-/* line 31, sass/var.scss */
+/* line 59, sass/var.scss */
 .text-right {
   text-align: right;
 }
 
-/* line 39, sass/var.scss */
+/* line 82, sass/var.scss */
 .navbar-toggle {
   border: none !important;
   background-color: transparent !important;
 }
-/* line 42, sass/var.scss */
+/* line 85, sass/var.scss */
 .navbar-toggle:hover {
   border: none !important;
   background-color: transparent !important;
 }
-/* line 46, sass/var.scss */
+/* line 89, sass/var.scss */
 .navbar-toggle:focus {
   border: none !important;
   background-color: transparent !important;
-}
-
-@media (min-width: 768px) {
-  /* line 12, sass/var.scss */
-  .navbar .navbar-nav {
-    display: inline-block;
-    float: none;
-    vertical-align: top;
-  }
-  /* line 18, sass/var.scss */
-  .navbar .navbar-collapse {
-    text-align: center;
-  }
-}
-/* line 4, sass/main.scss */
-.first {
-  color: #fff;
-}
-/* line 6, sass/main.scss */
-.first .left {
-  background-color: blue;
-}
-/* line 9, sass/main.scss */
-.first .right {
-  background-color: green;
 }
