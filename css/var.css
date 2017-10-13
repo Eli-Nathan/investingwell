@@ -1,0 +1,30 @@
+/* line 25, sass/var.scss */
+.text-center {
+  text-align: center;
+}
+
+/* line 28, sass/var.scss */
+.text-left {
+  text-align: left;
+}
+
+/* line 31, sass/var.scss */
+.text-right {
+  text-align: right;
+}
+
+/* line 39, sass/var.scss */
+.navbar-toggle {
+  border: none !important;
+  background-color: transparent !important;
+}
+/* line 42, sass/var.scss */
+.navbar-toggle:hover {
+  border: none !important;
+  background-color: transparent !important;
+}
+/* line 46, sass/var.scss */
+.navbar-toggle:focus {
+  border: none !important;
+  background-color: transparent !important;
+}
