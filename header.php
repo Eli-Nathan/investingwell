@@ -29,11 +29,7 @@
                <!-- Collect the nav links, forms, and other content for toggling -->
                <div class="collapse navbar-collapse" id="navbar-collapse">
                     <ul class="nav navbar-nav">
-                         <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
-                         <li><a href="#">Link</a></li>
-                         <li><a href="#">Link</a></li>
-                         <li><a href="#">Link</a></li>
-                         <li><a href="#">Link</a></li>
+                          <?php wp_nav_menu( array( 'container_id' => 'mainNavMenu', 'theme_location' => 'header-menu'  ) ); ?>
                     </ul>
                </div>
                <!-- /.navbar-collapse -->

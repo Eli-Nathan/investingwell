@@ -13,4 +13,22 @@ function include_investingwell_scripts() {
 }
 add_action( 'wp_enqueue_scripts', 'include_investingwell_scripts' );
 
+function menus() {
+    register_nav_menus(
+        array(
+            'header-menu' => __( 'Header Menu' ),
+            'footer-menu' => __( 'Footer Menu' )
+        )
+    );
+}
+add_action( 'init', 'menus' );
+
+// Remove comments links from admin bar
+function df_disable_comments_admin_bar() {
+    if (is_admin_bar_showing()) {
+        remove_action('admin_bar_menu', 'wp_admin_bar_comments_menu', 60);
+    }
+}
+add_action('init', 'df_disable_comments_admin_bar');
+
 ?>
