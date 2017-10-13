@@ -7,21 +7,6 @@
      <meta name="author" content="Elijah Nathan - Eli's Web">
      <meta name="description" content="">
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <link rel="shortcut icon" href="images/logo.png">
-     <link rel="apple-touch-icon" sizes="57x57" href="images/logo.png">
-     <link rel="apple-touch-icon" sizes="72x72" href="images/logo.png">
-     <link rel="apple-touch-icon" sizes="114x114" href="images/logo.png">
-     <!-- Animation CSS -->
-     <link href="css/animate.css" rel="stylesheet">
-     <!-- Font Awesome CSS -->
-     <link href="font-awesome/css/font-awesome.css" rel="stylesheet">
-     <!-- Bootstrap -->
-     <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
-     <!-- Custom styles for this template -->
-     <link href="blog.css" rel="stylesheet">
-     <!-- Custom CSS -->
-     <link href="css/main.css" rel="stylesheet">
-     <link href="css/style.less" rel="stylesheet/less">
      <link href='https://fonts.googleapis.com/css?family=Lato:400,900,300,700' rel='stylesheet' type='text/css'>
      <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
      <!--[if lt IE 9]>
