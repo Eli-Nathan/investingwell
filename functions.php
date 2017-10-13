@@ -13,6 +13,21 @@ function include_investingwell_scripts() {
 }
 add_action( 'wp_enqueue_scripts', 'include_investingwell_scripts' );
 
+// Register Custom Navigation Walker
+require_once('wp-bootstrap-navwalker.php');
+// Bootstrap navigation
+function bootstrap_nav()
+{
+	wp_nav_menu( array(
+            'theme_location'    => 'header-menu',
+            'depth'             => 2,
+            'container'         => 'false',
+            'menu_class'        => 'nav navbar-nav',
+            'fallback_cb'       => 'wp_bootstrap_navwalker::fallback',
+            'walker'            => new wp_bootstrap_navwalker())
+    );
+}
+
 function menus() {
     register_nav_menus(
         array(

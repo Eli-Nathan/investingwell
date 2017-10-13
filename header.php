@@ -28,9 +28,7 @@
                </div>
                <!-- Collect the nav links, forms, and other content for toggling -->
                <div class="collapse navbar-collapse" id="navbar-collapse">
-                    <ul class="nav navbar-nav">
-                          <?php wp_nav_menu( array( 'container_id' => 'mainNavMenu', 'theme_location' => 'header-menu'  ) ); ?>
-                    </ul>
+                    <?php bootstrap_nav(); ?>
                </div>
                <!-- /.navbar-collapse -->
           </div>
