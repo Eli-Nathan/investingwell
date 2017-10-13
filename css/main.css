@@ -28,3 +28,37 @@
   border: none !important;
   background-color: transparent !important;
 }
+
+/* line 3, sass/main.scss */
+.header {
+  margin-top: 50px;
+  height: 80vh;
+  background: #C04848;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #480048, #C04848);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #480048, #C04848);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+/* line 12, sass/main.scss */
+.header h1 {
+  color: #fff;
+}
+/* line 16, sass/main.scss */
+.header .question {
+  margin-top: 30vh;
+  width: 50%;
+  margin: 0 auto;
+}
+/* line 21, sass/main.scss */
+.header .question label {
+  color: #fff;
+  text-shadow: 1px 1px 3px #000;
+}
+/* line 27, sass/main.scss */
+.header #answer {
+  width: 75%;
+  margin: 30px auto 0;
+  color: #fff;
+  font-size: 17px;
+}
