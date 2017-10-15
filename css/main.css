@@ -29,10 +29,39 @@
   background-color: transparent !important;
 }
 
-/* line 3, sass/main.scss */
+/* line 2, sass/main.scss */
+body {
+  font-family: 'Lato', verdana;
+}
+
+/* line 6, sass/main.scss */
+.navbar .navbar-brand {
+  width: 20%;
+}
+/* line 8, sass/main.scss */
+.navbar .navbar-brand img {
+  max-width: 120px;
+  margin-top: -7px;
+}
+
+/* line 14, sass/main.scss */
 .header {
   margin-top: 50px;
   height: 80vh;
+  background: url("../images/hands.png");
+  background-size: cover;
+  background-position: center;
+}
+/* line 20, sass/main.scss */
+.header p {
+  padding: 100px;
+  color: #fff;
+  text-shadow: 1px 1px 1px #000;
+  font-size: 2.5em;
+}
+
+/* line 27, sass/main.scss */
+.chatbot {
   background: #C04848;
   /* fallback for old browsers */
   background: -webkit-linear-gradient(to right, #480048, #C04848);
@@ -40,23 +69,23 @@
   background: linear-gradient(to right, #480048, #C04848);
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
-/* line 12, sass/main.scss */
-.header h1 {
+/* line 36, sass/main.scss */
+.chatbot h1 {
   color: #fff;
 }
-/* line 16, sass/main.scss */
-.header .question {
+/* line 40, sass/main.scss */
+.chatbot .question {
   margin-top: 30vh;
   width: 50%;
   margin: 0 auto;
 }
-/* line 21, sass/main.scss */
-.header .question label {
+/* line 45, sass/main.scss */
+.chatbot .question label {
   color: #fff;
   text-shadow: 1px 1px 3px #000;
 }
-/* line 27, sass/main.scss */
-.header #answer {
+/* line 51, sass/main.scss */
+.chatbot #answer {
   width: 75%;
   margin: 30px auto 0;
   color: #fff;

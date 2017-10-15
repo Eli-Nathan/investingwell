@@ -1,13 +1,37 @@
 @import 'var'; // @include justify-nav;
-
+body {
+     font-family:'Lato', verdana;
+}
+.navbar {
+     .navbar-brand {
+          width:20%;
+          img {
+               max-width:120px;
+               margin-top:-7px;
+          }
+     }
+}
 .header {
      margin-top:50px;
      height: 80vh;
+     background:url('../images/hands.png');
+     background-size:cover;
+     background-position: center;
+     p {
+          padding:100px;
+          color:#fff;
+          text-shadow: 1px 1px 1px #000;
+          font-size:2.5em;
+     }
+}
+.chatbot {
+
      background: #C04848;
      /* fallback for old browsers */
      background: -webkit-linear-gradient(to right, #480048, #C04848);
      /* Chrome 10-25, Safari 5.1-6 */
      background: linear-gradient(to right, #480048, #C04848);
+
      /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
      h1 {
           color: #fff;

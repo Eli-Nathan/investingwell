@@ -25,7 +25,11 @@
                          <span class="sr-only">Toggle navigation</span>
                          <i class="fa fa-bars"></i>
                     </button>
+                    <a class='navbar-brand'>
+                         <img src='<?php bloginfo('stylesheet_directory');?>/images/iw-logo-long.png' alt="Investing Well">
+                    </a>
                </div>
+
                <!-- Collect the nav links, forms, and other content for toggling -->
                <div class="collapse navbar-collapse" id="navbar-collapse">
                     <?php bootstrap_nav(); ?>
