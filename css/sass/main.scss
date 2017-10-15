@@ -24,34 +24,59 @@ body {
           font-size:2.5em;
      }
 }
-.chatbot {
+input[type='text'] {
+    font-size: 16px;
+}
 
-     background: #C04848;
-     /* fallback for old browsers */
-     background: -webkit-linear-gradient(to right, #480048, #C04848);
-     /* Chrome 10-25, Safari 5.1-6 */
-     background: linear-gradient(to right, #480048, #C04848);
-
-     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-     h1 {
-          color: #fff;
-     }
-
-     .question {
-          margin-top: 30vh;
-          width: 50%;
-          margin: 0 auto;
-
-          label {
-               color: #fff;
-               text-shadow: 1px 1px 3px #000;
-          }
-     }
-
-     #answer {
-          width: 75%;
-          margin: 30px auto 0;
-          color: #fff;
-          font-size: 17px;
-     }
+.chatHeader {
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    height: auto;
+    transition: 1s;
+    background: #C04848;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #480048, #C04848);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #480048, #C04848);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    h1 {
+        font-family: 'Cookie', cursive;
+        color: #fff;
+        font-size: 50px;
+    }
+    .question {
+        margin-top: 30vh;
+        width: 50%;
+        @media(max-width: 768px) {
+            width:90%;
+        }
+        margin: 0 auto;
+        label {
+            color: #fff;
+            text-shadow: 1px 1px 3px #000;
+        }
+    }
+    #answer {
+        width: 75%;
+        @media(max-width: 768px) {
+            width:90%;
+        }
+        margin: 0 auto;
+        margin-top: 30px;
+        color: #fff;
+        font-size: 17px;
+        transition:1s;
+        ul {
+            list-style-type: none;
+            li {
+                margin-left: -15px;
+                a {
+                    color: #fff;
+                    margin-left: -15px;
+                }
+            }
+        }
+    }
+    input {
+    }
 }

@@ -33,6 +33,8 @@
                <!-- Collect the nav links, forms, and other content for toggling -->
                <div class="collapse navbar-collapse" id="navbar-collapse">
                     <?php bootstrap_nav(); ?>
+                    <ul class='nav navbar-nav navbar-right'>
+                         <li><a href="#">Login &nbsp; <i class='fa fa-user'></i></a> </li>
                </div>
                <!-- /.navbar-collapse -->
           </div>
