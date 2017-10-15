@@ -3,6 +3,8 @@ $white: #FFF;
 $black: #000;
 $dark: #222!important;
 $light: #EEE!important;
+$purple: #A09ECB;
+$blue: #294890;
 
 @mixin change-nav-break {
     @media (max-width: 1200px) {
@@ -48,6 +50,33 @@ $light: #EEE!important;
   }
 }
 
+//Investing Well Puple Button
+.btn-iw-p {
+     background:$purple;
+     color:$white;
+     border:none;
+     border-radius:2px;
+     padding:1%;
+     padding-left:2%;
+     padding-right:2%;
+     &:hover {
+          background:$blue;
+          color:#fff;
+     }
+}
+.btn-iw-b {
+     background:$blue;
+     color:$white;
+     border:none;
+     border-radius:2px;
+     padding:1%;
+     padding-left:2%;
+     padding-right:2%;
+     &:hover {
+          background:$purple;
+          color:#fff;
+     }
+}
 
 // Text alignment
 .text-center {

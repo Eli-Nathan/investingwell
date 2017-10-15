@@ -2,6 +2,9 @@
 body {
      font-family:'Lato', verdana;
 }
+.investingwell-well {
+     color:$purple;
+}
 .navbar {
      .navbar-brand {
           width:20%;
@@ -17,11 +20,21 @@ body {
      background:url('../images/hands.png');
      background-size:cover;
      background-position: center;
-     p {
-          padding:100px;
+     padding:100px;
+     h1 {
           color:#fff;
-          text-shadow: 1px 1px 1px #000;
-          font-size:2.5em;
+          font-weight:300;
+          font-size:4em;
+          text-shadow: 2px 2px 4px #000;
+     }
+     p {
+          padding:150px;
+          padding-top:20px;
+          padding-bottom:30px;
+          color:#fff;
+          text-shadow: 2px 2px 4px #000;
+          font-weight:200;
+          font-size: 1.8em;
      }
 }
 input[type='text'] {
@@ -35,15 +48,10 @@ input[type='text'] {
     transition: 1s;
     background: #C04848;
     /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #480048, #C04848);
+    background: -webkit-linear-gradient(to right, $purple, $blue);
     /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #480048, #C04848);
+    background: linear-gradient(to right, $purple, $blue);
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    h1 {
-        font-family: 'Cookie', cursive;
-        color: #fff;
-        font-size: 50px;
-    }
     .question {
         margin-top: 30vh;
         width: 50%;

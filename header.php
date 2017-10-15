@@ -1,3 +1,7 @@
+<?php
+     global $investingwell;
+     $investingwell = "Investing<span class='investingwell-well'>well</span>";
+?>
 <!DOCTYPE html>
 <html lang="en">
 

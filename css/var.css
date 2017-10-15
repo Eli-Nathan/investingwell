@@ -1,29 +1,61 @@
-/* line 53, sass/var.scss */
+/* line 54, sass/var.scss */
+.btn-iw-p {
+  background: #A09ECB;
+  color: #FFF;
+  border: none;
+  border-radius: 2px;
+  padding: 1%;
+  padding-left: 2%;
+  padding-right: 2%;
+}
+/* line 62, sass/var.scss */
+.btn-iw-p:hover {
+  background: #294890;
+  color: #fff;
+}
+
+/* line 67, sass/var.scss */
+.btn-iw-b {
+  background: #294890;
+  color: #FFF;
+  border: none;
+  border-radius: 2px;
+  padding: 1%;
+  padding-left: 2%;
+  padding-right: 2%;
+}
+/* line 75, sass/var.scss */
+.btn-iw-b:hover {
+  background: #A09ECB;
+  color: #fff;
+}
+
+/* line 82, sass/var.scss */
 .text-center {
   text-align: center;
 }
 
-/* line 56, sass/var.scss */
+/* line 85, sass/var.scss */
 .text-left {
   text-align: left;
 }
 
-/* line 59, sass/var.scss */
+/* line 88, sass/var.scss */
 .text-right {
   text-align: right;
 }
 
-/* line 82, sass/var.scss */
+/* line 111, sass/var.scss */
 .navbar-toggle {
   border: none !important;
   background-color: transparent !important;
 }
-/* line 85, sass/var.scss */
+/* line 114, sass/var.scss */
 .navbar-toggle:hover {
   border: none !important;
   background-color: transparent !important;
 }
-/* line 89, sass/var.scss */
+/* line 118, sass/var.scss */
 .navbar-toggle:focus {
   border: none !important;
   background-color: transparent !important;

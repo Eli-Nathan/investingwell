@@ -1,29 +1,61 @@
-/* line 53, sass/var.scss */
+/* line 54, sass/var.scss */
+.btn-iw-p {
+  background: #A09ECB;
+  color: #FFF;
+  border: none;
+  border-radius: 2px;
+  padding: 1%;
+  padding-left: 2%;
+  padding-right: 2%;
+}
+/* line 62, sass/var.scss */
+.btn-iw-p:hover {
+  background: #294890;
+  color: #fff;
+}
+
+/* line 67, sass/var.scss */
+.btn-iw-b {
+  background: #294890;
+  color: #FFF;
+  border: none;
+  border-radius: 2px;
+  padding: 1%;
+  padding-left: 2%;
+  padding-right: 2%;
+}
+/* line 75, sass/var.scss */
+.btn-iw-b:hover {
+  background: #A09ECB;
+  color: #fff;
+}
+
+/* line 82, sass/var.scss */
 .text-center {
   text-align: center;
 }
 
-/* line 56, sass/var.scss */
+/* line 85, sass/var.scss */
 .text-left {
   text-align: left;
 }
 
-/* line 59, sass/var.scss */
+/* line 88, sass/var.scss */
 .text-right {
   text-align: right;
 }
 
-/* line 82, sass/var.scss */
+/* line 111, sass/var.scss */
 .navbar-toggle {
   border: none !important;
   background-color: transparent !important;
 }
-/* line 85, sass/var.scss */
+/* line 114, sass/var.scss */
 .navbar-toggle:hover {
   border: none !important;
   background-color: transparent !important;
 }
-/* line 89, sass/var.scss */
+/* line 118, sass/var.scss */
 .navbar-toggle:focus {
   border: none !important;
   background-color: transparent !important;
@@ -34,38 +66,54 @@ body {
   font-family: 'Lato', verdana;
 }
 
-/* line 6, sass/main.scss */
+/* line 5, sass/main.scss */
+.investingwell-well {
+  color: #A09ECB;
+}
+
+/* line 9, sass/main.scss */
 .navbar .navbar-brand {
   width: 20%;
 }
-/* line 8, sass/main.scss */
+/* line 11, sass/main.scss */
 .navbar .navbar-brand img {
   max-width: 120px;
   margin-top: -7px;
 }
 
-/* line 14, sass/main.scss */
+/* line 17, sass/main.scss */
 .header {
   margin-top: 50px;
   height: 80vh;
   background: url("../images/hands.png");
   background-size: cover;
   background-position: center;
-}
-/* line 20, sass/main.scss */
-.header p {
   padding: 100px;
+}
+/* line 24, sass/main.scss */
+.header h1 {
   color: #fff;
-  text-shadow: 1px 1px 1px #000;
-  font-size: 2.5em;
+  font-weight: 300;
+  font-size: 4em;
+  text-shadow: 2px 2px 4px #000;
+}
+/* line 30, sass/main.scss */
+.header p {
+  padding: 150px;
+  padding-top: 20px;
+  padding-bottom: 30px;
+  color: #fff;
+  text-shadow: 2px 2px 4px #000;
+  font-weight: 200;
+  font-size: 1.8em;
 }
 
-/* line 27, sass/main.scss */
+/* line 40, sass/main.scss */
 input[type='text'] {
   font-size: 16px;
 }
 
-/* line 31, sass/main.scss */
+/* line 44, sass/main.scss */
 .chatHeader {
   padding-top: 10vh;
   padding-bottom: 10vh;
@@ -73,35 +121,29 @@ input[type='text'] {
   transition: 1s;
   background: #C04848;
   /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #480048, #C04848);
+  background: -webkit-linear-gradient(to right, #A09ECB, #294890);
   /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #480048, #C04848);
+  background: linear-gradient(to right, #A09ECB, #294890);
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
-/* line 42, sass/main.scss */
-.chatHeader h1 {
-  font-family: 'Cookie', cursive;
-  color: #fff;
-  font-size: 50px;
-}
-/* line 47, sass/main.scss */
+/* line 55, sass/main.scss */
 .chatHeader .question {
   margin-top: 30vh;
   width: 50%;
   margin: 0 auto;
 }
 @media (max-width: 768px) {
-  /* line 47, sass/main.scss */
+  /* line 55, sass/main.scss */
   .chatHeader .question {
     width: 90%;
   }
 }
-/* line 54, sass/main.scss */
+/* line 62, sass/main.scss */
 .chatHeader .question label {
   color: #fff;
   text-shadow: 1px 1px 3px #000;
 }
-/* line 59, sass/main.scss */
+/* line 67, sass/main.scss */
 .chatHeader #answer {
   width: 75%;
   margin: 0 auto;
@@ -111,20 +153,20 @@ input[type='text'] {
   transition: 1s;
 }
 @media (max-width: 768px) {
-  /* line 59, sass/main.scss */
+  /* line 67, sass/main.scss */
   .chatHeader #answer {
     width: 90%;
   }
 }
-/* line 69, sass/main.scss */
+/* line 77, sass/main.scss */
 .chatHeader #answer ul {
   list-style-type: none;
 }
-/* line 71, sass/main.scss */
+/* line 79, sass/main.scss */
 .chatHeader #answer ul li {
   margin-left: -15px;
 }
-/* line 73, sass/main.scss */
+/* line 81, sass/main.scss */
 .chatHeader #answer ul li a {
   color: #fff;
   margin-left: -15px;
