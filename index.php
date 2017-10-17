@@ -27,6 +27,44 @@
          </form>
          <div id='answer'></div>
      </div>
+     <div class='savingFor col-sm-12'>
+          <div class='col-md-offset-2 col-md-8'>
+               <h3 class='text-center'>Tell us what you are saving for and we can help you reach your goal.</h3>
+          </div>
+          <div class='card-options col-sm-12'>
+               <div class='box col-md-2 col-md-offset-1 col-sm-4 text-center'>
+                    <div class='box-inner'>
+                         <i class='fa fa-bar-chart'></i>
+                         <p>Just Investing</p>
+                    </div>
+               </div>
+               <div class='box col-md-2 col-sm-4 text-center'>
+                    <div class='box-inner'>
+                         <i class='fa fa-sun-o'></i>
+                         <p>Travel</p>
+                    </div>
+               </div>
+               <div class='box col-md-2 col-sm-4 text-center'>
+                    <div class='box-inner'>
+                         <i class='fa fa-home'></i>
+                         <p>Home</p>
+                    </div>
+               </div>
+               <div class='box col-md-2 col-md-offset-0 col-sm-4 col-sm-offset-2 text-center'>
+                    <div class='box-inner'>
+                         <i class='fa fa-umbrella'></i>
+                         <p>Rainy Day</p>
+                    </div>
+               </div>
+               <div class='box col-md-2 col-sm-4 text-center'>
+                    <div class='box-inner'>
+                         <i class='fa fa-gift'></i>
+                         <p>Wedding</p>
+                    </div>
+               </div>
+          </div>
+
+     </div>
 
      <!-- Body ends and footer begins -->
 
