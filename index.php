@@ -126,6 +126,60 @@
                <a class='btn btn-iw-p' href='#'>Find out more</a>
           </div>
      </div>
+     <div class='service col-sm-12' id='service'>
+          <div class='col-sm-12'>
+               <h3>Is this service right for you?</h3>
+               <p>This online service is ideal if you have between £1,000 and £50,000 available to invest over a period of between 3 and 30 years, and you’re looking for effective, low-cost investment management. It’s not suitable if you have significant liabilities or debts (not including your mortgage), particularly if your liabilities are greater than your total assets. This is a restricted advice service which is limited to investing funds from a single provider within ISAs and GIAs, so it isn't suitable if you want to apply for a regulated pension product. Further information can be found in our Terms of Service.</p>
+          </div>
+          <div class='col-sm-6'>
+               <h3>Our fees for this service</h3>
+               <p>Our fees are shown in the table, compared with the fees currently charged by some of our competitors. Investing Well is free to use with no set up or exit charges. All you pay is the annual charge which is deducted from your investment.</p>
+          </div>
+          <div class='col-sm-6 tableDiv'>
+               <table>
+                    <thead>
+                         <tr>
+                              <th colspan="3">Coparison of typical costs</th>
+                         </tr>
+                    </thead>
+                    <tbody>
+                         <tr class='firstRow'>
+                              <td>
+                                   Provider
+                              </td>
+                              <td>
+                                   Average Annual Charge
+                              </td>
+                              <td>
+                                   Regulated Advice
+                              </td>
+                         </tr>
+                         <tr>
+                              <td>
+                                   Investingwell
+                              </td>
+                              <td>
+                                   0.95%
+                              </td>
+                              <td>
+                                   <i class='fa fa-check'></i>
+                              </td>
+                         </tr>
+                         <tr>
+                              <td>
+                                   Hargreaves Lansdown
+                              </td>
+                              <td>
+                                   1.85%
+                              </td>
+                              <td>
+                                   <i class='fa fa-times'></i>
+                              </td>
+                         </tr>
+                    </tbody>
+               </table>
+          </div>
+     </div>
 
      <!-- Body ends and footer begins -->
 

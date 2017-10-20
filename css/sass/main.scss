@@ -6,6 +6,7 @@ body {
 
      p {
           line-height: 1.7em;
+          font-weight: 300;
      }
 }
 
@@ -223,7 +224,7 @@ input[type='text'] {
 }
 
 .personalised {
-     background:#f6f6f6;
+     background: #f6f6f6;
      padding: 20px;
 
      h2 {
@@ -240,11 +241,56 @@ input[type='text'] {
      .btn {
           margin-top: 20px;
      }
+
      img {
           @media(min-width:768px) {
-               width:75%;
-               margin-top:50px;
+               width: 75%;
+               margin-top: 50px;
           }
-          width:50%;
+          width: 50%;
+     }
+}
+
+.service {
+     @media(min-width:768px) {
+          padding:30px;
+     }
+     h3 {
+          font-weight:700;
+     }
+     table {
+          margin-top:30px;
+          thead {
+               background: #4A4A4A;
+               color: #fff;
+
+               th {
+                    color: #fff;
+                    padding:7px;
+                    border-radius: 3px 3px 0px 0px;
+               }
+          }
+          tbody {
+               border-left:1px solid #eee;
+               tr {
+                    border-bottom:1px solid #eee;
+                    &.firstRow {
+                         font-weight:700;
+                    }
+                    &:nth-of-type(even) {
+                         background:#F2F2F2;
+                    }
+                    td {
+                         padding:7px;
+                         border-right:1px solid #eee;
+                         .fa-check {
+                              color:#72E270;
+                         }
+                         .fa-times {
+                              color:#852525;
+                         }
+                    }
+               }
+          }
      }
 }
