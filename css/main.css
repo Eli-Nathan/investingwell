@@ -283,3 +283,77 @@ input[type='text'] {
 .donations .btn {
   margin-top: 20px;
 }
+
+/* line 190, sass/main.scss */
+.robots {
+  padding: 20px;
+  padding-top: 30px !important;
+}
+@media (min-width: 768px) {
+  /* line 190, sass/main.scss */
+  .robots {
+    padding: 15px 90px 90px;
+  }
+}
+/* line 197, sass/main.scss */
+.robots h2 {
+  font-size: 2.6em;
+  font-weight: 700;
+}
+/* line 202, sass/main.scss */
+.robots hr {
+  height: 1px;
+  background-color: #333;
+  border: none;
+}
+/* line 208, sass/main.scss */
+.robots p {
+  font-size: 18px;
+  font-weight: 300;
+}
+/* line 213, sass/main.scss */
+.robots .btn {
+  margin-top: 20px;
+}
+/* line 217, sass/main.scss */
+.robots img {
+  width: 100%;
+}
+@media (min-width: 1300px) {
+  /* line 217, sass/main.scss */
+  .robots img {
+    width: 75%;
+  }
+}
+
+/* line 225, sass/main.scss */
+.personalised {
+  background: #f6f6f6;
+  padding: 20px;
+}
+/* line 229, sass/main.scss */
+.personalised h2 {
+  font-size: 2.6em;
+  font-weight: 700;
+  margin-bottom: 50px;
+}
+/* line 235, sass/main.scss */
+.personalised p {
+  font-size: 18px;
+  font-weight: 300;
+}
+/* line 240, sass/main.scss */
+.personalised .btn {
+  margin-top: 20px;
+}
+/* line 243, sass/main.scss */
+.personalised img {
+  width: 50%;
+}
+@media (min-width: 768px) {
+  /* line 243, sass/main.scss */
+  .personalised img {
+    width: 75%;
+    margin-top: 50px;
+  }
+}

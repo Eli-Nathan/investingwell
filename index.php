@@ -90,10 +90,39 @@
                </div>
           </div>
      </div>
-     <div class='donations col-sm-12 col-xs-12'>
-          <div class='text col-sm-6 col-xs-12'>
+     <div class='clearfix'></div>
+     <div class='donations col-sm-12'>
+          <div class='text col-md-6 col-sm-9'>
                <h2>Change your world</h2>
                <p>Investing Well offers you the opportunity to make a positive impact on society. We help you plan for your own future and also secure the future of a charity close to your heart. So what are you saving for?</p>
+               <a class='btn btn-iw-p' href='#'>Find out more</a>
+          </div>
+     </div>
+
+     <div class='robots col-sm-12'>
+          <div class='text col-md-6 col-sm-12'>
+               <h2>We are not robots.</h2>
+               <hr />
+               <p>Investing Well is a service provided by <strong>Qualified Financial Experts</strong>. It is designed so that you can make your own choices and therefore save on the upfront costs.</p>
+
+               <p>But if you have a question or you do need advice feel free to get in touch.</p>
+               <a class='btn btn-iw-p' href='#'>Find out more</a>
+          </div>
+          <div class='image col-md-6 col-sm-12 text-center'>
+               <img src='<?php bloginfo('stylesheet_directory');?>/images/robot.png' alt="Not Robots">
+          </div>
+     </div>
+     <div class='personalised col-sm-12'>
+          <div class='image col-md-3 col-sm-3 hidden-xs'>
+               <img src='<?php bloginfo('stylesheet_directory');?>/images/line-chart-animation.gif' alt="Animation">
+          </div>
+          <div class='text col-md-8 col-sm-9'>
+               <h2>Personalised for you</h2>
+               <div class='image hidden-md hidden-lg hidden-sm col-xs-6'>
+                    <img src='<?php bloginfo('stylesheet_directory');?>/images/line-chart-animation.gif' alt="Animation">
+               </div>
+               <div class='clearfix'></div>
+               <p>Investing Well helps individuals and families to meet thier own goals. We are an online service to help keep costs really low but you can rest assured expert investment specialists look after your money. Our dedicated support team are on hand if you have a question.</p>
                <a class='btn btn-iw-p' href='#'>Find out more</a>
           </div>
      </div>
