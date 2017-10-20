@@ -1,109 +1,121 @@
-/* line 54, sass/var.scss */
+/* line 56, sass/var.scss */
 .btn-iw-p {
   background: #A09ECB;
   color: #FFF;
   border: none;
   border-radius: 2px;
-  padding: 1%;
-  padding-left: 2%;
-  padding-right: 2%;
+  padding: 15px;
 }
-/* line 62, sass/var.scss */
+@media (min-width: 768px) {
+  /* line 56, sass/var.scss */
+  .btn-iw-p {
+    padding: 10px 20px;
+  }
+}
+/* line 66, sass/var.scss */
 .btn-iw-p:hover {
   background: #294890;
   color: #fff;
 }
 
-/* line 67, sass/var.scss */
+/* line 72, sass/var.scss */
 .btn-iw-b {
   background: #294890;
   color: #FFF;
   border: none;
   border-radius: 2px;
-  padding: 1%;
-  padding-left: 2%;
-  padding-right: 2%;
+  padding: 3%;
 }
-/* line 75, sass/var.scss */
+@media (min-width: 768px) {
+  /* line 72, sass/var.scss */
+  .btn-iw-b {
+    padding: 1% 2%;
+  }
+}
+/* line 81, sass/var.scss */
 .btn-iw-b:hover {
   background: #A09ECB;
   color: #fff;
 }
 
-/* line 82, sass/var.scss */
+/* line 87, sass/var.scss */
 .text-center {
   text-align: center;
 }
 
-/* line 85, sass/var.scss */
+/* line 91, sass/var.scss */
 .text-left {
   text-align: left;
 }
 
-/* line 88, sass/var.scss */
+/* line 95, sass/var.scss */
 .text-right {
   text-align: right;
 }
 
-/* line 111, sass/var.scss */
+/* line 115, sass/var.scss */
 .navbar-toggle {
   border: none !important;
   background-color: transparent !important;
 }
-/* line 114, sass/var.scss */
+/* line 119, sass/var.scss */
 .navbar-toggle:hover {
   border: none !important;
   background-color: transparent !important;
 }
-/* line 118, sass/var.scss */
+/* line 124, sass/var.scss */
 .navbar-toggle:focus {
   border: none !important;
   background-color: transparent !important;
 }
 
-/* line 2, sass/main.scss */
+/* line 3, sass/main.scss */
 body {
   font-family: 'Lato', verdana;
+  background: #fafafa;
+}
+/* line 7, sass/main.scss */
+body p {
+  line-height: 1.7em;
 }
 
-/* line 5, sass/main.scss */
+/* line 12, sass/main.scss */
 .investingwell-well {
   color: #A09ECB;
 }
 
-/* line 9, sass/main.scss */
+/* line 17, sass/main.scss */
 .navbar .navbar-brand {
   width: 20%;
 }
-/* line 11, sass/main.scss */
+/* line 20, sass/main.scss */
 .navbar .navbar-brand img {
   max-width: 120px;
   margin-top: -7px;
 }
 
-/* line 17, sass/main.scss */
+/* line 27, sass/main.scss */
 .header {
-  margin-top: 50px;
-  height: 80vh;
+  margin-top: 40px;
   background: url("../images/hands.png");
   background-size: cover;
   background-position: center;
   padding: 20px;
 }
 @media (min-width: 768px) {
-  /* line 17, sass/main.scss */
+  /* line 27, sass/main.scss */
   .header {
     padding: 100px;
   }
 }
-/* line 27, sass/main.scss */
+/* line 37, sass/main.scss */
 .header h1 {
   color: #fff;
   font-weight: 300;
   font-size: 4em;
   text-shadow: 2px 2px 4px #000;
 }
-/* line 33, sass/main.scss */
+/* line 44, sass/main.scss */
 .header p {
   padding: 20px;
   padding-top: 20px;
@@ -111,23 +123,22 @@ body {
   color: #fff;
   text-shadow: 2px 2px 4px #000;
   font-weight: 200;
-  font-size: 1.8em;
+  font-size: 1.4em;
 }
 @media (min-width: 768px) {
-  /* line 33, sass/main.scss */
+  /* line 44, sass/main.scss */
   .header p {
-    padding: 150px;
-    padding-top: 20px;
-    padding-bottom: 30px;
+    padding: 20px 150px 30px;
+    font-size: 1.8em;
   }
 }
 
-/* line 48, sass/main.scss */
+/* line 59, sass/main.scss */
 input[type='text'] {
   font-size: 16px;
 }
 
-/* line 52, sass/main.scss */
+/* line 63, sass/main.scss */
 .chatHeader {
   padding-top: 10vh;
   padding-bottom: 10vh;
@@ -140,97 +151,135 @@ input[type='text'] {
   background: linear-gradient(to right, #A09ECB, #294890);
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
-/* line 63, sass/main.scss */
+/* line 74, sass/main.scss */
 .chatHeader .question {
   margin-top: 30vh;
   width: 50%;
   margin: 0 auto;
 }
 @media (max-width: 768px) {
-  /* line 63, sass/main.scss */
+  /* line 74, sass/main.scss */
   .chatHeader .question {
     width: 90%;
   }
 }
-/* line 70, sass/main.scss */
+/* line 82, sass/main.scss */
 .chatHeader .question label {
   color: #fff;
   text-shadow: 1px 1px 3px #000;
 }
-/* line 75, sass/main.scss */
+/* line 88, sass/main.scss */
 .chatHeader #answer {
   width: 75%;
-  margin: 0 auto;
-  margin-top: 30px;
+  margin: 30px auto 0;
   color: #fff;
   font-size: 17px;
   transition: 1s;
 }
 @media (max-width: 768px) {
-  /* line 75, sass/main.scss */
+  /* line 88, sass/main.scss */
   .chatHeader #answer {
     width: 90%;
   }
 }
-/* line 85, sass/main.scss */
+/* line 98, sass/main.scss */
 .chatHeader #answer ul {
   list-style-type: none;
 }
-/* line 87, sass/main.scss */
+/* line 101, sass/main.scss */
 .chatHeader #answer ul li {
   margin-left: -15px;
 }
-/* line 89, sass/main.scss */
+/* line 104, sass/main.scss */
 .chatHeader #answer ul li a {
   color: #fff;
   margin-left: -15px;
 }
 
-/* line 99, sass/main.scss */
+/* line 115, sass/main.scss */
 .savingFor {
   padding-top: 20px;
   padding-bottom: 40px;
 }
-/* line 102, sass/main.scss */
+/* line 119, sass/main.scss */
 .savingFor h3 {
   font-weight: 700;
 }
-/* line 105, sass/main.scss */
+/* line 123, sass/main.scss */
 .savingFor .card-options {
   margin-top: 30px;
 }
-/* line 107, sass/main.scss */
+/* line 126, sass/main.scss */
 .savingFor .card-options .box {
+  color: #333;
   margin-bottom: 30px;
+  text-decoration: none;
 }
-/* line 109, sass/main.scss */
+/* line 131, sass/main.scss */
 .savingFor .card-options .box .box-inner {
   background: #fff;
   border-radius: 3px;
   padding: 20px;
-  box-shadow: 2px 2px 10px 2px #000;
+  border: 1px solid #e5e5e5;
+  transition: 0.3s;
 }
-/* line 110, sass/main.scss */
+/* line 132, sass/main.scss */
 .savingFor .card-options .box .box-inner i {
   font-size: 40px;
 }
-/* line 113, sass/main.scss */
+/* line 136, sass/main.scss */
 .savingFor .card-options .box .box-inner p {
   font-weight: 700;
   margin-top: 20px;
 }
+@media (min-width: 768px) {
+  /* line 146, sass/main.scss */
+  .savingFor .card-options .box .box-inner:hover {
+    margin-top: -5px;
+    border-bottom: 5px solid #A09ECB;
+  }
+  /* line 147, sass/main.scss */
+  .savingFor .card-options .box .box-inner:hover i {
+    color: #294890;
+  }
+}
 
-/* line 125, sass/main.scss */
+/* line 159, sass/main.scss */
 .donations {
-  padding: 30px;
-  background: url("../images/donations.png");
+  padding: 20px;
+  padding-top: 30px;
+  background: url("../images/donations-darker.png");
+  background-position: center;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-position: right;
   color: #fff;
 }
-/* line 131, sass/main.scss */
+@media (min-width: 768px) {
+  /* line 159, sass/main.scss */
+  .donations {
+    padding: 15px 90px 90px;
+  }
+}
+@media (min-width: 768px) {
+  /* line 159, sass/main.scss */
+  .donations {
+    background: url("../images/donations.png");
+    background-position: right;
+  }
+}
+/* line 174, sass/main.scss */
 .donations h2 {
+  font-size: 2.6em;
   font-weight: 700;
+  margin-bottom: 50px;
+}
+/* line 180, sass/main.scss */
+.donations p {
+  font-size: 18px;
+  font-weight: 300;
+}
+/* line 185, sass/main.scss */
+.donations .btn {
+  margin-top: 20px;
 }
