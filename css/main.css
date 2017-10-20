@@ -235,7 +235,7 @@ input[type='text'] {
 @media (min-width: 768px) {
   /* line 146, sass/main.scss */
   .savingFor .card-options .box .box-inner:hover {
-    margin-top: -5px;
+    margin-top: -3px;
     border-bottom: 5px solid #A09ECB;
   }
   /* line 147, sass/main.scss */
