@@ -176,6 +176,52 @@
                </table>
           </div>
      </div>
+     <div class='steps col-sm-12'>
+          <div class="col-sm-5 image">
+               <img src="<?php bloginfo('stylesheet_directory');?>/images/iphone-mock-up.png" alt="Investingwell">
+          </div>
+          <div class='col-sm-7 theSteps'>
+               <ul>
+                    <li class='col-sm-12'>
+                         <div class='col-sm-2 text-right'>
+                              <img src='<?php bloginfo('stylesheet_directory');?>/images/number-1.svg' alt="1">
+                         </div>
+                         <div class='col-sm-10'>
+                              <h3>Choose your goal</h3>
+                              <p></p>
+                         </div>
+                    </li>
+                    <li class='col-sm-12'>
+                         <div class='col-sm-2 text-right'>
+                              <img src='<?php bloginfo('stylesheet_directory');?>/images/number-2.svg' alt="2">
+                         </div>
+                         <div class='col-sm-10'>
+                              <h3>Select your risk level</h3>
+                              <p>By choosing from our range of risk levels it will help us select the most suitable investment for you</p>
+                         </div>
+                    </li>
+                    <li class='col-sm-12'>
+                         <div class='col-sm-2 text-right'>
+                              <img src='<?php bloginfo('stylesheet_directory');?>/images/number-3.svg' alt="3">
+                         </div>
+                         <div class='col-sm-10'>
+                              <h3>Read our documentation</h3>
+                              <p>We will provide you with a personal suitability report, containing the important information you will need before you decide to procees.</p>
+                         </div>
+                    </li>
+                    <li class='col-sm-12'>
+                         <div class='col-sm-2 text-right'>
+                              <img src='<?php bloginfo('stylesheet_directory');?>/images/number-4.svg' alt="4">
+                         </div>
+                         <div class='col-sm-10'>
+                              <h3>Start Investing</h3>
+                              <p>Access your account 24/7</p>
+                              <a class='btn btn-iw-b' href='#'>Get Started</a>
+                         </div>
+                    </li>
+               </ul>
+          </div>
+     </div>
      <!-- Body ends and footer begins -->
 
 <?php get_footer(); ?>
