@@ -26,7 +26,7 @@
           <h1 class='text-center'><?php echo $investingwell; ?></h1>
           <p>
                <?php
-                    if($charity == "chas") {
+                    if(isset($charity)) {
                          echo "You came from ". $charityname ."! ";
                     }
                ?>
