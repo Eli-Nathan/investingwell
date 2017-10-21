@@ -163,12 +163,13 @@ input[type='text'] {
           padding: 15px 90px 90px;
      }
      padding-top: 30px;
-     @media(min-width:768px) {
-          background: url('../images/donations.png');
-          background-position: right;
-     }
      background: url('../images/donations-darker.png');
      background-position: center;
+     @media(min-width:768px) {
+          background: url('../images/donations.png');
+          background-position: left;
+     }
+
      @include full-background;
      color: #fff;
 
@@ -315,6 +316,23 @@ input[type='text'] {
                          .fa-times {
                               color: #852525;
                          }
+                    }
+               }
+          }
+     }
+}
+.footer {
+     @include no-pad;
+     margin-bottom:0px;
+     padding-bottom:0px;
+     .navbar {
+          border-radius: 0px;
+          background-color:#eee;
+          border:none;
+          .navbar-right {
+               li {
+                    a {
+                         font-size:18px;
                     }
                }
           }

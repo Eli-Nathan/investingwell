@@ -27,6 +27,17 @@ function bootstrap_nav()
             'walker'            => new wp_bootstrap_navwalker())
     );
 }
+function bootstrap_footer()
+{
+	wp_nav_menu( array(
+            'theme_location'    => 'footer-menu',
+            'depth'             => 2,
+            'container'         => 'false',
+            'menu_class'        => 'nav navbar-nav',
+            'fallback_cb'       => 'wp_bootstrap_navwalker::fallback',
+            'walker'            => new wp_bootstrap_navwalker())
+    );
+}
 
 function menus() {
     register_nav_menus(

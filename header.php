@@ -38,7 +38,12 @@
                <div class="collapse navbar-collapse" id="navbar-collapse">
                     <?php bootstrap_nav(); ?>
                     <ul class='nav navbar-nav navbar-right'>
-                         <li><a href="#">Login &nbsp; <i class='fa fa-user'></i></a> </li>
+                         <li>
+                              <a href="#">
+                                   Login &nbsp; <i class='fa fa-user'></i>
+                              </a> 
+                         </li>
+                    </ul>
                </div>
                <!-- /.navbar-collapse -->
           </div>

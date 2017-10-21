@@ -266,179 +266,197 @@ input[type='text'] {
   /* line 160, sass/main.scss */
   .donations {
     background: url("../images/donations.png");
-    background-position: right;
+    background-position: left;
   }
 }
-/* line 175, sass/main.scss */
+/* line 176, sass/main.scss */
 .donations h2 {
   font-size: 2.6em;
   font-weight: 700;
   margin-bottom: 50px;
 }
-/* line 181, sass/main.scss */
+/* line 182, sass/main.scss */
 .donations p {
   font-size: 18px;
   font-weight: 300;
 }
-/* line 186, sass/main.scss */
+/* line 187, sass/main.scss */
 .donations .btn {
   margin-top: 20px;
 }
 
-/* line 191, sass/main.scss */
+/* line 192, sass/main.scss */
 .robots {
   padding: 20px;
   padding-top: 30px !important;
 }
 @media (min-width: 768px) {
-  /* line 191, sass/main.scss */
+  /* line 192, sass/main.scss */
   .robots {
     padding: 15px 90px 90px;
   }
 }
-/* line 198, sass/main.scss */
+/* line 199, sass/main.scss */
 .robots h2 {
   font-size: 2.6em;
   font-weight: 700;
 }
-/* line 203, sass/main.scss */
+/* line 204, sass/main.scss */
 .robots hr {
   height: 1px;
   background-color: #333;
   border: none;
 }
-/* line 209, sass/main.scss */
+/* line 210, sass/main.scss */
 .robots p {
   font-size: 18px;
   font-weight: 300;
 }
-/* line 214, sass/main.scss */
+/* line 215, sass/main.scss */
 .robots .btn {
   margin-top: 20px;
 }
 @media (max-width: 768px) {
-  /* line 218, sass/main.scss */
+  /* line 219, sass/main.scss */
   .robots .image {
     text-align: left;
   }
 }
-/* line 222, sass/main.scss */
+/* line 223, sass/main.scss */
 .robots .image img {
   width: 100%;
 }
 @media (min-width: 480px) {
-  /* line 222, sass/main.scss */
+  /* line 223, sass/main.scss */
   .robots .image img {
     width: 50%;
   }
 }
 @media (min-width: 992px) {
-  /* line 222, sass/main.scss */
+  /* line 223, sass/main.scss */
   .robots .image img {
     width: 100%;
     margin-top: 50px;
   }
 }
 @media (min-width: 1300px) {
-  /* line 222, sass/main.scss */
+  /* line 223, sass/main.scss */
   .robots .image img {
     width: 75%;
   }
 }
 
-/* line 238, sass/main.scss */
+/* line 239, sass/main.scss */
 .personalised {
   background: #eee;
   padding: 20px;
 }
 @media (min-width: 992px) {
-  /* line 238, sass/main.scss */
+  /* line 239, sass/main.scss */
   .personalised {
     padding-bottom: 0;
   }
 }
-/* line 245, sass/main.scss */
+/* line 246, sass/main.scss */
 .personalised h2 {
   font-size: 2.6em;
   font-weight: 700;
 }
 @media (min-width: 768px) {
-  /* line 245, sass/main.scss */
+  /* line 246, sass/main.scss */
   .personalised h2 {
     margin-bottom: 50px;
   }
 }
-/* line 253, sass/main.scss */
+/* line 254, sass/main.scss */
 .personalised p {
   font-size: 18px;
   font-weight: 300;
 }
-/* line 258, sass/main.scss */
+/* line 259, sass/main.scss */
 .personalised .btn {
   margin-top: 20px;
 }
-/* line 262, sass/main.scss */
+/* line 263, sass/main.scss */
 .personalised img {
   width: 50%;
 }
 @media (min-width: 768px) {
-  /* line 262, sass/main.scss */
+  /* line 263, sass/main.scss */
   .personalised img {
     width: 55%;
   }
 }
 
 @media (min-width: 768px) {
-  /* line 270, sass/main.scss */
+  /* line 271, sass/main.scss */
   .service {
     padding: 30px;
   }
 }
-/* line 275, sass/main.scss */
+/* line 276, sass/main.scss */
 .service h3 {
   font-weight: 700;
 }
-/* line 279, sass/main.scss */
+/* line 280, sass/main.scss */
 .service table {
   margin-top: 30px;
 }
-/* line 282, sass/main.scss */
+/* line 283, sass/main.scss */
 .service table thead {
   background: #4A4A4A;
   color: #fff;
 }
-/* line 286, sass/main.scss */
+/* line 287, sass/main.scss */
 .service table thead th {
   color: #fff;
   padding: 7px;
   border-radius: 3px 3px 0 0;
 }
-/* line 293, sass/main.scss */
+/* line 294, sass/main.scss */
 .service table tbody {
   border-left: 1px solid #eee;
 }
-/* line 296, sass/main.scss */
+/* line 297, sass/main.scss */
 .service table tbody tr {
   border-bottom: 1px solid #eee;
 }
-/* line 299, sass/main.scss */
+/* line 300, sass/main.scss */
 .service table tbody tr.firstRow {
   font-weight: 700;
 }
-/* line 303, sass/main.scss */
+/* line 304, sass/main.scss */
 .service table tbody tr:nth-of-type(even) {
   background: #F2F2F2;
 }
-/* line 307, sass/main.scss */
+/* line 308, sass/main.scss */
 .service table tbody tr td {
   padding: 7px;
   border-right: 1px solid #eee;
 }
-/* line 311, sass/main.scss */
+/* line 312, sass/main.scss */
 .service table tbody tr td .fa-check {
   color: #72E270;
 }
-/* line 315, sass/main.scss */
+/* line 316, sass/main.scss */
 .service table tbody tr td .fa-times {
   color: #852525;
+}
+
+/* line 324, sass/main.scss */
+.footer {
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+}
+/* line 328, sass/main.scss */
+.footer .navbar {
+  border-radius: 0px;
+  background-color: #eee;
+  border: none;
+}
+/* line 334, sass/main.scss */
+.footer .navbar .navbar-right li a {
+  font-size: 18px;
 }
