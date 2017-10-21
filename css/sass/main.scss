@@ -345,6 +345,10 @@ input[type='text'] {
      }
      @media (max-width: 768px) {
           .navbar .navbar-nav {
+               li {
+                    display: inline-block!important;
+                    float: none!important;
+               }
                display: inline-block!important;
                float: none!important;
                vertical-align: top;

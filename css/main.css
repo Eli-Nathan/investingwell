@@ -478,49 +478,54 @@ input[type='text'] {
     float: none !important;
     vertical-align: top;
   }
-  /* line 353, sass/main.scss */
+  /* line 348, sass/main.scss */
+  .footer .navbar .navbar-nav li {
+    display: inline-block !important;
+    float: none !important;
+  }
+  /* line 357, sass/main.scss */
   .footer .navbar .navbar-collapse {
     text-align: center;
   }
 }
-/* line 358, sass/main.scss */
+/* line 362, sass/main.scss */
 .footer .navbar {
   border-radius: 0;
   margin-bottom: 0;
   background-color: #eee;
   border: none;
 }
-/* line 366, sass/main.scss */
+/* line 370, sass/main.scss */
 .footer .navbar .navbar-right li a {
   font-size: 18px;
 }
-/* line 373, sass/main.scss */
+/* line 377, sass/main.scss */
 .footer .footer-content {
   padding: 30px 30px 10px;
 }
-/* line 376, sass/main.scss */
+/* line 380, sass/main.scss */
 .footer .footer-content .contact-info {
   padding-bottom: 20px;
 }
 @media (min-width: 768px) {
-  /* line 376, sass/main.scss */
+  /* line 380, sass/main.scss */
   .footer .footer-content .contact-info {
     padding-left: 90px;
   }
 }
-/* line 383, sass/main.scss */
+/* line 387, sass/main.scss */
 .footer .footer-content .contact-info table tr {
   cursor: pointer;
 }
-/* line 386, sass/main.scss */
+/* line 390, sass/main.scss */
 .footer .footer-content .contact-info table tr td {
   padding: 5px;
 }
-/* line 389, sass/main.scss */
+/* line 393, sass/main.scss */
 .footer .footer-content .contact-info table tr td:nth-child(1) {
   padding-left: 0;
 }
-/* line 393, sass/main.scss */
+/* line 397, sass/main.scss */
 .footer .footer-content .contact-info table tr td i {
   color: #A09ECB;
 }
