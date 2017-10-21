@@ -1,6 +1,30 @@
 <?php
      global $investingwell;
      $investingwell = "Investing<span class='investingwell-well'>well</span>";
+     global $phonelink;
+     global $phonenumber;
+     global $emaillink;
+     global $emailaddress;
+     global $linkedinlink;
+     global $twitterlink;
+     global $twittertext;
+     global $facebooklink;
+     global $facebooktext;
+     global $instagramlink;
+     global $youtubelink;
+
+     $phonelink = "tel:01419463000";
+     $phonenumber = "0141 946 3000";
+     $emaillink = "mailto:advisor@investingwell.co.uk";
+     $emailaddress = "advisor@investingwell.co.uk";
+     $linkedinlink = "https://www.linkedin.com/in/investing-well-4a491388/";
+     $twitterlink = "https://twitter.com/BeGoodWithMoney";
+     $twittertext = "@BeGoodWithMoney";
+     $facebooklink = "https://www.facebook.com/investingwell";
+     $facebooktext = "facebook.com/investingwell";
+     $instagramlink = "https://www.instagram.com/investinggreen/";
+     $youtubelink = "https://www.youtube.com/channel/UCelqY2yLJdNcN5BstB3ttXg";
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -41,7 +65,7 @@
                          <li>
                               <a href="#">
                                    Login &nbsp; <i class='fa fa-user'></i>
-                              </a> 
+                              </a>
                          </li>
                     </ul>
                </div>

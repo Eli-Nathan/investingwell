@@ -176,7 +176,6 @@
                </table>
           </div>
      </div>
-
      <!-- Body ends and footer begins -->
 
 <?php get_footer(); ?>

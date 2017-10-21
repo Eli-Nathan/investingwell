@@ -169,7 +169,6 @@ input[type='text'] {
           background: url('../images/donations.png');
           background-position: left;
      }
-
      @include full-background;
      color: #fff;
 
@@ -218,16 +217,17 @@ input[type='text'] {
 
      .image {
           @media(max-width:768px) {
-               text-align:left;
+               text-align: left;
           }
+
           img {
                width: 100%;
                @media(min-width:480px) {
-                    width:50%;
+                    width: 50%;
                }
                @media(min-width:992px) {
-                    width:100%;
-                    margin-top:50px;
+                    width: 100%;
+                    margin-top: 50px;
                }
                @media(min-width:1300px) {
                     width: 75%;
@@ -272,6 +272,7 @@ input[type='text'] {
      @media(min-width:768px) {
           padding: 30px;
      }
+     padding-bottom: 30px;
 
      h3 {
           font-weight: 700;
@@ -321,18 +322,78 @@ input[type='text'] {
           }
      }
 }
+
 .footer {
      @include no-pad;
-     margin-bottom:0px;
-     padding-bottom:0px;
+
+     .navbar-collapse.collapse {
+          display: block;
+     }
+
+     .navbar-nav,
+     .navbar-nav > li {
+          float: left;
+     }
+
+     .navbar-nav.navbar-right:last-child {
+          margin-right: -15px;
+     }
+     @media(min-width:768px) {
+          .navbar-right {
+               float: right!important;
+          }
+     }
+     @media (max-width: 768px) {
+          .navbar .navbar-nav {
+               display: inline-block!important;
+               float: none!important;
+               vertical-align: top;
+          }
+
+          .navbar .navbar-collapse {
+               text-align: center;
+          }
+     }
+
      .navbar {
-          border-radius: 0px;
-          background-color:#eee;
-          border:none;
+          border-radius: 0;
+          margin-bottom: 0;
+          background-color: #eee;
+          border: none;
+
           .navbar-right {
                li {
                     a {
-                         font-size:18px;
+                         font-size: 18px;
+                    }
+               }
+          }
+     }
+
+     .footer-content {
+          padding: 30px 30px 10px;
+
+          .contact-info {
+               @media(min-width:768px) {
+                    padding-left: 90px;
+               }
+               padding-bottom: 20px;
+
+               table {
+                    tr {
+                         cursor: pointer;
+
+                         td {
+                              padding: 5px;
+
+                              &:nth-child(1) {
+                                   padding-left: 0;
+                              }
+
+                              i {
+                                   color: $purple;
+                              }
+                         }
                     }
                }
           }
