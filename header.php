@@ -29,7 +29,7 @@
                          <span class="sr-only">Toggle navigation</span>
                          <i class="fa fa-bars"></i>
                     </button>
-                    <a class='navbar-brand'>
+                    <a class='navbar-brand' href='/'>
                          <img src='<?php bloginfo('stylesheet_directory');?>/images/iw-logo-long.png' alt="Investing Well">
                     </a>
                </div>

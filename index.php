@@ -113,15 +113,11 @@
           </div>
      </div>
      <div class='personalised col-sm-12'>
-          <div class='image col-md-3 col-sm-3 hidden-xs'>
-               <img src='<?php bloginfo('stylesheet_directory');?>/images/line-chart-animation.gif' alt="Animation">
+          <div class='image col-md-6 hidden-sm hidden-xs text-center'>
+               <img src='<?php bloginfo('stylesheet_directory');?>/images/ipadhand.png' alt="Animation">
           </div>
-          <div class='text col-md-8 col-sm-9'>
+          <div class='text col-md-6 col-sm-12'>
                <h2>Personalised for you</h2>
-               <div class='image hidden-md hidden-lg hidden-sm col-xs-6'>
-                    <img src='<?php bloginfo('stylesheet_directory');?>/images/line-chart-animation.gif' alt="Animation">
-               </div>
-               <div class='clearfix'></div>
                <p>Investing Well helps individuals and families to meet thier own goals. We are an online service to help keep costs really low but you can rest assured expert investment specialists look after your money. Our dedicated support team are on hand if you have a question.</p>
                <a class='btn btn-iw-p' href='#'>Find out more</a>
           </div>
@@ -148,7 +144,7 @@
                                    Provider
                               </td>
                               <td>
-                                   Average Annual Charge
+                                   Average Annual Charge <i class="fa fa-info-circle" aria-hidden="true"></i>
                               </td>
                               <td>
                                    Regulated Advice

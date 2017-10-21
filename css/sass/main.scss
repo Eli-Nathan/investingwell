@@ -215,22 +215,39 @@ input[type='text'] {
           margin-top: 20px;
      }
 
-     img {
-          width: 100%;
-          @media(min-width:1300px) {
-               width: 75%;
+     .image {
+          @media(max-width:768px) {
+               text-align:left;
+          }
+          img {
+               width: 100%;
+               @media(min-width:480px) {
+                    width:50%;
+               }
+               @media(min-width:992px) {
+                    width:100%;
+                    margin-top:50px;
+               }
+               @media(min-width:1300px) {
+                    width: 75%;
+               }
           }
      }
 }
 
 .personalised {
-     background: #f6f6f6;
+     background: #eee;
      padding: 20px;
+     @media(min-width:992px) {
+          padding-bottom: 0;
+     }
 
      h2 {
           font-size: 2.6em;
           font-weight: 700;
-          margin-bottom: 50px;
+          @media(min-width:768px) {
+               margin-bottom: 50px;
+          }
      }
 
      p {
@@ -244,8 +261,7 @@ input[type='text'] {
 
      img {
           @media(min-width:768px) {
-               width: 75%;
-               margin-top: 50px;
+               width: 55%;
           }
           width: 50%;
      }
@@ -253,41 +269,51 @@ input[type='text'] {
 
 .service {
      @media(min-width:768px) {
-          padding:30px;
+          padding: 30px;
      }
+
      h3 {
-          font-weight:700;
+          font-weight: 700;
      }
+
      table {
-          margin-top:30px;
+          margin-top: 30px;
+
           thead {
                background: #4A4A4A;
                color: #fff;
 
                th {
                     color: #fff;
-                    padding:7px;
-                    border-radius: 3px 3px 0px 0px;
+                    padding: 7px;
+                    border-radius: 3px 3px 0 0;
                }
           }
+
           tbody {
-               border-left:1px solid #eee;
+               border-left: 1px solid #eee;
+
                tr {
-                    border-bottom:1px solid #eee;
+                    border-bottom: 1px solid #eee;
+
                     &.firstRow {
-                         font-weight:700;
+                         font-weight: 700;
                     }
+
                     &:nth-of-type(even) {
-                         background:#F2F2F2;
+                         background: #F2F2F2;
                     }
+
                     td {
-                         padding:7px;
-                         border-right:1px solid #eee;
+                         padding: 7px;
+                         border-right: 1px solid #eee;
+
                          .fa-check {
-                              color:#72E270;
+                              color: #72E270;
                          }
+
                          .fa-times {
-                              color:#852525;
+                              color: #852525;
                          }
                     }
                }
