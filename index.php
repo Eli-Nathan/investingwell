@@ -176,44 +176,109 @@
                </table>
           </div>
      </div>
-     <div class='steps col-sm-12'>
-          <div class="col-sm-5 image">
+     <div class='clients col-sm-12'>
+       <h2 class='text-center'>What some of our clients think</h2>
+       <div class='clientsInner col-sm-offset-1 col-sm-10'>
+         <div class='clientbox clientbox-lower col-sm-4'>
+           <div class='clientBoxInner col-sm-12'>
+           <div class="clientImage col-sm-1">
+             <img src="<?php bloginfo('stylesheet_directory');?>/images/user-male.jpg" alt="Client">
+           </div>
+           <div class='nameRating col-sm-9'>
+             <h3>Elon Musk</h3>
+             <p>
+               <i class='fa fa-star'></i>
+               <i class='fa fa-star'></i>
+               <i class='fa fa-star'></i>
+               <i class='fa fa-star'></i>
+               <i class='fa fa-star'></i>
+             </p>
+           </div>
+           <div class='col-sm-12 reviewContent'>
+             <p>“Ethical Investing is really important to me as I need my savings to grow more than the bank over the next few years. But I don't want to benefit from anything harmful to other people. I also look for stability and this proposition gives me this as it avoids more uncertain things like oil and mining."</p>
+           </div>
+         </div>
+       </div>
+       <div class='clientbox col-sm-4'>
+         <div class='clientBoxInner col-sm-12'>
+         <div class="clientImage col-sm-1">
+           <img src="<?php bloginfo('stylesheet_directory');?>/images/user-female.jpg" alt="Client">
+         </div>
+         <div class='nameRating col-sm-9'>
+           <h3>Michelle Obama</h3>
+           <p>
+             <i class='fa fa-star'></i>
+             <i class='fa fa-star'></i>
+             <i class='fa fa-star'></i>
+             <i class='fa fa-star'></i>
+             <i class='fa fa-star'></i>
+           </p>
+         </div>
+         <div class='col-sm-12 reviewContent'>
+           <p>“Ethical Investing is really important to me as I need my savings to grow more than the bank over the next few years. But I don't want to benefit from anything harmful to other people. I also look for stability and this proposition gives me this as it avoids more uncertain things like oil and mining."</p>
+         </div>
+       </div>
+     </div>
+     <div class='clientbox clientbox-lower col-sm-4'>
+       <div class='clientBoxInner col-sm-12'>
+       <div class="clientImage col-sm-1">
+         <img src="<?php bloginfo('stylesheet_directory');?>/images/user-female-2.jpg" alt="Client">
+       </div>
+       <div class='nameRating col-sm-9'>
+         <h3>Deborah Meaden</h3>
+         <p>
+           <i class='fa fa-star'></i>
+           <i class='fa fa-star'></i>
+           <i class='fa fa-star'></i>
+           <i class='fa fa-star'></i>
+           <i class='fa fa-star'></i>
+         </p>
+       </div>
+       <div class='col-sm-12 reviewContent'>
+         <p>“Ethical Investing is really important to me as I need my savings to grow more than the bank over the next few years. But I don't want to benefit from anything harmful to other people. I also look for stability and this proposition gives me this as it avoids more uncertain things like oil and mining."</p>
+       </div>
+     </div>
+   </div>
+     </div>
+   </div>
+     <div class='steps col-sm-12 col-xs-12'>
+          <div class="col-sm-5 hidden-xs image">
                <img src="<?php bloginfo('stylesheet_directory');?>/images/iphone-mock-up.png" alt="Investingwell">
           </div>
-          <div class='col-sm-7 theSteps'>
+          <div class='col-sm-5 theSteps'>
                <ul>
-                    <li class='col-sm-12'>
-                         <div class='col-sm-2 text-right'>
+                    <li class='col-xs-12'>
+                         <div class='col-xs-3 text-right'>
                               <img src='<?php bloginfo('stylesheet_directory');?>/images/number-1.svg' alt="1">
                          </div>
-                         <div class='col-sm-10'>
+                         <div class='col-xs-9'>
                               <h3>Choose your goal</h3>
                               <p></p>
                          </div>
                     </li>
-                    <li class='col-sm-12'>
-                         <div class='col-sm-2 text-right'>
+                    <li class='col-xs-12'>
+                         <div class='col-xs-3 text-right'>
                               <img src='<?php bloginfo('stylesheet_directory');?>/images/number-2.svg' alt="2">
                          </div>
-                         <div class='col-sm-10'>
+                         <div class='col-xs-9'>
                               <h3>Select your risk level</h3>
                               <p>By choosing from our range of risk levels it will help us select the most suitable investment for you</p>
                          </div>
                     </li>
-                    <li class='col-sm-12'>
-                         <div class='col-sm-2 text-right'>
+                    <li class='col-xs-12'>
+                         <div class='col-xs-3 text-right'>
                               <img src='<?php bloginfo('stylesheet_directory');?>/images/number-3.svg' alt="3">
                          </div>
-                         <div class='col-sm-10'>
+                         <div class='col-xs-9'>
                               <h3>Read our documentation</h3>
                               <p>We will provide you with a personal suitability report, containing the important information you will need before you decide to procees.</p>
                          </div>
                     </li>
-                    <li class='col-sm-12'>
-                         <div class='col-sm-2 text-right'>
+                    <li class='col-xs-12'>
+                         <div class='col-xs-3 text-right'>
                               <img src='<?php bloginfo('stylesheet_directory');?>/images/number-4.svg' alt="4">
                          </div>
-                         <div class='col-sm-10'>
+                         <div class='col-xs-9'>
                               <h3>Start Investing</h3>
                               <p>Access your account 24/7</p>
                               <a class='btn btn-iw-b' href='#'>Get Started</a>
@@ -222,6 +287,66 @@
                </ul>
           </div>
      </div>
+     <div class='clearfix'></div>
+     <div class="flowchart col-sm-12 col-md-12 text-center">
+          <h3>How the service works</h3>
+          <div class="flowbox col-md-3 col-sm-6 text-center">
+               <h4>What are you looking for?</h4>
+               <img src='<?php bloginfo('stylesheet_directory');?>/images/icon-flow1.png' alt="Step 1" />
+               <div class='para-holder col-sm-12'>
+                    <p>We'll ask you some questions about your apporoach to investing to help us make the right selections for you.</p>
+               </div>
+          </div>
+          <div class="flowbox col-md-3 col-sm-6 text-center">
+               <h4>Our advice</h4>
+               <img src='<?php bloginfo('stylesheet_directory');?>/images/icon-flow2.png' alt="Step 2" />
+               <div class='para-holder col-sm-12'>
+                    <p>Based on what you've told us, we'll recommend an investment for you. </p>
+               </div>
+          </div>
+          <div class="flowbox col-md-3 col-sm-6 text-center">
+               <h4>How long does it take?</h4>
+               <img src='<?php bloginfo('stylesheet_directory');?>/images/icon-flow3.png' alt="Step 3" />
+               <div class='para-holder col-sm-12'>
+                    <p>About 15 minutes. You can always stop halfway through to save your answers and resume later.</p>
+               </div>
+          </div>
+          <div class="flowbox col-md-3 col-sm-6 text-center">
+               <h4>We're here to help</h4>
+               <img src='<?php bloginfo('stylesheet_directory');?>/images/icon-flow4.png' alt="Step 4" />
+               <div class='para-holder col-sm-12'>
+                    <p>If you've got any questions at any stage, just click on the "Questions? Let's Talk!" tab on the left or contact your adviser.</p>
+               </div>
+          </div>
+     </div>
+     <div class='clearfix'></div>
+     <div class='charity col-sm-12'>
+       <div class='logo col-sm-6'>
+         <img src='<?php bloginfo('stylesheet_directory');?>/images/<?php if($charity == "chas") { echo 'chas.png'; } else { echo 'chas.png'; } ?>' alt="Chas" />
+       </div>
+       <div class='tagline col-sm-6'>
+         <h2>Be <span class='investingwell-well'>Good</span> with Money
+       </div>
+       <div class='charityInfo col-sm-12'>
+         <p>Investing Well helps families and individuals to save towards their goals but also helps a charity close to their heart. Each year Investing Well donates 10% of our fee to charity.</p>
+
+         <p>We write to everyone at the end of the year to let you know how you have made a difference to your charity. Lots of little donations can make a massive difference.</p>
+     </div>
+     <div class='charity-image col-sm-12 text-center'>
+       <a class='btn btn-iw-b' href="#">Set your goal for FREE</a>
+     </div>
+   </div>
+   <div class='col-sm-12 fscs'>
+     <div class='col-sm-6 text-center'>
+       <img src='<?php bloginfo('stylesheet_directory');?>/images/fscs.gif' alt='FSCS' />
+     </div>
+     <div class='col-sm-6 fscs-text'>
+       <p>Investing Well is authorised and regulated by the Financial Conduct Authority (FCA).]</p>
+
+       <p>Savings and investments are covered by the FSCS. <a href="#" target="_blank">Click here</a> for more details on limits and levels.</p>
+     </div>
+   </div>
+
      <!-- Body ends and footer begins -->
 
 <?php get_footer(); ?>
