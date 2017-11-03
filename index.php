@@ -55,36 +55,36 @@
                <h3 class='text-center'>Tell us what you are saving for and we can help you reach your goal.</h3>
           </div>
           <div class='card-options text-center col-sm-12 col-xs-12'>
-               <a href='#' class='box col-md-2 col-md-offset-1 col-sm-4 col-xs-6'>
+               <div href='#' class='box col-md-2 col-md-offset-1 col-sm-4 col-xs-6'>
                     <div class='box-inner'>
                          <i class='fa fa-bar-chart'></i>
                          <p>Just Investing</p>
                     </div>
-               </a>
-               <a href='#' class='box col-md-2 col-sm-4 col-xs-6'>
+               </div>
+               <div href='#' class='box col-md-2 col-sm-4 col-xs-6'>
                     <div class='box-inner'>
                          <i class='fa fa-sun-o'></i>
                          <p>Travel</p>
                     </div>
-               </a>
-               <a href='#' class='box col-md-2 col-sm-4 col-xs-6'>
+               </div>
+               <div href='#' class='box col-md-2 col-sm-4 col-xs-6'>
                     <div class='box-inner'>
                          <i class='fa fa-home'></i>
                          <p>Home</p>
                     </div>
-               </a>
-               <a href='#' class='box col-md-2 col-md-offset-0 col-sm-4 col-sm-offset-2 col-xs-6'>
+               </div>
+               <div href='#' class='box col-md-2 col-md-offset-0 col-sm-4 col-sm-offset-2 col-xs-6'>
                     <div class='box-inner'>
                          <i class='fa fa-umbrella'></i>
                          <p>Rainy Day</p>
                     </div>
-               </a>
-               <a href='#' class='box col-md-2 col-sm-offset-0 col-sm-4 col-xs-6 col-xs-offset-3'>
+               </div>
+               <div href='#' class='box col-md-2 col-sm-offset-0 col-sm-4 col-xs-6 col-xs-offset-3'>
                     <div class='box-inner'>
                          <i class='fa fa-gift'></i>
                          <p>Wedding</p>
                     </div>
-               </a>
+               </div>
                <div class='col-sm-12 col-xs-12'>
                     <a class='btn btn-iw-p' href='#'>Let's Start</a>
                </div>
@@ -109,19 +109,24 @@
                <a class='btn btn-iw-p' href='#'>Find out more</a>
           </div>
           <div class='image col-md-6 col-sm-12 text-center'>
-               <img src='<?php bloginfo('stylesheet_directory');?>/images/robot.png' alt="Not Robots">
+               <img src='<?php bloginfo('stylesheet_directory');?>/images/robot.jpg' alt="Not Robots">
           </div>
      </div>
      <div class='personalised col-sm-12'>
           <div class='image col-md-6 hidden-sm hidden-xs text-center'>
-               <img src='<?php bloginfo('stylesheet_directory');?>/images/ipadhand.png' alt="Animation">
+               <img src='<?php bloginfo('stylesheet_directory');?>/images/personal.jpg' alt="Personal">
           </div>
           <div class='text col-md-6 col-sm-12'>
                <h2>Personalised for you</h2>
                <p>Investing Well helps individuals and families to meet thier own goals. We are an online service to help keep costs really low but you can rest assured expert investment specialists look after your money. Our dedicated support team are on hand if you have a question.</p>
                <a class='btn btn-iw-p' href='#'>Find out more</a>
           </div>
+          <div class='image col-xs-12 col-sm-12 hidden-md hidden-lg text-center'>
+               <img src='<?php bloginfo('stylesheet_directory');?>/images/personal.jpg' alt="Personal">
+          </div>
+          <div class='clearfix'></div>
      </div>
+     <div class='clearfix'></div>
      <div class='service col-sm-12' id='service'>
           <div class='col-sm-12'>
                <h3>Is this service right for you?</h3>
@@ -344,6 +349,41 @@
        <p>Investing Well is authorised and regulated by the Financial Conduct Authority (FCA).]</p>
 
        <p>Savings and investments are covered by the FSCS. <a href="#" target="_blank">Click here</a> for more details on limits and levels.</p>
+     </div>
+   </div>
+   <div class='articles col-sm-12'>
+     <div class='col-sm-12'>
+       <h3>Articles</h3>
+     </div>
+     <div class='articleBox col-sm-4'>
+       <a href='#' class='articleCard col-sm-12'>
+         <div class='topImage col-sm-12' style="background-image:url(<?php bloginfo('stylesheet_directory');?>/images/baby.jpg)">
+         </div>
+         <div class='bottomInfo col-sm-12'>
+           <h4>The Price of Parenthood</h4>
+           <p><i class='fa fa-clock-o'></i> &nbsp; Sat 14th October &nbsp; &nbsp; <i class='fa fa-book'></i> Read more</p>
+         </div>
+       </a>
+     </div>
+     <div class='articleBox col-sm-4'>
+       <a href='#' class='articleCard col-sm-12'>
+         <div class='topImage col-sm-12' style="background-image:url(<?php bloginfo('stylesheet_directory');?>/images/eggs.jpg)">
+         </div>
+         <div class='bottomInfo col-sm-12'>
+           <h4>Building a nest egg</h4>
+           <p><i class='fa fa-clock-o'></i> &nbsp; Sat 14th October &nbsp; &nbsp; <i class='fa fa-book'></i> Read more</p>
+         </div>
+       </a>
+     </div>
+     <div class='articleBox col-sm-4'>
+       <a href='#' class='articleCard col-sm-12'>
+         <div class='topImage col-sm-12' style="background-image:url(<?php bloginfo('stylesheet_directory');?>/images/piggy-bank.jpg)">
+         </div>
+         <div class='bottomInfo col-sm-12'>
+           <h4>Make cash the king</h4>
+           <p><i class='fa fa-clock-o'></i> &nbsp; Sat 14th October &nbsp; &nbsp; <i class='fa fa-book'></i> Read more</p>
+         </div>
+       </a>
      </div>
    </div>
 

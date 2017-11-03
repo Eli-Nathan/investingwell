@@ -54,7 +54,7 @@
                          <i class="fa fa-bars"></i>
                     </button>
                     <a class='navbar-brand' href='/'>
-                         <img src='<?php bloginfo('stylesheet_directory');?>/images/iw-logo-long.png' alt="Investing Well">
+                         <img src='<?php bloginfo('stylesheet_directory');?>/images/iw-logo-long-newer.png' alt="Investing Well">
                     </a>
                </div>
 

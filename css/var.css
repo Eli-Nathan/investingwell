@@ -1,6 +1,6 @@
 /* line 56, sass/var.scss */
 .btn-iw-p {
-  background: #A09ECB;
+  background: #49C1B6;
   color: #FFF;
   border: none;
   border-radius: 2px;
@@ -14,13 +14,13 @@
 }
 /* line 66, sass/var.scss */
 .btn-iw-p:hover {
-  background: #294890;
+  background: #98EAC5;
   color: #fff;
 }
 
 /* line 72, sass/var.scss */
 .btn-iw-b {
-  background: #294890;
+  background: #98EAC5;
   color: #FFF;
   border: none;
   border-radius: 2px;
@@ -34,7 +34,7 @@
 }
 /* line 81, sass/var.scss */
 .btn-iw-b:hover {
-  background: #A09ECB;
+  background: #49C1B6;
   color: #fff;
 }
 

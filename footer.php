@@ -100,6 +100,16 @@
 </footer>
 
 <?php wp_footer(); ?>
+<script>
+$('.box-inner').click(function() {
+  $(this).toggleClass("is-active");
+});
+// var button = document.querySelector(".box-inner");
+//
+// button.addEventListener("click", function(e) {
+//    this.classList.toggle("is-active");
+// });
+</script>
 </body>
 
 </html>

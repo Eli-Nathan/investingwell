@@ -16,11 +16,32 @@ body {
 
 .navbar {
   .navbar-brand {
-    width: 20%;
+    width: 30%;
 
     img {
-      max-width: 120px;
-      margin-top: -7px;
+      max-width: 170px;
+      @media(min-width:768px) {
+        margin-top: -10px;
+      }
+    }
+  }
+
+  .navbar-toggle {
+    font-size: 26px;
+    color: $purple;
+  }
+
+  li {
+    &:hover {
+      background: $purple!important;
+
+      a {
+        color: #fff!important;
+      }
+    }
+
+    a {
+      font-weight: 300;
     }
   }
 }
@@ -128,6 +149,14 @@ input[type='text'] {
       color: #333;
       margin-bottom: 30px;
       text-decoration: none;
+      cursor: pointer;
+
+      .box-inner.is-active {
+        i {
+          color: $blue;
+        }
+        border-bottom: 5px solid $purple;
+      }
 
       .box-inner {
         i {
@@ -142,13 +171,12 @@ input[type='text'] {
         border-radius: 3px;
         padding: 20px;
         border: 1px solid #e5e5e5;
-        transition: 0.3s;
+        border-bottom: 5px solid #e5e5e5;
         @media(min-width:768px) {
           &:hover {
             i {
               color: $blue;
             }
-            margin-top: -3px;
             border-bottom: 5px solid $purple;
           }
         }
@@ -165,9 +193,9 @@ input[type='text'] {
   padding-top: 30px;
   background: url('../images/donations-darker.png');
   background-position: center;
-  @media(min-width:768px) {
+  @media(min-width:992px) {
     background: url('../images/donations.png');
-    background-position: left;
+    background-position: right;
   }
   @include full-background;
   color: #fff;
@@ -189,82 +217,74 @@ input[type='text'] {
 }
 
 .robots {
-  padding: 20px;
-  @media(min-width:768px) {
-    padding: 15px 90px 90px;
-  }
-  padding-top: 30px !important;
+  @include no-pad;
 
-  h2 {
-    font-size: 2.6em;
-    font-weight: 700;
-  }
+  .text {
+    padding:30px;
+    h2 {
+      font-size: 2.6em;
+      font-weight: 700;
+    }
 
-  hr {
-    height: 1px;
-    background-color: #333;
-    border: none;
-  }
+    hr {
+      height: 1px;
+      background-color: #333;
+      border: none;
+    }
 
-  p {
-    font-size: 18px;
-    font-weight: 300;
-  }
+    p {
+      font-size: 18px;
+      font-weight: 300;
+    }
 
-  .btn {
-    margin-top: 20px;
+    .btn {
+      margin-top: 20px;
+    }
   }
 
   .image {
-    @media(max-width:768px) {
-      text-align: left;
-    }
+    @include no-pad;
 
     img {
       width: 100%;
-      @media(min-width:480px) {
-        width: 50%;
-      }
-      @media(min-width:992px) {
-        width: 100%;
-        margin-top: 50px;
-      }
-      @media(min-width:1300px) {
-        width: 75%;
-      }
     }
   }
 }
 
 .personalised {
   background: #eee;
-  padding: 20px;
+  @include no-pad;
   @media(min-width:992px) {
     padding-bottom: 0;
   }
 
-  h2 {
-    font-size: 2.6em;
-    font-weight: 700;
-    @media(min-width:768px) {
-      margin-bottom: 50px;
+  .text {
+    padding: 30px;
+
+    h2 {
+      font-size: 2.6em;
+      font-weight: 700;
+      @media(min-width:768px) {
+        margin-bottom: 50px;
+      }
+    }
+
+    p {
+      font-size: 18px;
+      font-weight: 300;
+    }
+
+    .btn {
+      margin-top: 20px;
     }
   }
 
-  p {
-    font-size: 18px;
-    font-weight: 300;
-  }
+  .image {
+    @include no-pad;
 
-  .btn {
-    margin-top: 20px;
-  }
-
-  img {
-    @media(min-width:768px) {
-      width: 55%;
+    img {
+      width: 100%;
     }
-    width: 50%;
   }
 }
 
@@ -333,21 +353,21 @@ input[type='text'] {
   }
 
   .clientbox-lower {
-
     @media(min-width:768px) {
       opacity: 0.75;
       margin-top: 30px;
-      transition: 0.3s;
+      transition: 0.1s;
 
       &:hover {
         opacity: 1;
-        margin-top: 0;
+        margin-top: 20px;
       }
     }
   }
 
   .clientbox {
-    margin-bottom:20px;
+    margin-bottom: 20px;
+
     .clientBoxInner {
       background: #fff;
       border-radius: 4px;
@@ -561,45 +581,79 @@ input[type='text'] {
 //           }
 //      }
 // }
+
 .charity {
-  background:#fff;
-  padding-left:0px;
-  padding-right:0px;
+  background: #fff;
+  padding-left: 0;
+  padding-right: 0;
+
   .logo {
-    padding:0px 90px;
+    padding: 0 90px;
+
     img {
-      width:100%;
+      width: 100%;
     }
   }
+
   .tagline {
     h2 {
       font-weight: 700;
-      padding-top:50px;
+      padding-top: 50px;
     }
   }
+
   .charityInfo {
-    padding:60px;
-    padding-bottom:0px;
+    padding: 60px 60px 0;
   }
+
   .charity-image {
-    background:url('../images/hands-colours.png');
-    background-size:cover;
-    background-position:top;
-    padding:10%;
+    background: url('../images/hands-colours.png');
+    background-size: cover;
+    background-position: top;
+    padding: 10%;
   }
 }
 
 .fscs {
-  background:#eee;
-  padding:90px;
+  background: #eee;
+  padding: 90px;
+
   img {
-    width:50%;
+    width: 50%;
   }
+
   .fscs-text {
-    margin-top:30px;
+    margin-top: 30px;
   }
 }
 
+.articles {
+  padding: 50px;
+
+  h3 {
+    font-weight: 700;
+    margin-bottom: 20px;
+  }
+
+  .articleCard {
+    @include no-pad;
+    box-shadow: 2px 2px 4px #000;
+    color: #333;
+
+    &:hover {
+      box-shadow: 1px 1px 2px #000;
+    }
+    border-top-right-radius: 4px;
+    border-top-left-radius: 4px;
+
+    .topImage {
+      height: 30vh;
+      background-size: cover;
+      border-top-right-radius: 4px;
+      border-top-left-radius: 4px;
+    }
+  }
+}
 
 .footer {
   @include no-pad;
