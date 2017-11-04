@@ -326,6 +326,7 @@
      </div>
      <div class='clearfix'></div>
      <div class='charity col-sm-12'>
+
        <div class='logo col-sm-6'>
          <img src='<?php bloginfo('stylesheet_directory');?>/images/<?php if($charity == "chas") { echo 'chas.png'; } else { echo 'chas.png'; } ?>' alt="Chas" />
        </div>
@@ -333,6 +334,12 @@
          <h2>Be <span class='investingwell-well'>Good</span> with Money
        </div>
        <div class='charityInfo col-sm-12'>
+         <?php  while ( have_posts() ) : the_post(); ?>
+        <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+            <div class="entry-content"><?php the_content(); ?></div>
+        </article>
+    <?php endwhile; ?>
+
          <p>Investing Well helps families and individuals to save towards their goals but also helps a charity close to their heart. Each year Investing Well donates 10% of our fee to charity.</p>
 
          <p>We write to everyone at the end of the year to let you know how you have made a difference to your charity. Lots of little donations can make a massive difference.</p>
