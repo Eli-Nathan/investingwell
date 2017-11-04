@@ -351,6 +351,7 @@
        <p>Savings and investments are covered by the FSCS. <a href="#" target="_blank">Click here</a> for more details on limits and levels.</p>
      </div>
    </div>
+   <div class="clearfix"></div>
    <div class='articles col-sm-12'>
      <div class='col-sm-12'>
        <h3>Articles</h3>
@@ -370,12 +371,14 @@
     <!-- the loop -->
     <?php while ( $wpquery->have_posts() ) : $wpquery->the_post(); ?>
       <div class='articleBox col-sm-4'>
-        <a href='<?php the_permalink(); ?>' class='articleCard col-sm-12''>
+        <a href='<?php the_permalink(); ?>' class='articleCard col-sm-12'>
           <?php if (has_post_thumbnail($post->ID)):
               $image = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), 'large');
               $image_alt = get_post_meta( get_post_thumbnail_id($post->ID) , '_wp_attachment_image_alt', true);
               echo '<div class="topImage col-sm-12" style="background-image: url(' . $image[0] . ') "></div>';
-          endif; ?>
+              else : ?>
+                <div class="topImage col-sm-12" style='background-image:url(<?php bloginfo('stylesheet_directory');?>/images/money-placeholder.jpg)'></div>
+          <?php endif; ?>
           <div class='bottomInfo col-sm-12'>
             <h4><?php the_title(); ?></h4>
             <p><i class='fa fa-clock-o'></i> &nbsp; <?php the_date(); ?> &nbsp; &nbsp; <i class='fa fa-book'></i> Read more</p>
