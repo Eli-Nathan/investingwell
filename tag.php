@@ -18,7 +18,7 @@
   <?php
   $paged = get_query_var('paged') ? get_query_var('paged') : 1;
   $wpquery = new WP_Query(array(
-    'cat'            => get_query_var('cat'),
+    'tag'            => get_query_var('tag'),
     'post_type'      => 'post',
     'post_status'    => 'publish',
     'posts_per_page' => 12,

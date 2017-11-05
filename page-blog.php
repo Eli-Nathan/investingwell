@@ -24,12 +24,19 @@
        <?php
   ?>
 
-  <?php $wpquery = new WP_Query(array('post_type'=>'post', 'post_status'=>'publish', 'posts_per_page'=>3)); ?>
+  <?php
+  $paged = get_query_var('paged') ? get_query_var('paged') : 1;
+  $wp_query = new WP_Query(array(
+    'post_type'       => 'post',
+    'post_status'     => 'publish',
+    'posts_per_page'  => 12,
+    'paged'           => $paged
+  )); ?>
 
-  <?php if ( $wpquery->have_posts() ) : ?>
+  <?php if ( $wp_query->have_posts() ) : ?>
 
       <!-- the loop -->
-      <?php while ( $wpquery->have_posts() ) : $wpquery->the_post(); ?>
+      <?php while ( $wp_query->have_posts() ) : $wp_query->the_post(); ?>
         <div class='articleBox col-sm-4'>
           <a href='<?php the_permalink(); ?>' class='articleCard col-sm-12'>
             <?php if (has_post_thumbnail($post->ID)):
@@ -41,14 +48,19 @@
             <?php endif; ?>
             <div class='bottomInfo col-sm-12'>
               <h4><?php the_title(); ?></h4>
-              <p><i class='fa fa-clock-o'></i> &nbsp; <?php the_date(); ?> &nbsp; &nbsp; <i class='fa fa-book'></i> Read more</p>
+              <p><i class='fa fa-clock-o'></i> &nbsp; <?php echo get_the_date(); ?> &nbsp; &nbsp; <i class='fa fa-book'></i> Read more</p>
             </div>
           </a>
         </div>
       <?php endwhile; ?>
       <!-- end of the loop -->
+      <nav class="col-sm-12">
+      	<ul class="pager">
+      		<li><?php previous_posts_link( '<i class="fa fa-caret-left"></i> &nbsp; Back' ); ?></li>
+          <li><?php next_posts_link( 'Next &nbsp; <i class="fa fa-caret-right"></i>' ); ?></li>
+      	</ul>
+      </nav>
 
-      <?php wp_reset_postdata(); ?>
 
   <?php else : ?>
       <p><?php _e( 'Sorry, no posts matched your criteria.' ); ?></p>

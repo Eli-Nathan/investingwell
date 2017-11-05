@@ -882,7 +882,13 @@ input[type='text'] {
     }
   }
 }
-
+.pager {
+  li {
+    a {
+      @extend .btn-iw-b
+    }
+  }
+}
 .footer {
   @include no-pad;
 

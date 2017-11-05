@@ -48,7 +48,7 @@
               endif; ?>
               <div class='bottomInfo col-sm-12'>
                 <h4><?php the_title(); ?></h4>
-                <p><i class='fa fa-clock-o'></i> &nbsp; <?php the_date(); ?> &nbsp; &nbsp; <i class='fa fa-book'></i> Read more</p>
+                <p><i class='fa fa-clock-o'></i> &nbsp; <?php echo get_the_date(); ?> &nbsp; &nbsp; <i class='fa fa-book'></i> Read more</p>
               </div>
             </a>
           </div>

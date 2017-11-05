@@ -1,5 +1,5 @@
 /* line 56, sass/var.scss */
-.btn-iw-b {
+.btn-iw-b, .pager li a {
   background: #49C1B6;
   color: #FFF;
   border: none;
@@ -8,12 +8,12 @@
 }
 @media (min-width: 768px) {
   /* line 56, sass/var.scss */
-  .btn-iw-b {
+  .btn-iw-b, .pager li a {
     padding: 10px 20px;
   }
 }
 /* line 66, sass/var.scss */
-.btn-iw-b:hover {
+.btn-iw-b:hover, .pager li a:hover {
   background: #98EAC5;
   color: #fff;
 }
@@ -962,85 +962,85 @@ input[type='text'] {
   }
 }
 
-/* line 886, sass/main.scss */
+/* line 892, sass/main.scss */
 .footer {
   padding-left: 0px !important;
   padding-right: 0px !important;
 }
-/* line 889, sass/main.scss */
+/* line 895, sass/main.scss */
 .footer .navbar-collapse.collapse {
   display: block;
 }
-/* line 893, sass/main.scss */
+/* line 899, sass/main.scss */
 .footer .navbar-nav,
 .footer .navbar-nav > li {
   float: left;
 }
-/* line 898, sass/main.scss */
+/* line 904, sass/main.scss */
 .footer .navbar-nav.navbar-right:last-child {
   margin-right: -15px;
 }
 @media (min-width: 768px) {
-  /* line 902, sass/main.scss */
+  /* line 908, sass/main.scss */
   .footer .navbar-right {
     float: right !important;
   }
 }
 @media (max-width: 768px) {
-  /* line 907, sass/main.scss */
+  /* line 913, sass/main.scss */
   .footer .navbar .navbar-nav {
     display: inline-block !important;
     float: none !important;
     vertical-align: top;
   }
-  /* line 908, sass/main.scss */
+  /* line 914, sass/main.scss */
   .footer .navbar .navbar-nav li {
     display: inline-block !important;
     float: none !important;
   }
-  /* line 917, sass/main.scss */
+  /* line 923, sass/main.scss */
   .footer .navbar .navbar-collapse {
     text-align: center;
   }
 }
-/* line 922, sass/main.scss */
+/* line 928, sass/main.scss */
 .footer .navbar {
   border-radius: 0;
   margin-bottom: 0;
   background-color: #eee;
   border: none;
 }
-/* line 930, sass/main.scss */
+/* line 936, sass/main.scss */
 .footer .navbar .navbar-right li a {
   font-size: 18px;
 }
-/* line 937, sass/main.scss */
+/* line 943, sass/main.scss */
 .footer .footer-content {
   padding: 30px 30px 10px;
 }
-/* line 940, sass/main.scss */
+/* line 946, sass/main.scss */
 .footer .footer-content .contact-info {
   padding-bottom: 20px;
 }
 @media (min-width: 768px) {
-  /* line 940, sass/main.scss */
+  /* line 946, sass/main.scss */
   .footer .footer-content .contact-info {
     padding-left: 90px;
   }
 }
-/* line 947, sass/main.scss */
+/* line 953, sass/main.scss */
 .footer .footer-content .contact-info table tr {
   cursor: pointer;
 }
-/* line 950, sass/main.scss */
+/* line 956, sass/main.scss */
 .footer .footer-content .contact-info table tr td {
   padding: 5px;
 }
-/* line 953, sass/main.scss */
+/* line 959, sass/main.scss */
 .footer .footer-content .contact-info table tr td:nth-child(1) {
   padding-left: 0;
 }
-/* line 957, sass/main.scss */
+/* line 963, sass/main.scss */
 .footer .footer-content .contact-info table tr td i {
   color: #49C1B6;
 }

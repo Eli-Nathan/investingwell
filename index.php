@@ -32,7 +32,7 @@
                ?>
                We all have goals and dreams, but how do we get there? Investing Well can help you save towards future goals from childrens education to retirment. This is acheived in a low cost way and can help a charity close to your heart as well.</p>
           <div class='btnDiv text-center'>
-               <a class='btn btn-default btn-iw-p'>
+               <a class='btn btn-default btn-iw-b'>
                     Let's Start &nbsp; <i class='fa fa-angle-right'></i>
                </a>
           </div>
@@ -86,7 +86,7 @@
                     </div>
                </div>
                <div class='col-sm-12 col-xs-12'>
-                    <a class='btn btn-iw-p' href='#'>Let's Start</a>
+                    <a class='btn btn-iw-b' href='#'>Let's Start</a>
                </div>
           </div>
      </div>
@@ -95,7 +95,7 @@
           <div class='text col-md-6 col-sm-9'>
                <h2>Change your world</h2>
                <p>Investing Well offers you the opportunity to make a positive impact on society. We help you plan for your own future and also secure the future of a charity close to your heart. So what are you saving for?</p>
-               <a class='btn btn-iw-p' href='#'>Find out more</a>
+               <a class='btn btn-iw-b' href='#'>Find out more</a>
           </div>
      </div>
 
@@ -106,7 +106,7 @@
                <p>Investing Well is a service provided by <strong>Qualified Financial Experts</strong>. It is designed so that you can make your own choices and therefore save on the upfront costs.</p>
 
                <p>But if you have a question or you do need advice feel free to get in touch.</p>
-               <a class='btn btn-iw-p' href='#'>Find out more</a>
+               <a class='btn btn-iw-b' href='#'>Find out more</a>
           </div>
           <div class='image col-md-6 col-sm-12 text-center'>
                <img src='<?php bloginfo('stylesheet_directory');?>/images/robot.jpg' alt="Not Robots">
@@ -119,7 +119,7 @@
           <div class='text col-md-6 col-sm-12'>
                <h2>Personalised for you</h2>
                <p>Investing Well helps individuals and families to meet thier own goals. We are an online service to help keep costs really low but you can rest assured expert investment specialists look after your money. Our dedicated support team are on hand if you have a question.</p>
-               <a class='btn btn-iw-p' href='#'>Find out more</a>
+               <a class='btn btn-iw-b' href='#'>Find out more</a>
           </div>
           <div class='image col-xs-12 col-sm-12 hidden-md hidden-lg text-center'>
                <img src='<?php bloginfo('stylesheet_directory');?>/images/personal.jpg' alt="Personal">
@@ -341,12 +341,12 @@
        <a class='btn btn-iw-g' href="#">Set your goal for FREE</a>
      </div>
    </div>
-   <div class='col-sm-12 fscs'>
+   <div class='col-sm-12 fscs' id='safety'>
      <div class='col-sm-6 text-center'>
        <img src='<?php bloginfo('stylesheet_directory');?>/images/fscs.gif' alt='FSCS' />
      </div>
      <div class='col-sm-6 fscs-text'>
-       <p>Investing Well is authorised and regulated by the Financial Conduct Authority (FCA).]</p>
+       <p>Investing Well is authorised and regulated by the Financial Conduct Authority (FCA).</p>
 
        <p>Savings and investments are covered by the FSCS. <a href="#" target="_blank">Click here</a> for more details on limits and levels.</p>
      </div>
@@ -381,7 +381,7 @@
           <?php endif; ?>
           <div class='bottomInfo col-sm-12'>
             <h4><?php the_title(); ?></h4>
-            <p><i class='fa fa-clock-o'></i> &nbsp; <?php the_date(); ?> &nbsp; &nbsp; <i class='fa fa-book'></i> Read more</p>
+            <p><i class='fa fa-clock-o'></i> &nbsp; <?php echo get_the_date(); ?> &nbsp; &nbsp; <i class='fa fa-book'></i> Read more</p>
           </div>
         </a>
       </div>
