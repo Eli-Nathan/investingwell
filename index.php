@@ -286,7 +286,7 @@
                          <div class='col-xs-9'>
                               <h3>Start Investing</h3>
                               <p>Access your account 24/7</p>
-                              <a class='btn btn-iw-b' href='#'>Get Started</a>
+                              <a class='btn btn-iw-g' href='#'>Get Started</a>
                          </div>
                     </li>
                </ul>
@@ -338,7 +338,7 @@
          <p>We write to everyone at the end of the year to let you know how you have made a difference to your charity. Lots of little donations can make a massive difference.</p>
      </div>
      <div class='charity-image col-sm-12 text-center'>
-       <a class='btn btn-iw-b' href="#">Set your goal for FREE</a>
+       <a class='btn btn-iw-g' href="#">Set your goal for FREE</a>
      </div>
    </div>
    <div class='col-sm-12 fscs'>

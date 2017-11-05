@@ -3,8 +3,8 @@ $white: #FFF;
 $black: #000;
 $dark: #222!important;
 $light: #EEE!important;
-$purple: #49C1B6;
-$blue: #98EAC5;
+$blue: #49C1B6;
+$green: #98EAC5;
 @mixin change-nav-break {
       @media (max-width: 1200px){
           .navbar-header {
@@ -53,8 +53,8 @@ $blue: #98EAC5;
      }
 }
 //Investing Well Puple Button
-.btn-iw-p {
-     background: $purple;
+.btn-iw-b {
+     background: $blue;
      color: $white;
      border: none;
      border-radius: 2px;
@@ -64,13 +64,13 @@ $blue: #98EAC5;
      padding: 15px;
 
      &:hover {
-          background: $blue;
+          background: $green;
           color: #fff;
      }
 }
 
-.btn-iw-b {
-     background: $blue;
+.btn-iw-g {
+     background: $green;
      color: $white;
      border: none;
      border-radius: 2px;
@@ -79,7 +79,7 @@ $blue: #98EAC5;
      }
      padding: 3%;
      &:hover {
-          background: $purple;
+          background: $blue;
           color: #fff;
      }
 }

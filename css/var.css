@@ -1,5 +1,5 @@
 /* line 56, sass/var.scss */
-.btn-iw-p {
+.btn-iw-b {
   background: #49C1B6;
   color: #FFF;
   border: none;
@@ -8,18 +8,18 @@
 }
 @media (min-width: 768px) {
   /* line 56, sass/var.scss */
-  .btn-iw-p {
+  .btn-iw-b {
     padding: 10px 20px;
   }
 }
 /* line 66, sass/var.scss */
-.btn-iw-p:hover {
+.btn-iw-b:hover {
   background: #98EAC5;
   color: #fff;
 }
 
 /* line 72, sass/var.scss */
-.btn-iw-b {
+.btn-iw-g {
   background: #98EAC5;
   color: #FFF;
   border: none;
@@ -28,12 +28,12 @@
 }
 @media (min-width: 768px) {
   /* line 72, sass/var.scss */
-  .btn-iw-b {
+  .btn-iw-g {
     padding: 1% 2%;
   }
 }
 /* line 81, sass/var.scss */
-.btn-iw-b:hover {
+.btn-iw-g:hover {
   background: #49C1B6;
   color: #fff;
 }

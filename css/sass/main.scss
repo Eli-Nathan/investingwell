@@ -11,7 +11,7 @@ body {
 }
 
 .investingwell-well {
-  color: $purple;
+  color: $blue;
 }
 
 .navbar {
@@ -28,12 +28,12 @@ body {
 
   .navbar-toggle {
     font-size: 26px;
-    color: $purple;
+    color: $blue;
   }
 
   li {
     &:hover {
-      background: $purple!important;
+      background: $blue!important;
 
       a {
         color: #fff!important;
@@ -44,11 +44,23 @@ body {
       font-weight: 300;
     }
   }
+
+  .navbar-nav > .active {
+    color: #333!important;
+    background: $green;
+  }
+
+  .navbar-nav > .active > a,
+  .navbar-nav > .active > a:focus,
+  .navbar-nav > .active > a:hover {
+    color: #333!important;
+    background: $green;
+  }
 }
 
 .header {
   margin-top: 40px;
-  background: url('../images/hands.png');
+  background: url("../images/hands.png");
   background-size: cover;
   background-position: center;
   padding: 20px;
@@ -113,7 +125,7 @@ input[type='text'] {
 
     a {
       font-weight: 500;
-      color: $purple;
+      color: $blue;
     }
   }
 
@@ -138,7 +150,7 @@ input[type='text'] {
 
     a {
       font-weight: 500;
-      color: $purple;
+      color: $blue;
     }
 
     img {
@@ -153,9 +165,11 @@ input[type='text'] {
 
   &__related {
     @include no-pad;
-  .articleBox {
-    margin-bottom:40px;
-  }
+
+    .articleBox {
+      margin-bottom: 40px;
+    }
+
     .articleCard {
       @include no-pad;
       box-shadow: 2px 2px 4px #000;
@@ -173,12 +187,16 @@ input[type='text'] {
         background-size: cover;
         border-top-right-radius: 4px;
         border-top-left-radius: 4px;
+        @media(max-width:768px) {
+          background-size:100%;
+        }
       }
+
       .bottomInfo {
         @media(max-width:768px) {
           background: #eee;
-          margin-top:-10px;
-          padding:15px;
+          margin-top: -10px;
+          padding: 15px;
         }
       }
     }
@@ -192,9 +210,9 @@ input[type='text'] {
   transition: 1s;
   background: #C04848;
   /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, $purple, $blue);
+  background: -webkit-linear-gradient(to right, $blue, $blue);
   /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, $purple, $blue);
+  background: linear-gradient(to right, $green, $green);
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   .question {
     margin-top: 30vh;
@@ -258,7 +276,7 @@ input[type='text'] {
         i {
           color: $blue;
         }
-        border-bottom: 5px solid $purple;
+        border-bottom: 5px solid $blue;
       }
 
       .box-inner {
@@ -280,7 +298,7 @@ input[type='text'] {
             i {
               color: $blue;
             }
-            border-bottom: 5px solid $purple;
+            border-bottom: 5px solid $blue;
           }
         }
       }
@@ -294,10 +312,10 @@ input[type='text'] {
     padding: 15px 90px 90px;
   }
   padding-top: 30px;
-  background: url('../images/donations-darker.png');
+  background: url("../images/donations-darker.png");
   background-position: center;
   @media(min-width:992px) {
-    background: url('../images/donations.png');
+    background: url("../images/donations.png");
     background-position: right;
   }
   @include full-background;
@@ -714,7 +732,7 @@ input[type='text'] {
   }
 
   .charity-image {
-    background: url('../images/hands-colours.png');
+    background: url("../images/hands-colours.png");
     background-size: cover;
     background-position: top;
     padding: 10%;
@@ -772,13 +790,94 @@ input[type='text'] {
       background-size: cover;
       border-top-right-radius: 4px;
       border-top-left-radius: 4px;
+      @media(max-width:768px) {
+        background-size:100%;
+      }
     }
 
     .bottomInfo {
       @media(max-width:768px) {
         background: #eee;
-        margin-top:-10px;
-        padding:15px;
+        margin-top: -10px;
+        padding: 15px;
+      }
+    }
+  }
+}
+
+.blog-post-list {
+  @include no-pad;
+  margin-top:100px;
+  .header {
+    height: 40vh;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 20px;
+  }
+
+  &__title {
+    font-weight: 700;
+    width: 100%;
+    text-align: center;
+    border-bottom: 1px solid #000;
+    line-height: 0.1em;
+    margin: 10px 0 20px;
+
+    .lined {
+      background: #fafafa;
+      padding: 0 10px;
+    }
+  }
+
+  .articles {
+    @media(min-width:768px) {
+      padding: 50px;
+    }
+
+    h3 {
+      font-weight: 700;
+      margin-bottom: 20px;
+    }
+
+    .articleBox {
+      margin-bottom: 40px;
+    }
+
+    .articleCard {
+      @include no-pad;
+      box-shadow: 2px 2px 4px #000;
+      -moz-box-shadow: 2px 2px 4px #000;
+      -webkit-box-shadow: 2px 2px 4px #000;
+      box-shadow: 2px 2px 4px #000;
+      color: #333;
+      margin-bottom: 40px;
+      @media(max-width:768px) {
+        background: #eee;
+      }
+
+      &:hover {
+        box-shadow: 1px 1px 2px #000;
+        text-decoration: none;
+      }
+      border-top-right-radius: 4px;
+      border-top-left-radius: 4px;
+
+      .topImage {
+        height: 30vh;
+        background-size: cover;
+        border-top-right-radius: 4px;
+        border-top-left-radius: 4px;
+        @media(max-width:768px) {
+          background-size:100%;
+        }
+      }
+
+      .bottomInfo {
+        @media(max-width:768px) {
+          background: #eee;
+          margin-top: -10px;
+          padding: 15px;
+        }
       }
     }
   }
@@ -856,7 +955,7 @@ input[type='text'] {
             }
 
             i {
-              color: $purple;
+              color: $blue;
             }
           }
         }
