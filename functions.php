@@ -125,4 +125,9 @@ function filter_ptags_on_images($content){
 }
 add_filter('the_content', 'filter_ptags_on_images');
 
+add_filter( 'wpcf7_form_elements', 'remove_attr_size' );
+	function remove_attr_size( $content ) {
+		$content = preg_replace('/ size=".*?"/i', ' size="100"', $content);
+		return $content;
+	}
 ?>

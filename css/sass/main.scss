@@ -130,6 +130,7 @@ input[type='text'] {
   }
 
   &__content {
+    padding-bottom:10px;
     @include no-pad;
 
     .article__tags,
@@ -210,9 +211,9 @@ input[type='text'] {
   transition: 1s;
   background: #C04848;
   /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, $blue, $blue);
+  background: -webkit-linear-gradient(to right, $green, $blue);
   /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, $green, $green);
+  background: linear-gradient(to right, $blue, $green);
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   .question {
     margin-top: 30vh;
@@ -886,6 +887,87 @@ input[type='text'] {
   li {
     a {
       @extend .btn-iw-b
+    }
+  }
+}
+.the-page {
+  @include no-pad;
+  margin-top:100px;
+  .header {
+    height: 40vh;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 20px;
+  }
+
+  &__title {
+    font-weight: 700;
+    width: 100%;
+    text-align: center;
+    border-bottom: 1px solid #000;
+    line-height: 0.1em;
+    margin: 10px 0 20px;
+
+    .lined {
+      background: #fafafa;
+      padding: 0 10px;
+    }
+  }
+  &__content {
+    padding-bottom:30px;
+    @include no-pad;
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    form,
+    p {
+      @media(max-width:768px) {
+        padding-left: 15px;
+        padding-right: 15px;
+      }
+    }
+
+    p {
+      font-size: 1.2em;
+    }
+
+    a {
+      font-weight: 500;
+      color: $blue;
+    }
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+    form {
+      width:100%;
+      text-align: center;
+      label {
+        text-align: left;
+      }
+      input, textarea {
+        width:100%!important;
+      }
+      input[type=submit] {
+        width:50%!important;
+        background: $blue;
+        color: $white;
+        border: none;
+        border-radius: 2px;
+        @media(min-width:768px) {
+             padding: 10px 20px;
+        }
+        padding: 15px;
+
+        &:hover {
+             background: $green;
+             color: #fff;
+        }
+      }
     }
   }
 }
