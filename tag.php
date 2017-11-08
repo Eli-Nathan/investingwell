@@ -5,8 +5,9 @@
      <div class='blog-post-list col-sm-12'>
        <div class='col-lg-6 col-lg-offset-3 col-md-8 col-md-offset-2 col-sm-1- col-sm-offset-1'>
        <h1 class='text-center blog-post-list__title'>
-         <span class='lined'><span class='investingwell-well'><?php single_cat_title(); ?></span> News
+         <span class='lined'><span class='investingwell-well'> <?php single_cat_title(); ?></span>
        </h1>
+       <h4 class='text-center'> <i class='fa fa-tags'></i></h4>
      </div>
     <div class="header col-sm-12" style='background-image:url(<?php bloginfo('stylesheet_directory');?>/images/blog-head.jpg)'></div>
      <div class='articles col-sm-12'>

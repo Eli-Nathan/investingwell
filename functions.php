@@ -87,14 +87,14 @@ function charity_post_type() {
         'description'         => __( 'Charities we work with', 'investingwell' ),
         'labels'              => $labels,
         // Features this CPT supports in Post Editor
-        'supports'            => array( 'title', 'editor', 'excerpt', 'author', 'thumbnail', 'comments', 'revisions', 'custom-fields', ),
+        'supports'            => array( 'title', 'editor', 'thumbnail', 'custom-fields', ),
         // You can associate this CPT with a taxonomy or custom taxonomy.
         // 'taxonomies'          => array( 'types' ),
         /* A hierarchical CPT is like Pages and can have
         * Parent and child items. A non-hierarchical CPT
         * is like Posts.
         */
-        'hierarchical'        => false,
+        'hierarchical'        => true,
         'public'              => true,
         'show_ui'             => true,
         'show_in_menu'        => true,
@@ -130,4 +130,6 @@ add_filter( 'wpcf7_form_elements', 'remove_attr_size' );
 		$content = preg_replace('/ size=".*?"/i', ' size="100"', $content);
 		return $content;
 	}
+
+
 ?>
