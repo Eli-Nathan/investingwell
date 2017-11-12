@@ -2,7 +2,6 @@
      get_header();
 ?>
 
-
      <!-- Header Ends (Includes navigation bar) -->
      <div class='header col-sm-12'>
           <h1 class='text-center'><?php echo $investingwell; ?></h1>
@@ -337,7 +336,7 @@
 
    <div class='col-sm-12 fscs' id='safety'>
      <div class='col-sm-6 text-center'>
-       <img src='<?php bloginfo('stylesheet_directory');?>/images/fscs.gif' alt='FSCS' />
+       <img src='<?php bloginfo('stylesheet_directory');?>/images/fscs.png' alt='FSCS' />
      </div>
      <div class='col-sm-6 fscs-text'>
        <p>Investing Well is authorised and regulated by the Financial Conduct Authority (FCA).</p>

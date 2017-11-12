@@ -1,168 +1,225 @@
 // Colours Here
 $white: #FFF;
 $black: #000;
-$dark: #222!important;
+$dark: #494949!important;
 $light: #EEE!important;
 $blue: #49C1B6;
 $green: #98EAC5;
 @mixin change-nav-break {
-      @media (max-width: 1200px){
-          .navbar-header {
-               float: none;
-          }
+  @media (max-width: 1200px) {
+    .navbar-header {
+      float: none;
+    }
 
-          .navbar-toggle {
-               display: block;
-          }
+    .navbar-toggle {
+      display: block;
+    }
 
-          .navbar-collapse {
-               border-top: 1px solid transparent;
-               box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
-          }
+    .navbar-collapse {
+      border-top: 1px solid transparent;
+      box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+    }
 
-          .navbar-collapse.collapse {
-               display: none!important;
-          }
+    .navbar-collapse.collapse {
+      display: none!important;
+    }
 
-          .navbar-nav {
-               float: none!important;
-               margin: 7.5px -15px;
-          }
+    .navbar-nav {
+      float: none!important;
+      margin: 7.5px -15px;
+    }
 
-          .navbar-nav > li {
-               float: none;
-          }
+    .navbar-nav > li {
+      float: none;
+    }
 
-          .navbar-nav > li > a {
-               padding-top: 10px;
-               padding-bottom: 10px;
-          }
-     }
+    .navbar-nav > li > a {
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
+  }
 }
 //Remove bootstrap's side padding
 @mixin no-pad {
-     padding-left: 0px !important;
-     padding-right: 0px !important;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
 }
 //Full background image (needs image)
 @mixin full-background {
-     background: {
-          size: cover;
-          position: center;
-          repeat: no-repeat;
-     }
+  background: {
+    size: cover;
+    position: center;
+    repeat: no-repeat;
+  }
 }
 //Investing Well Puple Button
-.btn-iw-b {
-     background: $blue;
-     color: $white;
-     border: none;
-     border-radius: 2px;
-     @media(min-width:768px) {
-          padding: 10px 20px;
-     }
-     padding: 15px;
 
-     &:hover {
-          background: $green;
-          color: #fff;
-     }
+.btn-iw-b {
+  background: $blue;
+  color: $white;
+  border: none;
+  border-radius: 2px;
+  @media(min-width:768px) {
+    padding: 10px 20px;
+  }
+  padding: 15px;
+
+  &:hover {
+    background: $green;
+    color: #fff;
+  }
 }
 
 .btn-iw-g {
-     background: $green;
-     color: $white;
-     border: none;
-     border-radius: 2px;
-     @media(min-width:768px) {
-          padding: 1% 2%;
-     }
-     padding: 3%;
-     &:hover {
-          background: $blue;
-          color: #fff;
-     }
+  background: $green;
+  color: $white;
+  border: none;
+  border-radius: 2px;
+  @media(min-width:768px) {
+    padding: 1% 2%;
+  }
+  padding: 3%;
+
+  &:hover {
+    background: $blue;
+    color: #fff;
+  }
 }
 // Text alignment
+
 .text-center {
-     text-align: center;
+  text-align: center;
 }
 
 .text-left {
-     text-align: left;
+  text-align: left;
 }
 
 .text-right {
-     text-align: right;
+  text-align: right;
 }
 // Justified Bootstrap Navigation
 @mixin justify-nav {
-      @media (min-width: 768px){
-          .navbar {
-               .navbar-nav {
-                    display: inline-block;
-                    float: none;
-                    vertical-align: top;
-               }
+  @media (min-width: 768px) {
+    .navbar {
+      .navbar-nav {
+        display: inline-block;
+        float: none;
+        vertical-align: top;
+      }
 
-               .navbar-collapse {
-                    text-align: center;
-               }
-          }
-     }
+      .navbar-collapse {
+        text-align: center;
+      }
+    }
+  }
 }
 //Remove bootstrap styles for nav-toggle
+
 .navbar-toggle {
-     border: none!important;
-     background-color: transparent!important;
+  border: none!important;
+  background-color: transparent!important;
 
-     &:hover {
-          border: none!important;
-          background-color: transparent!important;
-     }
+  &:hover {
+    border: none!important;
+    background-color: transparent!important;
+  }
 
-     &:focus {
-          border: none!important;
-          background-color: transparent!important;
-     }
+  &:focus {
+    border: none!important;
+    background-color: transparent!important;
+  }
 }
 // Remove bootstrap carousel gradient
 @mixin no-gradient {
-     .carousel-control {
-          background-image: none!important;
-     }
+  .carousel-control {
+    background-image: none!important;
+  }
 }
 // Bootstrap Carousel Fade
 @mixin fade-carousel {
-     .carousel-fade {
-          .carousel-inner {
-               .item {
-                    transition-property: opacity;
-               }
+  .carousel-fade {
+    .carousel-inner {
+      .item {
+        transition-property: opacity;
+      }
 
-               .active.left,
-               .active.right,
-               .item {
-                    opacity: 0;
-               }
+      .active.left,
+      .active.right,
+      .item {
+        opacity: 0;
+      }
 
-               .active,
-               .next.left,
-               .prev.right {
-                    opacity: 1;
-               }
+      .active,
+      .next.left,
+      .prev.right {
+        opacity: 1;
+      }
 
-               .active.left,
-               .active.right,
-               .next,
-               .prev {
-                    left: 0;
-                    transform: translate3d(0, 0, 0);
-               }
-          }
+      .active.left,
+      .active.right,
+      .next,
+      .prev {
+        left: 0;
+        transform: translate3d(0, 0, 0);
+      }
+    }
 
-          .carousel-control {
-               z-index: 2;
-          }
-     }
+    .carousel-control {
+      z-index: 2;
+    }
+  }
+}
+
+form {
+  width: 100%;
+  text-align: center;
+
+  label {
+    text-align: left;
+  }
+
+  input,
+  textarea {
+    width: 100%!important;
+  }
+
+  input[type=submit] {
+    width: 50%!important;
+    background: $blue;
+    color: $white;
+    border: none;
+    border-radius: 2px;
+    @media(min-width:768px) {
+      padding: 10px 20px;
+    }
+    padding: 15px;
+
+    &:hover {
+      background: $green;
+      color: #fff;
+    }
+  }
+}
+
+.the-blog-post,
+.the-page:not(.servicePage) {
+  ul {
+    list-style-type: none;
+    padding: 0;
+
+    li::before {
+      color: rgba($blue, 0.75);
+      /* color of bullet or square */
+      content: "\25A0";
+      /* Unicode of character to precede the list item */
+      font-size: 1em;
+      /* em or %*/
+      padding-right: 1.1225em;
+      /* use em*/
+      position: relative;
+      top: 0;
+      /* use em or % */
+    }
+  }
 }

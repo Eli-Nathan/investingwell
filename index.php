@@ -103,7 +103,7 @@
           <div class='clearfix'></div>
      </div>
      <div class='clearfix'></div>
-     <div class='service col-sm-12' id='service'>
+     <!-- <div class='service col-sm-12' id='service'>
           <div class='col-sm-12'>
                <h3>Is this service right for you?</h3>
                <p>This online service is ideal if you have between £1,000 and £50,000 available to invest over a period of between 3 and 30 years, and you’re looking for effective, low-cost investment management. It’s not suitable if you have significant liabilities or debts (not including your mortgage), particularly if your liabilities are greater than your total assets. This is a restricted advice service which is limited to investing funds from a single provider within ISAs and GIAs, so it isn't suitable if you want to apply for a regulated pension product. Further information can be found in our Terms of Service.</p>
@@ -156,7 +156,7 @@
                     </tbody>
                </table>
           </div>
-     </div>
+     </div> -->
      <div class='clients col-sm-12'>
        <h2 class='text-center'>What some of our clients think</h2>
        <div class='clientsInner col-sm-offset-1 col-sm-10'>
@@ -222,7 +222,7 @@
    </div>
      </div>
    </div>
-     <div class='steps col-sm-12 col-xs-12'>
+     <!-- <div class='steps col-sm-12 col-xs-12'>
        <h2 class='text-center'>How to get started</h2>
           <div class="col-sm-5 hidden-xs image">
                <img src="<?php bloginfo('stylesheet_directory');?>/images/iphone-mock-up.png" alt="Investingwell">
@@ -301,15 +301,43 @@
                     <p>If you've got any questions at any stage, just click on the "Questions? Let's Talk!" tab on the left or contact your adviser.</p>
                </div>
           </div>
-     </div>
+     </div> -->
      <div class='clearfix'></div>
-     <div class='charity col-sm-12'>
+     <div class='our-charities col-sm-12'>
+       <h3 class='text-center'><span class='investingwell-well'>Charities</span> we work with</h3>
+       <div class='articles col-sm-12'>
+       <?php
+       $wp_query = new WP_Query(array(
+         'post_type'       => 'charity',
+         'post_status'     => 'publish',
+         'posts_per_page'  => 3
+       )); ?>
+
+       <?php if ( $wp_query->have_posts() ) : ?>
+
+           <!-- the loop -->
+           <?php while ( $wp_query->have_posts() ) : $wp_query->the_post(); ?>
+             <div class='articleBox col-sm-4'>
+               <div class='col-sm-12'>
+                 <?php
+                  if( get_field('charity_logo') ):
+                 ?>
+                   <img src="<?php the_field('charity_logo'); ?>" />
+                 <?php endif; ?>
+
+               </div>
+             </div>
+
+           <?php endwhile; endif; ?>
+         </div>
+     </div>
+     <!-- <div class='charity col-sm-12'>
        <div class='charityInfo col-sm-6'>
          <div class='tagline'>
            <h2 class='text-center'>Be <span class='investingwell-well'>Good</span> with Money
          </div>
          <div class='logo'>
-           <img src='<?php bloginfo('stylesheet_directory');?>/images/chas.png' alt="Chas" />
+           <img src='<?php //bloginfo('stylesheet_directory');?>/images/chas.png' alt="Chas" />
          </div>
          <p>Investing Well helps families and individuals to save towards their goals but also helps a charity close to their heart. Each year Investing Well donates 10% of our fee to charity.</p>
 
@@ -318,10 +346,10 @@
      <div class='charity-image col-sm-6 text-center'>
        <a class='btn btn-iw-b' href="#">Set your goal for FREE</a>
      </div>
-   </div>
+   </div> -->
    <div class='col-sm-12 fscs' id='safety'>
      <div class='col-sm-6 text-center'>
-       <img src='<?php bloginfo('stylesheet_directory');?>/images/fscs.gif' alt='FSCS' />
+       <img src='<?php bloginfo('stylesheet_directory');?>/images/fscs.png' alt='FSCS' />
      </div>
      <div class='col-sm-6 fscs-text'>
        <p>Investing Well is authorised and regulated by the Financial Conduct Authority (FCA).</p>

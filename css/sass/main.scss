@@ -4,10 +4,11 @@ body {
   font-family: 'Lato', verdana;
   background: #fafafa;
 
-  p {
+  p, li {
     line-height: 1.7em;
     font-weight: 300;
   }
+
 }
 
 .investingwell-well {
@@ -15,11 +16,13 @@ body {
 }
 
 .navbar {
+  background:$white;
   .navbar-brand {
     width: 30%;
 
     img {
       max-width: 170px;
+      padding:10px;
       @media(min-width:768px) {
         margin-top: -10px;
       }
@@ -32,11 +35,20 @@ body {
   }
 
   li {
+    padding:10px;
+    a {
+      i {
+        color: $blue;
+      }
+    }
     &:hover {
       background: $blue!important;
 
       a {
-        color: #fff!important;
+        color: $white!important;
+        i {
+          color: $white;
+        }
       }
     }
 
@@ -384,7 +396,6 @@ input[type='text'] {
 }
 
 .personalised {
-  background: #eee;
   @include no-pad;
   @media(min-width:992px) {
     padding-bottom: 0;
@@ -770,7 +781,12 @@ input[type='text'] {
 }
 
 .fscs {
-  background: #eee;
+  background: #C04848;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, $green, $blue);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, $blue, $green);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   padding: 90px;
 
   img {
@@ -779,6 +795,7 @@ input[type='text'] {
 
   .fscs-text {
     margin-top: 30px;
+    color:#fff;
   }
 }
 
@@ -832,6 +849,26 @@ input[type='text'] {
         padding: 15px;
       }
     }
+  }
+}
+.charity-archive {
+  padding-top:10px!important;
+  .charities-info {
+    margin-bottom:20px;
+    font-size: 16px;
+  }
+}
+.our-charities {
+  text-align: center;
+  h3 {
+    font-weight:700;
+    padding-bottom:20px;
+  }
+  img {
+    width:auto;
+    max-width:100%;
+    max-height:100px;
+    padding-bottom:20px;
   }
 }
 
@@ -952,6 +989,7 @@ input[type='text'] {
     h5,
     h6,
     form,
+    ul,
     p {
       @media(max-width:768px) {
         padding-left: 15px;
@@ -998,6 +1036,15 @@ input[type='text'] {
         }
       }
     }
+  }
+}
+.servicePage {
+  margin-top:0px;
+  .header {
+    height:50vh;
+  }
+  .the-page__content {
+    padding:30px!important;
   }
 }
 .footer {

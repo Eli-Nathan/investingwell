@@ -1,4 +1,4 @@
-/* line 56, sass/var.scss */
+/* line 57, sass/var.scss */
 .btn-iw-b {
   background: #49C1B6;
   color: #FFF;
@@ -7,18 +7,18 @@
   padding: 15px;
 }
 @media (min-width: 768px) {
-  /* line 56, sass/var.scss */
+  /* line 57, sass/var.scss */
   .btn-iw-b {
     padding: 10px 20px;
   }
 }
-/* line 66, sass/var.scss */
+/* line 67, sass/var.scss */
 .btn-iw-b:hover {
   background: #98EAC5;
   color: #fff;
 }
 
-/* line 72, sass/var.scss */
+/* line 73, sass/var.scss */
 .btn-iw-g {
   background: #98EAC5;
   color: #FFF;
@@ -27,44 +27,101 @@
   padding: 3%;
 }
 @media (min-width: 768px) {
-  /* line 72, sass/var.scss */
+  /* line 73, sass/var.scss */
   .btn-iw-g {
     padding: 1% 2%;
   }
 }
-/* line 81, sass/var.scss */
+/* line 83, sass/var.scss */
 .btn-iw-g:hover {
   background: #49C1B6;
   color: #fff;
 }
 
-/* line 87, sass/var.scss */
+/* line 90, sass/var.scss */
 .text-center {
   text-align: center;
 }
 
-/* line 91, sass/var.scss */
+/* line 94, sass/var.scss */
 .text-left {
   text-align: left;
 }
 
-/* line 95, sass/var.scss */
+/* line 98, sass/var.scss */
 .text-right {
   text-align: right;
 }
 
-/* line 115, sass/var.scss */
+/* line 119, sass/var.scss */
 .navbar-toggle {
   border: none !important;
   background-color: transparent !important;
 }
-/* line 119, sass/var.scss */
+/* line 123, sass/var.scss */
 .navbar-toggle:hover {
   border: none !important;
   background-color: transparent !important;
 }
-/* line 124, sass/var.scss */
+/* line 128, sass/var.scss */
 .navbar-toggle:focus {
   border: none !important;
   background-color: transparent !important;
+}
+
+/* line 174, sass/var.scss */
+form {
+  width: 100%;
+  text-align: center;
+}
+/* line 178, sass/var.scss */
+form label {
+  text-align: left;
+}
+/* line 182, sass/var.scss */
+form input,
+form textarea {
+  width: 100% !important;
+}
+/* line 187, sass/var.scss */
+form input[type=submit] {
+  width: 50% !important;
+  background: #49C1B6;
+  color: #FFF;
+  border: none;
+  border-radius: 2px;
+  padding: 15px;
+}
+@media (min-width: 768px) {
+  /* line 187, sass/var.scss */
+  form input[type=submit] {
+    padding: 10px 20px;
+  }
+}
+/* line 198, sass/var.scss */
+form input[type=submit]:hover {
+  background: #98EAC5;
+  color: #fff;
+}
+
+/* line 207, sass/var.scss */
+.the-blog-post ul,
+.the-page:not(.servicePage) ul {
+  list-style-type: none;
+  padding: 0;
+}
+/* line 211, sass/var.scss */
+.the-blog-post ul li::before,
+.the-page:not(.servicePage) ul li::before {
+  color: rgba(73, 193, 182, 0.75);
+  /* color of bullet or square */
+  content: "\25A0";
+  /* Unicode of character to precede the list item */
+  font-size: 1em;
+  /* em or %*/
+  padding-right: 1.1225em;
+  /* use em*/
+  position: relative;
+  top: 0;
+  /* use em or % */
 }
