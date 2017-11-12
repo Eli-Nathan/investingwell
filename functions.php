@@ -87,7 +87,7 @@ function charity_post_type() {
         'description'         => __( 'Charities we work with', 'investingwell' ),
         'labels'              => $labels,
         // Features this CPT supports in Post Editor
-        'supports'            => array( 'title', 'editor', 'thumbnail', 'custom-fields', ),
+        'supports'            => array( 'title', 'editor', 'thumbnail' ),
         // You can associate this CPT with a taxonomy or custom taxonomy.
         // 'taxonomies'          => array( 'types' ),
         /* A hierarchical CPT is like Pages and can have

@@ -1,36 +1,12 @@
 <?php
      get_header();
-     global $investingwell;
-     global $charity;
-     global $charityname;
-     if(isset($_GET["charity"])) {
-          $charity = $_GET["charity"];
-          if($charity == "chas") {
-               $charityname = "CHAS";
-          }
-          else if($charity == 'oxfam') {
-               $charityname = "Oxfam";
-          }
-          else {
-               $charityname = null;
-          }
-     }
-     else {
-          $charity = null;
-     }
 ?>
 
 
      <!-- Header Ends (Includes navigation bar) -->
      <div class='header col-sm-12'>
           <h1 class='text-center'><?php echo $investingwell; ?></h1>
-          <p>
-               <?php
-                    if(isset($charity)) {
-                         echo "You came from ". $charityname ."! ";
-                    }
-               ?>
-               We all have goals and dreams, but how do we get there? Investing Well can help you save towards future goals from childrens education to retirment. This is acheived in a low cost way and can help a charity close to your heart as well.</p>
+          <p>We all have goals and dreams, but how do we get there? Investing Well can help you save towards future goals from childrens education to retirment. This is acheived in a low cost way and can help a charity close to your heart as well.</p>
           <div class='btnDiv text-center'>
                <a class='btn btn-default btn-iw-b'>
                     Let's Start &nbsp; <i class='fa fa-angle-right'></i>
@@ -247,13 +223,15 @@
      </div>
    </div>
      <div class='steps col-sm-12 col-xs-12'>
+       <h2 class='text-center'>How to get started</h2>
           <div class="col-sm-5 hidden-xs image">
                <img src="<?php bloginfo('stylesheet_directory');?>/images/iphone-mock-up.png" alt="Investingwell">
           </div>
-          <div class='col-sm-5 theSteps'>
-               <ul>
+          <div class='col-sm-5 col-xs-12 theSteps'>
+
+               <ul class='col-xs-12'>
                     <li class='col-xs-12'>
-                         <div class='col-xs-3 text-right'>
+                         <div class='col-xs-3 theNumber'>
                               <img src='<?php bloginfo('stylesheet_directory');?>/images/number-1.svg' alt="1">
                          </div>
                          <div class='col-xs-9'>
@@ -262,7 +240,7 @@
                          </div>
                     </li>
                     <li class='col-xs-12'>
-                         <div class='col-xs-3 text-right'>
+                         <div class='col-xs-3 theNumber'>
                               <img src='<?php bloginfo('stylesheet_directory');?>/images/number-2.svg' alt="2">
                          </div>
                          <div class='col-xs-9'>
@@ -271,7 +249,7 @@
                          </div>
                     </li>
                     <li class='col-xs-12'>
-                         <div class='col-xs-3 text-right'>
+                         <div class='col-xs-3 theNumber'>
                               <img src='<?php bloginfo('stylesheet_directory');?>/images/number-3.svg' alt="3">
                          </div>
                          <div class='col-xs-9'>
@@ -280,7 +258,7 @@
                          </div>
                     </li>
                     <li class='col-xs-12'>
-                         <div class='col-xs-3 text-right'>
+                         <div class='col-xs-3 theNumber'>
                               <img src='<?php bloginfo('stylesheet_directory');?>/images/number-4.svg' alt="4">
                          </div>
                          <div class='col-xs-9'>
@@ -326,19 +304,19 @@
      </div>
      <div class='clearfix'></div>
      <div class='charity col-sm-12'>
-       <div class='logo col-sm-6'>
-         <img src='<?php bloginfo('stylesheet_directory');?>/images/<?php if($charity == "chas") { echo 'chas.png'; } else { echo 'chas.png'; } ?>' alt="Chas" />
-       </div>
-       <div class='tagline col-sm-6'>
-         <h2>Be <span class='investingwell-well'>Good</span> with Money
-       </div>
-       <div class='charityInfo col-sm-12'>
+       <div class='charityInfo col-sm-6'>
+         <div class='tagline'>
+           <h2 class='text-center'>Be <span class='investingwell-well'>Good</span> with Money
+         </div>
+         <div class='logo'>
+           <img src='<?php bloginfo('stylesheet_directory');?>/images/chas.png' alt="Chas" />
+         </div>
          <p>Investing Well helps families and individuals to save towards their goals but also helps a charity close to their heart. Each year Investing Well donates 10% of our fee to charity.</p>
 
          <p>We write to everyone at the end of the year to let you know how you have made a difference to your charity. Lots of little donations can make a massive difference.</p>
      </div>
-     <div class='charity-image col-sm-12 text-center'>
-       <a class='btn btn-iw-g' href="#">Set your goal for FREE</a>
+     <div class='charity-image col-sm-6 text-center'>
+       <a class='btn btn-iw-b' href="#">Set your goal for FREE</a>
      </div>
    </div>
    <div class='col-sm-12 fscs' id='safety'>

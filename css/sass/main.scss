@@ -1,5 +1,5 @@
 @import 'var'; // @include justify-nav;
-
+div:focus, input:focus { outline: none!important; }
 body {
   font-family: 'Lato', verdana;
   background: #fafafa;
@@ -276,9 +276,17 @@ input[type='text'] {
 
       .box-inner.is-active {
         i {
-          color: $blue;
+          color: $green;
         }
-        border-bottom: 5px solid $blue;
+        border-bottom: 5px solid $green;
+        @media(min-width:768px) {
+          &:hover {
+            i {
+              color: $green;
+            }
+            border-bottom: 5px solid $green;
+          }
+        }
       }
 
       .box-inner {
@@ -318,7 +326,7 @@ input[type='text'] {
   background-position: center;
   @media(min-width:992px) {
     background: url("../images/donations.png");
-    background-position: right;
+    background-position: left;
   }
   @include full-background;
   color: #fff;
@@ -536,10 +544,15 @@ input[type='text'] {
 .steps {
   @media(min-width:768px) {
     padding: 30px;
+    padding-top:10px;
   }
   padding: 20px;
+  padding-top:10px;
   margin-bottom: 20px;
-
+  h2 {
+    font-weight: 700;
+    margin-bottom:20px;
+  }
   .image {
     text-align: center;
 
@@ -549,17 +562,27 @@ input[type='text'] {
   }
 
   .theSteps {
+    @media(max-width:768px) {
+      @include no-pad;
+    }
     ul {
       list-style-type: none;
-
+      @media(max-width:768px) {
+        @include no-pad;
+      }
       li {
         margin-bottom: 20px;
-
+      .theNumber {
+        @media(max-width:768px) {
+          text-align: left!important;
+          @include no-pad;
+        }
+      }
         img {
           width: 100%;
           padding-top: 20px;
           @media(max-width:768px) {
-            width: 100%;
+            width: 75%;
           }
         }
 
@@ -712,17 +735,19 @@ input[type='text'] {
   padding-right: 0;
 
   .logo {
-    padding: 0 90px;
-
+    text-align: center;
     img {
-      width: 100%;
+      width: 50%;
+      @media(min-width:768px) {
+        padding-bottom:20px
+      }
     }
   }
 
   .tagline {
     h2 {
       font-weight: 700;
-      padding-top: 50px;
+      padding-bottom:20px;
       @media(max-width:768px) {
         text-align: center;
       }
@@ -730,14 +755,17 @@ input[type='text'] {
   }
 
   .charityInfo {
-    padding: 30px;
+    padding: 0 30px;
+    @media(min-width:768px) {
+      font-size: 16px;
+    }
   }
 
   .charity-image {
-    background: url("../images/hands-colours.png");
+    background: url("../images/chas-charity.jpg");
     background-size: cover;
     background-position: top;
-    padding: 10%;
+    padding:15%;
   }
 }
 

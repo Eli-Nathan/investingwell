@@ -77,7 +77,35 @@
                <a class='btn btn-iw-b' href='#'>Find out more</a>
           </div>
      </div>
+     <div class='charity col-sm-12'>
+       <div class='charityInfo col-sm-6'>
+         <div class='tagline'>
+           <h2 class='text-center'>Be <span class='investingwell-well'>Good</span> with Money
+         </div>
+         <div class='logo'>
+           <?php
+            if( get_field('charity_logo') ):
+           ?>
+             <img src="<?php the_field('charity_logo'); ?>" />
+           <?php endif; ?>
+       </div>
+       <?php while ( have_posts() ) : the_post(); ?>
+         <p><?php the_content(); ?></p>
 
+         <p>We write to everyone at the end of the year to let you know how you have made a difference to your charity. Lots of little donations can make a massive difference.</p>
+     </div>
+     <?php $image = wp_get_attachment_image_src(get_post_thumbnail_id(get_the_ID()), 'large');
+
+     if($image[0] != ""):
+       echo "<div class='charity-image col-sm-6 text-center' style='background-image:url(".$image[0].")'>
+         <a class='btn btn-iw-b' href='#'>Set your goal for FREE</a>
+       </div>";
+     else: ?>
+     <div class='charity-image col-sm-6 text-center' style='background-image:url(<?php bloginfo('stylesheet_directory');?>/images/hands-colours.png)'>
+       <a class='btn btn-iw-b' href="#">Set your goal for FREE</a>
+     </div>
+   <?php endif; endwhile;?>
+   </div>
      <div class='robots col-sm-12'>
           <div class='text col-md-6 col-sm-12'>
                <h2>We are not robots.</h2>
@@ -225,52 +253,54 @@
    </div>
      </div>
    </div>
-     <div class='steps col-sm-12 col-xs-12'>
-          <div class="col-sm-5 hidden-xs image">
-               <img src="<?php bloginfo('stylesheet_directory');?>/images/iphone-mock-up.png" alt="Investingwell">
-          </div>
-          <div class='col-sm-5 theSteps'>
-               <ul>
-                    <li class='col-xs-12'>
-                         <div class='col-xs-3 text-right'>
-                              <img src='<?php bloginfo('stylesheet_directory');?>/images/number-1.svg' alt="1">
-                         </div>
-                         <div class='col-xs-9'>
-                              <h3>Choose your goal</h3>
-                              <p></p>
-                         </div>
-                    </li>
-                    <li class='col-xs-12'>
-                         <div class='col-xs-3 text-right'>
-                              <img src='<?php bloginfo('stylesheet_directory');?>/images/number-2.svg' alt="2">
-                         </div>
-                         <div class='col-xs-9'>
-                              <h3>Select your risk level</h3>
-                              <p>By choosing from our range of risk levels it will help us select the most suitable investment for you</p>
-                         </div>
-                    </li>
-                    <li class='col-xs-12'>
-                         <div class='col-xs-3 text-right'>
-                              <img src='<?php bloginfo('stylesheet_directory');?>/images/number-3.svg' alt="3">
-                         </div>
-                         <div class='col-xs-9'>
-                              <h3>Read our documentation</h3>
-                              <p>We will provide you with a personal suitability report, containing the important information you will need before you decide to procees.</p>
-                         </div>
-                    </li>
-                    <li class='col-xs-12'>
-                         <div class='col-xs-3 text-right'>
-                              <img src='<?php bloginfo('stylesheet_directory');?>/images/number-4.svg' alt="4">
-                         </div>
-                         <div class='col-xs-9'>
-                              <h3>Start Investing</h3>
-                              <p>Access your account 24/7</p>
-                              <a class='btn btn-iw-g' href='#'>Get Started</a>
-                         </div>
-                    </li>
-               </ul>
-          </div>
-     </div>
+   <div class='steps col-sm-12 col-xs-12'>
+     <h2 class='text-center'>How to get started</h2>
+        <div class="col-sm-5 hidden-xs image">
+             <img src="<?php bloginfo('stylesheet_directory');?>/images/iphone-mock-up.png" alt="Investingwell">
+        </div>
+        <div class='col-sm-5 col-xs-12 theSteps'>
+
+             <ul class='col-xs-12'>
+                  <li class='col-xs-12'>
+                       <div class='col-xs-3 theNumber'>
+                            <img src='<?php bloginfo('stylesheet_directory');?>/images/number-1.svg' alt="1">
+                       </div>
+                       <div class='col-xs-9'>
+                            <h3>Choose your goal</h3>
+                            <p></p>
+                       </div>
+                  </li>
+                  <li class='col-xs-12'>
+                       <div class='col-xs-3 theNumber'>
+                            <img src='<?php bloginfo('stylesheet_directory');?>/images/number-2.svg' alt="2">
+                       </div>
+                       <div class='col-xs-9'>
+                            <h3>Select your risk level</h3>
+                            <p>By choosing from our range of risk levels it will help us select the most suitable investment for you</p>
+                       </div>
+                  </li>
+                  <li class='col-xs-12'>
+                       <div class='col-xs-3 theNumber'>
+                            <img src='<?php bloginfo('stylesheet_directory');?>/images/number-3.svg' alt="3">
+                       </div>
+                       <div class='col-xs-9'>
+                            <h3>Read our documentation</h3>
+                            <p>We will provide you with a personal suitability report, containing the important information you will need before you decide to procees.</p>
+                       </div>
+                  </li>
+                  <li class='col-xs-12'>
+                       <div class='col-xs-3 theNumber'>
+                            <img src='<?php bloginfo('stylesheet_directory');?>/images/number-4.svg' alt="4">
+                       </div>
+                       <div class='col-xs-9'>
+                            <h3>Start Investing</h3>
+                            <p>Access your account 24/7</p>
+                            <a class='btn btn-iw-g' href='#'>Get Started</a>
+                       </div>
+                  </li>
+             </ul>
+        </div>
+   </div>
      <div class='clearfix'></div>
      <div class="flowchart col-sm-12 col-md-12 text-center">
           <h3>How the service works</h3>
@@ -304,35 +334,7 @@
           </div>
      </div>
      <div class='clearfix'></div>
-     <div class='charity col-sm-12'>
-       <div class='logo col-sm-6'>
-        <?php if( get_field('charity_logo') ): ?>
 
-<img src="<?php the_field('charity_logo'); ?>" />
-
-<?php endif; ?>
-       </div>
-       <div class='tagline col-sm-6'>
-         <h2>Be <span class='investingwell-well'>Good</span> with Money
-       </div>
-       <?php while ( have_posts() ) : the_post(); ?>
-       <div class='charityInfo col-sm-12'>
-         <p><?php the_content(); ?></p>
-
-         <p>We write to everyone at the end of the year to let you know how you have made a difference to your charity. Lots of little donations can make a massive difference.</p>
-     </div>
-     <?php $image = wp_get_attachment_image_src(get_post_thumbnail_id(get_the_ID()), 'large');
-
-     if($image[0] != ""):
-       echo "<div class='charity-image col-sm-12 text-center' style='background-image:url(".$image[0].")'>
-         <a class='btn btn-iw-g' href='#'>Set your goal for FREE</a>
-       </div>";
-     else: ?>
-     <div class='charity-image col-sm-12 text-center' style='background-image:url(<?php bloginfo('stylesheet_directory');?>/images/hands-colours.png)'>
-       <a class='btn btn-iw-g' href="#">Set your goal for FREE</a>
-     </div>
-   <?php endif; endwhile;?>
-   </div>
    <div class='col-sm-12 fscs' id='safety'>
      <div class='col-sm-6 text-center'>
        <img src='<?php bloginfo('stylesheet_directory');?>/images/fscs.gif' alt='FSCS' />

@@ -72,4 +72,15 @@ $(document).ready(function() {
                navMain.collapse('hide');
           });
      });
+     $('.box-inner').click(function() {
+       var clickedEl = $(this);
+       if(clickedEl.hasClass('is-active')) {
+         clickedEl.removeClass('is-active');
+       }
+       else {
+         $('.box-inner').removeClass('is-active');
+         $(this).toggleClass("is-active");
+       }
+
+     });
 });
