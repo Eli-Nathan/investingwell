@@ -69,6 +69,7 @@
 
      </div>
    </div>
+   <?php include("includes/cta.php"); ?>
 
      <!-- Body ends and footer begins -->
 

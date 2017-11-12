@@ -62,5 +62,6 @@
     <?php endif; ?>
 </div>
 </div>
+<?php include("includes/cta.php"); ?>
 
 <?php get_footer(); ?>

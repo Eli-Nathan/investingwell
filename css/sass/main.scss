@@ -1,14 +1,19 @@
 @import 'var'; // @include justify-nav;
-div:focus, input:focus { outline: none!important; }
+
+div:focus,
+input:focus {
+  outline: none!important;
+}
+
 body {
   font-family: 'Lato', verdana;
   background: #fafafa;
 
-  p, li {
+  li,
+  p {
     line-height: 1.7em;
     font-weight: 300;
   }
-
 }
 
 .investingwell-well {
@@ -16,13 +21,14 @@ body {
 }
 
 .navbar {
-  background:$white;
+  background: $white;
+
   .navbar-brand {
     width: 30%;
 
     img {
       max-width: 170px;
-      padding:10px;
+      padding: 10px;
       @media(min-width:768px) {
         margin-top: -10px;
       }
@@ -35,17 +41,12 @@ body {
   }
 
   li {
-    padding:10px;
-    a {
-      i {
-        color: $blue;
-      }
-    }
     &:hover {
       background: $blue!important;
 
       a {
         color: $white!important;
+
         i {
           color: $white;
         }
@@ -70,6 +71,18 @@ body {
   }
 }
 
+.navbar-fixed-top {
+  li {
+    padding: 10px;
+
+    a {
+      i {
+        color: $blue;
+      }
+    }
+  }
+}
+
 .header {
   margin-top: 40px;
   background: url("../images/hands.png");
@@ -85,7 +98,7 @@ body {
     font-weight: 300;
     font-size: 4em;
     text-shadow: 2px 2px 4px #000;
-    padding-bottom:20px;
+    padding-bottom: 20px;
   }
 
   p {
@@ -143,7 +156,7 @@ input[type='text'] {
   }
 
   &__content {
-    padding-bottom:10px;
+    padding-bottom: 10px;
     @include no-pad;
 
     .article__tags,
@@ -202,7 +215,7 @@ input[type='text'] {
         border-top-right-radius: 4px;
         border-top-left-radius: 4px;
         @media(max-width:768px) {
-          background-size:100%;
+          background-size: 100%;
         }
       }
 
@@ -554,16 +567,16 @@ input[type='text'] {
 
 .steps {
   @media(min-width:768px) {
-    padding: 30px;
-    padding-top:10px;
+    padding: 10px 30px 30px;
   }
-  padding: 20px;
-  padding-top:10px;
+  padding: 10px 20px 20px;
   margin-bottom: 20px;
+
   h2 {
     font-weight: 700;
-    margin-bottom:20px;
+    margin-bottom: 20px;
   }
+
   .image {
     text-align: center;
 
@@ -576,19 +589,23 @@ input[type='text'] {
     @media(max-width:768px) {
       @include no-pad;
     }
+
     ul {
       list-style-type: none;
       @media(max-width:768px) {
         @include no-pad;
       }
+
       li {
         margin-bottom: 20px;
-      .theNumber {
-        @media(max-width:768px) {
-          text-align: left!important;
-          @include no-pad;
+
+        .theNumber {
+          @media(max-width:768px) {
+            text-align: left!important;
+            @include no-pad;
+          }
         }
-      }
+
         img {
           width: 100%;
           padding-top: 20px;
@@ -747,10 +764,11 @@ input[type='text'] {
 
   .logo {
     text-align: center;
+
     img {
       width: 50%;
       @media(min-width:768px) {
-        padding-bottom:20px
+        padding-bottom: 20px;
       }
     }
   }
@@ -758,7 +776,7 @@ input[type='text'] {
   .tagline {
     h2 {
       font-weight: 700;
-      padding-bottom:20px;
+      padding-bottom: 20px;
       @media(max-width:768px) {
         text-align: center;
       }
@@ -776,7 +794,7 @@ input[type='text'] {
     background: url("../images/chas-charity.jpg");
     background-size: cover;
     background-position: top;
-    padding:15%;
+    padding: 15%;
   }
 }
 
@@ -795,7 +813,7 @@ input[type='text'] {
 
   .fscs-text {
     margin-top: 30px;
-    color:#fff;
+    color: #fff;
   }
 }
 
@@ -838,7 +856,7 @@ input[type='text'] {
       border-top-right-radius: 4px;
       border-top-left-radius: 4px;
       @media(max-width:768px) {
-        background-size:100%;
+        background-size: 100%;
       }
     }
 
@@ -851,30 +869,36 @@ input[type='text'] {
     }
   }
 }
+
 .charity-archive {
-  padding-top:10px!important;
+  padding-top: 10px!important;
+
   .charities-info {
-    margin-bottom:20px;
+    margin-bottom: 20px;
     font-size: 16px;
   }
 }
+
 .our-charities {
   text-align: center;
+
   h3 {
-    font-weight:700;
-    padding-bottom:20px;
+    font-weight: 700;
+    padding-bottom: 20px;
   }
+
   img {
-    width:auto;
-    max-width:100%;
-    max-height:100px;
-    padding-bottom:20px;
+    width: auto;
+    max-width: 100%;
+    max-height: 100px;
+    padding-bottom: 20px;
   }
 }
 
 .blog-post-list {
   @include no-pad;
-  margin-top:100px;
+  margin-top: 100px;
+
   .header {
     height: 40vh;
     background-size: cover;
@@ -935,7 +959,7 @@ input[type='text'] {
         border-top-right-radius: 4px;
         border-top-left-radius: 4px;
         @media(max-width:768px) {
-          background-size:100%;
+          background-size: 100%;
         }
       }
 
@@ -949,6 +973,7 @@ input[type='text'] {
     }
   }
 }
+
 .pager {
   li {
     a {
@@ -956,9 +981,11 @@ input[type='text'] {
     }
   }
 }
+
 .the-page {
   @include no-pad;
-  margin-top:100px;
+  margin-top: 100px;
+
   .header {
     height: 40vh;
     background-size: cover;
@@ -979,18 +1006,20 @@ input[type='text'] {
       padding: 0 10px;
     }
   }
+
   &__content {
-    padding-bottom:30px;
+    padding-bottom: 30px;
     @include no-pad;
+
+    form,
     h1,
     h2,
     h3,
     h4,
     h5,
     h6,
-    form,
-    ul,
-    p {
+    p,
+    ul {
       @media(max-width:768px) {
         padding-left: 15px;
         padding-right: 15px;
@@ -1010,43 +1039,76 @@ input[type='text'] {
       width: 100%;
       height: auto;
     }
+
     form {
-      width:100%;
+      width: 100%;
       text-align: center;
+
       label {
         text-align: left;
       }
-      input, textarea {
-        width:100%!important;
+
+      input,
+      textarea {
+        width: 100%!important;
       }
+
       input[type=submit] {
-        width:50%!important;
+        width: 50%!important;
         background: $blue;
         color: $white;
         border: none;
         border-radius: 2px;
         @media(min-width:768px) {
-             padding: 10px 20px;
+          padding: 10px 20px;
         }
         padding: 15px;
 
         &:hover {
-             background: $green;
-             color: #fff;
+          background: $green;
+          color: #fff;
         }
       }
     }
   }
 }
+
 .servicePage {
-  margin-top:0px;
+  margin-top: 0;
+
   .header {
-    height:50vh;
+    height: 50vh;
   }
+
   .the-page__content {
-    padding:30px!important;
+    padding: 30px!important !important;
   }
 }
+
+.last-cta {
+  padding: 50px;
+  background: url("../images/kelpies-grad.jpg");
+  background-size: cover;
+  background-position: center;
+
+  h3 {
+    font-weight: 700;
+    margin-bottom: 40px;
+    color: $white;
+  }
+
+  .btn-iw-b {
+    background: $blue;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, $green, $blue);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, $blue, $green);
+    padding: 10px 20px;
+    font-size: 20px;
+    border: 2px $white solid;
+  }
+}
+
 .footer {
   @include no-pad;
 
