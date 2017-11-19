@@ -4,7 +4,9 @@ div:focus,
 input:focus {
   outline: none!important;
 }
-
+a {
+  color:$blue;
+}
 body {
   font-family: 'Rubik', 'Lato', verdana;
   background: #fafafa;
