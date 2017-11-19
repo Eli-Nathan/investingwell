@@ -6,13 +6,19 @@ input:focus {
 }
 
 body {
-  font-family: 'Lato', verdana;
+  font-family: 'Rubik', 'Lato', verdana;
   background: #fafafa;
 
   li,
   p {
     line-height: 1.7em;
     font-weight: 300;
+  }
+  p {
+    font-size:17px;
+    @media(min-width:1300px) {
+      font-size:17px;
+    }
   }
 }
 
@@ -27,11 +33,8 @@ body {
     width: 30%;
 
     img {
-      max-width: 170px;
-      padding: 10px;
-      @media(min-width:768px) {
-        margin-top: -10px;
-      }
+      max-width: 250px;
+      margin-top: -12px;
     }
   }
 
@@ -109,6 +112,9 @@ body {
     }
     padding-top: 5px;
     padding-bottom: 5px;
+    @media(min-width:1500px) {
+      padding:30px 250px;
+    }
     color: #fff;
     text-shadow: 2px 2px 4px #000;
     font-weight: 200;
@@ -235,7 +241,7 @@ input[type='text'] {
   padding-bottom: 10vh;
   height: auto;
   transition: 1s;
-  background: #C04848;
+  background: $blue;
   /* fallback for old browsers */
   background: -webkit-linear-gradient(to right, $green, $blue);
   /* Chrome 10-25, Safari 5.1-6 */
@@ -349,6 +355,8 @@ input[type='text'] {
   padding-top: 30px;
   background: url("../images/donations-darker.png");
   background-position: center;
+  background-size: cover!important;
+  background-repeat: no-repeat;
   @media(min-width:992px) {
     background: url("../images/donations.png");
     background-position: left;
@@ -376,8 +384,14 @@ input[type='text'] {
   @include no-pad;
 
   .text {
-    padding: 30px;
-
+    padding: 15px;
+    padding-top:5px;
+    @media(min-width:992px) {
+      padding:30px;
+    }
+    @media(min-width:1800px) {
+      padding:90px;
+    }
     h2 {
       font-size: 2.6em;
       font-weight: 700;
@@ -390,7 +404,11 @@ input[type='text'] {
     }
 
     p {
-      font-size: 18px;
+      @media(min-width:1600px) {
+        font-size:22px;
+        margin-top:30px;
+      }
+      font-size: 17px;
       font-weight: 300;
     }
 
@@ -416,7 +434,9 @@ input[type='text'] {
 
   .text {
     padding: 30px;
-
+    @media(min-width:1800px) {
+      padding:90px;
+    }
     h2 {
       font-size: 2.6em;
       font-weight: 700;
@@ -427,6 +447,10 @@ input[type='text'] {
 
     p {
       font-size: 18px;
+      @media(min-width:1300px) {
+        font-size:22px;
+        margin-top:30px;
+      }
       font-weight: 300;
     }
 
@@ -442,6 +466,16 @@ input[type='text'] {
       width: 100%;
     }
   }
+}
+.service-title {
+  padding-top:30px;
+}
+.added-content {
+  @media(min-width:768px) {
+    padding: 45px;
+    padding-bottom:0px;
+  }
+  padding-bottom: 30px;
 }
 
 .service {
@@ -476,6 +510,9 @@ input[type='text'] {
 
         &.firstRow {
           font-weight: 700;
+          i {
+            cursor: pointer;
+          }
         }
 
         &:nth-of-type(even) {
@@ -559,6 +596,9 @@ input[type='text'] {
       .reviewContent {
         p {
           font-size: 10px;
+          @media(min-width:1000px) {
+            font-size:14px;
+          }
         }
       }
     }
@@ -814,12 +854,17 @@ input[type='text'] {
   .fscs-text {
     margin-top: 30px;
     color: #fff;
+    @media(min-width:1500px) {
+      p {
+        font-size:22px;
+      }
+    }
   }
 }
 
 .articles {
   @media(min-width:768px) {
-    padding: 50px;
+    padding: 50px 50px 20px;
   }
 
   h3 {
@@ -922,7 +967,7 @@ input[type='text'] {
 
   .articles {
     @media(min-width:768px) {
-      padding: 50px;
+      padding: 50px 50px 20px;
     }
 
     h3 {
@@ -1108,7 +1153,24 @@ input[type='text'] {
     border: 2px $white solid;
   }
 }
-
+.not-found-message {
+  padding:75px 15px;
+  @media(min-width:768px){
+    padding: 100px;
+  }
+  img {
+    width:50%;
+    @media(min-width:768px){
+      width:10%;
+    }
+  }
+  .goBack {
+    color:$blue;
+    font-weight: 500;
+    cursor: pointer;
+    text-decoration: underline;
+  }
+}
 .footer {
   @include no-pad;
 
@@ -1185,6 +1247,11 @@ input[type='text'] {
             }
           }
         }
+      }
+    }
+    .disclaimer {
+      p {
+        font-size:14px;
       }
     }
   }

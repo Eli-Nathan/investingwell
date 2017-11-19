@@ -223,3 +223,23 @@ form {
     }
   }
 }
+.modal-header {
+    color:#fff;
+    padding:9px 15px;
+    border-bottom:1px solid #eee;
+    background: $blue;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, $green, $blue);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, $blue, $green);
+    i {
+      color:#fff;
+    }
+    button {
+      opacity: 1;
+      text-shadow:none;
+    }
+}
+
+.modal-footer {
+}

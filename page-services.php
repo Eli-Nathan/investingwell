@@ -15,12 +15,12 @@
 
        <?php endif; ?>
        <div class="col-lg-6 col-lg-offset-3 col-md-8 col-md-offset-2 col-sm-1- col-sm-offset-1">
-       <h1 class='text-center the-page__title'>
+       <h1 class='text-center the-page__title service-title'>
          <span class='lined'>Our <span class='investingwell-well'><?php the_title(); ?></span>
        </h1>
      </div>
      <div class='the-page__content col-sm-12'>
-       <div class='col-sm-12'>
+       <div class='col-sm-12 added-content'>
          <?php the_content(); ?>
        </div>
      </div>
@@ -47,7 +47,7 @@
                                    Provider
                               </td>
                               <td>
-                                   Average Annual Charge <i class="fa fa-info-circle" aria-hidden="true"></i>
+                                   Average Annual Charge <i class="fa fa-info-circle" data-toggle="modal" data-target="#serviceModal1" aria-hidden="true"></i>
                               </td>
                               <td>
                                    Regulated Advice
@@ -172,7 +172,26 @@
    </div>
    <div class="clearfix"></div>
  </div>
+ <!-- Modal -->
+ <div id="serviceModal1" class="modal fade" role="dialog">
+   <div class="modal-dialog">
 
+     <!-- Modal content-->
+     <div class="modal-content">
+       <div class="modal-header">
+         <button type="button" class="close" data-dismiss="modal"><i class="fa fa-times"></i></button>
+         <h4 class="modal-title">Average Annual Charge</h4>
+       </div>
+       <div class="modal-body">
+         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula. Vivamus suscipit tortor eget felis porttitor volutpat.</p>
+       </div>
+       <div class="modal-footer">
+         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+       </div>
+     </div>
+
+   </div>
+ </div>
 
 
      <!-- Body ends and footer begins -->

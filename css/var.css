@@ -125,3 +125,24 @@ form input[type=submit]:hover {
   top: 0;
   /* use em or % */
 }
+
+/* line 226, sass/var.scss */
+.modal-header {
+  color: #fff;
+  padding: 9px 15px;
+  border-bottom: 1px solid #eee;
+  background: #49C1B6;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #98EAC5, #49C1B6);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #49C1B6, #98EAC5);
+}
+/* line 235, sass/var.scss */
+.modal-header i {
+  color: #fff;
+}
+/* line 238, sass/var.scss */
+.modal-header button {
+  opacity: 1;
+  text-shadow: none;
+}
