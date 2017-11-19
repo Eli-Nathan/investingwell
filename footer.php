@@ -97,6 +97,9 @@
                <p>The value of investments can go down as well as up an you may get back less than you invested.</p>
           </div>
      </div>
+     <div class="web-design col-sm-12 text-center">
+       <p>Web design by <a href="http://www.elisweb.co.uk" target="_blank">Eli's Web</a></p>
+     </div>
 </footer>
 
 <?php wp_footer(); ?>
