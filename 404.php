@@ -5,7 +5,7 @@
   * @link https://codex.wordpress.org/Creating_an_Error_404_Page
   *
   * @package WordPress
-  * @subpackage Twenty_Seventeen
+  * @subpackage Investingwell
   * @since 1.0
   * @version 1.0
  */
@@ -17,7 +17,7 @@
   <img src='<?php bloginfo('stylesheet_directory');?>/images/error-cone.png' alt="404 Error">
   <h2>Oh dear! It looks like this page doesn't exist!</h2>
   <p>You can either <span class="goBack" onclick="goBack();">click here</span> to go back or use the button below to return to our homepage</p>
-  <a href="/" class="btn btn-iw-b">Head home</a>
+  <a href="/" class="btn btn-iw-b">Head home <i class="fa fa-home"></i></a>
 </div>
 
 <?php
