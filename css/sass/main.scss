@@ -332,8 +332,13 @@ input[type='text'] {
         }
 
         p {
-          font-weight: 700;
+          font-weight: 300;
           margin-top: 20px;
+          font-size:10px!important;
+          @media(min-width:768px) {
+            font-weight:700;
+            font-size:17px;
+          }
         }
         background: #fff;
         border-radius: 3px;
