@@ -1,12 +1,15 @@
 @import 'var'; // @include justify-nav;
 @include change-nav-break;
+
 div:focus,
 input:focus {
   outline: none!important;
 }
+
 a {
-  color:$blue;
+  color: $blue;
 }
+
 body {
   font-family: 'Rubik', 'Lato', verdana;
   background: #fafafa;
@@ -16,10 +19,11 @@ body {
     line-height: 1.7em;
     font-weight: 300;
   }
+
   p {
-    font-size:17px;
+    font-size: 17px;
     @media(min-width:1300px) {
-      font-size:17px;
+      font-size: 17px;
     }
   }
 }
@@ -115,7 +119,7 @@ body {
     padding-top: 5px;
     padding-bottom: 5px;
     @media(min-width:1500px) {
-      padding:30px 250px;
+      padding: 30px 250px;
     }
     color: #fff;
     text-shadow: 2px 2px 4px #000;
@@ -386,14 +390,14 @@ input[type='text'] {
   @include no-pad;
 
   .text {
-    padding: 15px;
-    padding-top:5px;
+    padding: 5px 15px 15px;
     @media(min-width:992px) {
-      padding:30px;
+      padding: 30px;
     }
     @media(min-width:1800px) {
-      padding:90px;
+      padding: 90px;
     }
+
     h2 {
       font-size: 2.6em;
       font-weight: 700;
@@ -407,8 +411,8 @@ input[type='text'] {
 
     p {
       @media(min-width:1600px) {
-        font-size:22px;
-        margin-top:30px;
+        font-size: 22px;
+        margin-top: 30px;
       }
       font-size: 17px;
       font-weight: 300;
@@ -437,8 +441,9 @@ input[type='text'] {
   .text {
     padding: 30px;
     @media(min-width:1800px) {
-      padding:90px;
+      padding: 90px;
     }
+
     h2 {
       font-size: 2.6em;
       font-weight: 700;
@@ -450,8 +455,8 @@ input[type='text'] {
     p {
       font-size: 18px;
       @media(min-width:1300px) {
-        font-size:22px;
-        margin-top:30px;
+        font-size: 22px;
+        margin-top: 30px;
       }
       font-weight: 300;
     }
@@ -469,13 +474,14 @@ input[type='text'] {
     }
   }
 }
+
 .service-title {
-  padding-top:30px;
+  padding-top: 30px;
 }
+
 .added-content {
   @media(min-width:768px) {
-    padding: 45px;
-    padding-bottom:0px;
+    padding: 45px 45px 0;
   }
   padding-bottom: 30px;
 }
@@ -512,6 +518,7 @@ input[type='text'] {
 
         &.firstRow {
           font-weight: 700;
+
           i {
             cursor: pointer;
           }
@@ -599,7 +606,7 @@ input[type='text'] {
         p {
           font-size: 10px;
           @media(min-width:1000px) {
-            font-size:14px;
+            font-size: 14px;
           }
         }
       }
@@ -858,7 +865,7 @@ input[type='text'] {
     color: #fff;
     @media(min-width:1500px) {
       p {
-        font-size:22px;
+        font-size: 22px;
       }
     }
   }
@@ -957,13 +964,15 @@ input[type='text'] {
     font-weight: 700;
     width: 100%;
     text-align: center;
-    border-bottom: 1px solid #000;
-    line-height: 0.1em;
-    margin: 10px 0 20px;
+    @media(min-width:768px) {
+      border-bottom: 1px solid #000;
+      line-height: 0.1em;
+      margin: 10px 0 20px;
 
-    .lined {
-      background: #fafafa;
-      padding: 0 10px;
+      .lined {
+        background: #fafafa;
+        padding: 0 10px;
+      }
     }
   }
 
@@ -1044,13 +1053,15 @@ input[type='text'] {
     font-weight: 700;
     width: 100%;
     text-align: center;
-    border-bottom: 1px solid #000;
-    line-height: 0.1em;
-    margin: 10px 0 20px;
+    @media(min-width:768px) {
+      border-bottom: 1px solid #000;
+      line-height: 0.1em;
+      margin: 10px 0 20px;
 
-    .lined {
-      background: #fafafa;
-      padding: 0 10px;
+      .lined {
+        background: #fafafa;
+        padding: 0 10px;
+      }
     }
   }
 
@@ -1155,24 +1166,28 @@ input[type='text'] {
     border: 2px $white solid;
   }
 }
+
 .not-found-message {
-  padding:75px 15px;
-  @media(min-width:768px){
+  padding: 75px 15px;
+  @media(min-width:768px) {
     padding: 100px;
   }
+
   img {
-    width:50%;
-    @media(min-width:768px){
-      width:10%;
+    width: 50%;
+    @media(min-width:768px) {
+      width: 10%;
     }
   }
+
   .goBack {
-    color:$blue;
+    color: $blue;
     font-weight: 500;
     cursor: pointer;
     text-decoration: underline;
   }
 }
+
 .footer {
   @include no-pad;
 
@@ -1251,9 +1266,10 @@ input[type='text'] {
         }
       }
     }
+
     .disclaimer {
       p {
-        font-size:14px;
+        font-size: 14px;
       }
     }
   }

@@ -3,13 +3,13 @@
 ?>
      <!-- Header Ends (Includes navigation bar) -->
      <div class='blog-post-list col-sm-12'>
-       <div class='col-lg-6 col-lg-offset-3 col-md-8 col-md-offset-2 col-sm-1- col-sm-offset-1'>
+       <div class='col-lg-6 col-lg-offset-3 col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1'>
        <h1 class='text-center blog-post-list__title'>
          <span class='lined'>Investing<span class='investingwell-well'>well</span> News
        </h1>
      </div>
        <?php
-       $image = wp_get_attachment_image_src(get_post_thumbnail_id(get_the_ID()), 'large');
+       $image = wp_get_attachment_image_src(get_post_thumbnail_id(get_the_ID()), 'full');
 
        if($image[0] != ""):
 

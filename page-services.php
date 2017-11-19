@@ -5,7 +5,7 @@
      <!-- Header Ends (Includes navigation bar) -->
      <div class='the-page servicePage col-sm-12'>
        <?php
-       $image = wp_get_attachment_image_src(get_post_thumbnail_id(get_the_ID()), 'large');
+       $image = wp_get_attachment_image_src(get_post_thumbnail_id(get_the_ID()), 'full');
 
        if($image[0] != ""):
 
@@ -14,7 +14,7 @@
              <div class="header col-sm-12" style='background-image:url(<?php bloginfo('stylesheet_directory');?>/images/general-finance.jpg)'></div>
 
        <?php endif; ?>
-       <div class="col-lg-6 col-lg-offset-3 col-md-8 col-md-offset-2 col-sm-1- col-sm-offset-1">
+       <div class="col-lg-6 col-lg-offset-3 col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1">
        <h1 class='text-center the-page__title service-title'>
          <span class='lined'>Our <span class='investingwell-well'><?php the_title(); ?></span>
        </h1>

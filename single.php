@@ -7,7 +7,7 @@
        </h1>
        <p class='article__info text-center'> <?php the_time('jS \of F, Y') ?> | Posted in <?php the_category(', ') ?> </p>
      <?php
-     $image = wp_get_attachment_image_src(get_post_thumbnail_id(get_the_ID()), 'large');
+     $image = wp_get_attachment_image_src(get_post_thumbnail_id(get_the_ID()), 'full');
 
      if($image[0] != ""):
 
