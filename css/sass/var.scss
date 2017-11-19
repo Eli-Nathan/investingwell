@@ -6,9 +6,14 @@ $light: #EEE!important;
 $blue: #49C1B6;
 $green: #98EAC5;
 @mixin change-nav-break {
-  @media (max-width: 1200px) {
+  @media (max-width: 1000px) {
     .navbar-header {
       float: none;
+    }
+
+    .navbar-left,
+    .navbar-right {
+      float: none !important;
     }
 
     .navbar-toggle {
@@ -20,13 +25,18 @@ $green: #98EAC5;
       box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
     }
 
+    .navbar-fixed-top {
+      top: 0;
+      border-width: 0 0 1px;
+    }
+
     .navbar-collapse.collapse {
       display: none!important;
     }
 
     .navbar-nav {
       float: none!important;
-      margin: 7.5px -15px;
+      margin-top: 7.5px;
     }
 
     .navbar-nav > li {
@@ -36,6 +46,10 @@ $green: #98EAC5;
     .navbar-nav > li > a {
       padding-top: 10px;
       padding-bottom: 10px;
+    }
+
+    .collapse.in {
+      display: block !important;
     }
   }
 }
@@ -223,23 +237,25 @@ form {
     }
   }
 }
+
 .modal-header {
-    color:#fff;
-    padding:9px 15px;
-    border-bottom:1px solid #eee;
-    background: $blue;
-    /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, $green, $blue);
-    /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, $blue, $green);
-    i {
-      color:#fff;
-    }
-    button {
-      opacity: 1;
-      text-shadow:none;
-    }
+  color: #fff;
+  padding: 9px 15px;
+  border-bottom: 1px solid #eee;
+  background: $blue;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, $green, $blue);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, $blue, $green);
+
+  i {
+    color: #fff;
+  }
+
+  button {
+    opacity: 1;
+    text-shadow: none;
+  }
 }
 
-.modal-footer {
-}
+.modal-footer {}

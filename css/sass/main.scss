@@ -1,5 +1,5 @@
 @import 'var'; // @include justify-nav;
-
+@include change-nav-break;
 div:focus,
 input:focus {
   outline: none!important;
