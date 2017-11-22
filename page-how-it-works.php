@@ -16,7 +16,7 @@
        <?php endif; ?>
        <div class="col-lg-6 col-lg-offset-3 col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1">
        <h1 class='text-center the-page__title service-title'>
-         <span class='lined'>Our <span class='investingwell-well'><?php the_title(); ?></span>
+         <span class='lined investingwell-well'><?php the_title(); ?></span>
        </h1>
      </div>
      <div class='the-page__content col-sm-12'>
