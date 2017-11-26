@@ -1,4 +1,9 @@
-/* line 71, sass/var.scss */
+/* line 58, sass/var.scss */
+.navbar-collapse {
+  max-height: 100% !important;
+}
+
+/* line 74, sass/var.scss */
 .btn-iw-b {
   background: #49C1B6;
   color: #FFF;
@@ -7,18 +12,18 @@
   padding: 15px;
 }
 @media (min-width: 768px) {
-  /* line 71, sass/var.scss */
+  /* line 74, sass/var.scss */
   .btn-iw-b {
     padding: 10px 20px;
   }
 }
-/* line 81, sass/var.scss */
+/* line 84, sass/var.scss */
 .btn-iw-b:hover {
   background: #98EAC5;
   color: #fff;
 }
 
-/* line 87, sass/var.scss */
+/* line 90, sass/var.scss */
 .btn-iw-g {
   background: #98EAC5;
   color: #FFF;
@@ -27,63 +32,63 @@
   padding: 3%;
 }
 @media (min-width: 768px) {
-  /* line 87, sass/var.scss */
+  /* line 90, sass/var.scss */
   .btn-iw-g {
     padding: 1% 2%;
   }
 }
-/* line 97, sass/var.scss */
+/* line 100, sass/var.scss */
 .btn-iw-g:hover {
   background: #49C1B6;
   color: #fff;
 }
 
-/* line 104, sass/var.scss */
+/* line 107, sass/var.scss */
 .text-center {
   text-align: center;
 }
 
-/* line 108, sass/var.scss */
+/* line 111, sass/var.scss */
 .text-left {
   text-align: left;
 }
 
-/* line 112, sass/var.scss */
+/* line 115, sass/var.scss */
 .text-right {
   text-align: right;
 }
 
-/* line 133, sass/var.scss */
+/* line 136, sass/var.scss */
 .navbar-toggle {
   border: none !important;
   background-color: transparent !important;
 }
-/* line 137, sass/var.scss */
+/* line 140, sass/var.scss */
 .navbar-toggle:hover {
   border: none !important;
   background-color: transparent !important;
 }
-/* line 142, sass/var.scss */
+/* line 145, sass/var.scss */
 .navbar-toggle:focus {
   border: none !important;
   background-color: transparent !important;
 }
 
-/* line 188, sass/var.scss */
+/* line 191, sass/var.scss */
 form {
   width: 100%;
   text-align: center;
 }
-/* line 192, sass/var.scss */
+/* line 195, sass/var.scss */
 form label {
   text-align: left;
 }
-/* line 196, sass/var.scss */
+/* line 199, sass/var.scss */
 form input,
 form textarea {
   width: 100% !important;
 }
-/* line 201, sass/var.scss */
+/* line 204, sass/var.scss */
 form input[type=submit] {
   width: 50% !important;
   background: #49C1B6;
@@ -93,24 +98,24 @@ form input[type=submit] {
   padding: 15px;
 }
 @media (min-width: 768px) {
-  /* line 201, sass/var.scss */
+  /* line 204, sass/var.scss */
   form input[type=submit] {
     padding: 10px 20px;
   }
 }
-/* line 212, sass/var.scss */
+/* line 215, sass/var.scss */
 form input[type=submit]:hover {
   background: #98EAC5;
   color: #fff;
 }
 
-/* line 221, sass/var.scss */
+/* line 224, sass/var.scss */
 .the-blog-post ul,
 .the-page:not(.servicePage) ul {
   list-style-type: none;
   padding: 0;
 }
-/* line 225, sass/var.scss */
+/* line 228, sass/var.scss */
 .the-blog-post ul li::before,
 .the-page:not(.servicePage) ul li::before {
   color: rgba(73, 193, 182, 0.75);
@@ -126,7 +131,7 @@ form input[type=submit]:hover {
   /* use em or % */
 }
 
-/* line 241, sass/var.scss */
+/* line 244, sass/var.scss */
 .modal-header {
   color: #fff;
   padding: 9px 15px;
@@ -137,11 +142,11 @@ form input[type=submit]:hover {
   /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to right, #49C1B6, #98EAC5);
 }
-/* line 251, sass/var.scss */
+/* line 254, sass/var.scss */
 .modal-header i {
   color: #fff;
 }
-/* line 255, sass/var.scss */
+/* line 258, sass/var.scss */
 .modal-header button {
   opacity: 1;
   text-shadow: none;
