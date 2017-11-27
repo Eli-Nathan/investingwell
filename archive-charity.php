@@ -21,7 +21,7 @@
   $wp_query = new WP_Query(array(
     'post_type'       => 'charity',
     'post_status'     => 'publish',
-    'posts_per_page'  => 12,
+    'posts_per_page'  => 10,
     'paged'           => $paged
   )); ?>
 
@@ -44,6 +44,22 @@
           </a>
         </div>
       <?php endwhile; ?>
+      <div class="articleBox col-sm-4">
+        <a href="/glasgow-childrens-hospital/" class="articleCard col-sm-12">
+          <div class="topImage col-sm-12" style="background-image: url(/wp-content/uploads/2017/11/gch.png); background-size:cover"></div>
+          <div class="bottomInfo text-center col-sm-12">
+            <h4>Glasgow Children's Hospital</h4>
+          </div>
+        </a>
+      </div>
+      <div class="articleBox col-sm-4">
+        <a href="/bethany-christians-trust/" class="articleCard col-sm-12">
+          <div class="topImage col-sm-12" style="background-image: url(/wp-content/uploads/2017/11/bethany.jpg); background-size:cover"></div>
+          <div class="bottomInfo text-center col-sm-12">
+            <h4>Bethany Christians Trust</h4>
+          </div>
+        </a>
+      </div>
       <!-- end of the loop -->
       <nav class="col-sm-12">
       	<ul class="pager">

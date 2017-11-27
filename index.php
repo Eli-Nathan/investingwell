@@ -31,7 +31,7 @@
                <h3 class='text-center'>Tell us what you are saving for and we can help you reach your goal.</h3>
           </div>
           <div class='card-options text-center col-sm-12 col-xs-12'>
-               <div href='#' class='box col-md-2 col-md-offset-1 col-sm-4 col-xs-6'>
+               <div href='#' class='box col-md-2 col-md-offset-1 col-sm-4 col-xs-12'>
                     <div class='box-inner'>
                          <i class='fa fa-bar-chart'></i>
                          <p>Just Investing</p>
@@ -55,7 +55,7 @@
                          <p>Rainy Day</p>
                     </div>
                </div>
-               <div href='#' class='box col-md-2 col-sm-offset-0 col-sm-4 col-xs-6 col-xs-offset-3'>
+               <div href='#' class='box col-md-2 col-sm-4 col-xs-6'>
                     <div class='box-inner'>
                          <i class='fa fa-gift'></i>
                          <p>Wedding</p>
