@@ -317,7 +317,7 @@
 
            <!-- the loop -->
            <?php while ( $wp_query->have_posts() ) : $wp_query->the_post(); ?>
-             <div class='articleBox col-sm-4'>
+             <div class='articleBox col-sm-offset-4 col-sm-4'>
                <div class='col-sm-12'>
                  <?php
                   if( get_field('charity_logo') ):

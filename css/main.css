@@ -303,32 +303,33 @@ body p {
   color: #49C1B6;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1000px) {
   /* line 105, sass/main.scss */
-  .navbar .navbar-nav {
+  .navbar-fixed-top .navbar-nav {
     float: none;
     vertical-align: top;
   }
-  /* line 108, sass/main.scss */
-  .navbar .navbar-nav li {
+  /* line 109, sass/main.scss */
+  .navbar-fixed-top .navbar-nav li {
     display: block;
   }
 
-  /* line 113, sass/main.scss */
+  /* line 114, sass/main.scss */
   .navbar .navbar-collapse {
     text-align: center;
   }
 
-  /* line 117, sass/main.scss */
-  .navbar-right li {
+  /* line 120, sass/main.scss */
+  .navbar-fixed-top .navbar-right li {
     background: #98EAC5;
   }
-  /* line 119, sass/main.scss */
-  .navbar-right li a, .navbar-right li i {
+  /* line 123, sass/main.scss */
+  .navbar-fixed-top .navbar-right li a,
+  .navbar-fixed-top .navbar-right li i {
     color: #fff !important;
   }
 }
-/* line 126, sass/main.scss */
+/* line 132, sass/main.scss */
 .header {
   margin-top: 40px;
   background: url("../images/hands.png");
@@ -337,12 +338,12 @@ body p {
   padding: 20px;
 }
 @media (min-width: 992px) {
-  /* line 126, sass/main.scss */
+  /* line 132, sass/main.scss */
   .header {
     padding: 100px;
   }
 }
-/* line 136, sass/main.scss */
+/* line 142, sass/main.scss */
 .header h1 {
   color: #fff;
   font-weight: 300;
@@ -351,12 +352,12 @@ body p {
   padding-bottom: 20px;
 }
 @media (min-width: 400px) {
-  /* line 136, sass/main.scss */
+  /* line 142, sass/main.scss */
   .header h1 {
     font-size: 4em;
   }
 }
-/* line 147, sass/main.scss */
+/* line 153, sass/main.scss */
 .header p {
   padding: 20px;
   padding-top: 5px;
@@ -367,32 +368,32 @@ body p {
   font-size: 1.4em;
 }
 @media (min-width: 768px) {
-  /* line 147, sass/main.scss */
+  /* line 153, sass/main.scss */
   .header p {
     padding: 5px 150px;
     font-size: 1.8em;
   }
 }
 @media (min-width: 1500px) {
-  /* line 147, sass/main.scss */
+  /* line 153, sass/main.scss */
   .header p {
     padding: 30px 250px;
   }
 }
 
-/* line 165, sass/main.scss */
+/* line 171, sass/main.scss */
 input[type='text'] {
   font-size: 16px;
 }
 
-/* line 169, sass/main.scss */
+/* line 175, sass/main.scss */
 .article {
   margin-top: 100px;
   padding-bottom: 30px;
   padding-left: 0 !important;
   padding-right: 0 !important;
 }
-/* line 174, sass/main.scss */
+/* line 180, sass/main.scss */
 .article__title {
   font-weight: 700;
   width: 100%;
@@ -401,34 +402,34 @@ input[type='text'] {
   line-height: 0.1em;
   margin: 10px 0 20px;
 }
-/* line 182, sass/main.scss */
+/* line 188, sass/main.scss */
 .article__title span {
   background: #fafafa;
   padding: 0 10px;
 }
-/* line 188, sass/main.scss */
+/* line 194, sass/main.scss */
 .article__header {
   height: 40vh;
   background-size: cover;
   background-position: center;
   margin-bottom: 20px;
 }
-/* line 195, sass/main.scss */
+/* line 201, sass/main.scss */
 .article__info {
   padding-top: 20px;
 }
-/* line 198, sass/main.scss */
+/* line 204, sass/main.scss */
 .article__info a {
   font-weight: 500;
   color: #49C1B6;
 }
-/* line 204, sass/main.scss */
+/* line 210, sass/main.scss */
 .article__content {
   padding-bottom: 10px;
   padding-left: 0 !important;
   padding-right: 0 !important;
 }
-/* line 208, sass/main.scss */
+/* line 214, sass/main.scss */
 .article__content .article__tags,
 .article__content h1,
 .article__content h2,
@@ -440,34 +441,34 @@ input[type='text'] {
   padding-left: 15px;
   padding-right: 15px;
 }
-/* line 220, sass/main.scss */
+/* line 226, sass/main.scss */
 .article__content p {
   font-size: 1.4em;
 }
-/* line 224, sass/main.scss */
+/* line 230, sass/main.scss */
 .article__content a {
   font-weight: 500;
   color: #49C1B6;
 }
-/* line 229, sass/main.scss */
+/* line 235, sass/main.scss */
 .article__content img {
   width: 100%;
   height: auto;
 }
-/* line 235, sass/main.scss */
+/* line 241, sass/main.scss */
 .article__tags {
   padding: 20px 0;
 }
-/* line 239, sass/main.scss */
+/* line 245, sass/main.scss */
 .article__related {
   padding-left: 0 !important;
   padding-right: 0 !important;
 }
-/* line 242, sass/main.scss */
+/* line 248, sass/main.scss */
 .article__related .articleBox {
   margin-bottom: 40px;
 }
-/* line 246, sass/main.scss */
+/* line 252, sass/main.scss */
 .article__related .articleCard {
   padding-left: 0 !important;
   padding-right: 0 !important;
@@ -477,11 +478,11 @@ input[type='text'] {
   border-top-right-radius: 4px;
   border-top-left-radius: 4px;
 }
-/* line 252, sass/main.scss */
+/* line 258, sass/main.scss */
 .article__related .articleCard:hover {
   box-shadow: 1px 1px 2px #000;
 }
-/* line 258, sass/main.scss */
+/* line 264, sass/main.scss */
 .article__related .articleCard .topImage {
   height: 20vh;
   background-size: cover;
@@ -489,13 +490,13 @@ input[type='text'] {
   border-top-left-radius: 4px;
 }
 @media (max-width: 768px) {
-  /* line 258, sass/main.scss */
+  /* line 264, sass/main.scss */
   .article__related .articleCard .topImage {
     background-size: 100%;
   }
 }
 @media (max-width: 768px) {
-  /* line 268, sass/main.scss */
+  /* line 274, sass/main.scss */
   .article__related .articleCard .bottomInfo {
     background: #eee;
     margin-top: -10px;
@@ -503,7 +504,7 @@ input[type='text'] {
   }
 }
 
-/* line 279, sass/main.scss */
+/* line 285, sass/main.scss */
 .chatHeader {
   padding-top: 10vh;
   padding-bottom: 10vh;
@@ -516,24 +517,24 @@ input[type='text'] {
   background: linear-gradient(to right, #49C1B6, #98EAC5);
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
-/* line 290, sass/main.scss */
+/* line 296, sass/main.scss */
 .chatHeader .question {
   margin-top: 30vh;
   width: 50%;
   margin: 0 auto;
 }
 @media (max-width: 768px) {
-  /* line 290, sass/main.scss */
+  /* line 296, sass/main.scss */
   .chatHeader .question {
     width: 90%;
   }
 }
-/* line 298, sass/main.scss */
+/* line 304, sass/main.scss */
 .chatHeader .question label {
   color: #fff;
   text-shadow: 1px 1px 3px #000;
 }
-/* line 304, sass/main.scss */
+/* line 310, sass/main.scss */
 .chatHeader #answer {
   width: 75%;
   margin: 30px auto 0;
@@ -542,64 +543,64 @@ input[type='text'] {
   transition: 1s;
 }
 @media (max-width: 768px) {
-  /* line 304, sass/main.scss */
+  /* line 310, sass/main.scss */
   .chatHeader #answer {
     width: 90%;
   }
 }
-/* line 314, sass/main.scss */
+/* line 320, sass/main.scss */
 .chatHeader #answer ul {
   list-style-type: none;
 }
-/* line 317, sass/main.scss */
+/* line 323, sass/main.scss */
 .chatHeader #answer ul li {
   margin-left: -15px;
 }
-/* line 320, sass/main.scss */
+/* line 326, sass/main.scss */
 .chatHeader #answer ul li a {
   color: #fff;
   margin-left: -15px;
 }
 
-/* line 331, sass/main.scss */
+/* line 337, sass/main.scss */
 .savingFor {
   padding-top: 20px;
   padding-bottom: 40px;
 }
-/* line 335, sass/main.scss */
+/* line 341, sass/main.scss */
 .savingFor h3 {
   font-weight: 700;
 }
-/* line 339, sass/main.scss */
+/* line 345, sass/main.scss */
 .savingFor .card-options {
   margin-top: 30px;
 }
-/* line 342, sass/main.scss */
+/* line 348, sass/main.scss */
 .savingFor .card-options .box {
   color: #333;
   margin-bottom: 30px;
   text-decoration: none;
   cursor: pointer;
 }
-/* line 348, sass/main.scss */
+/* line 354, sass/main.scss */
 .savingFor .card-options .box .box-inner.is-active {
   border-bottom: 5px solid #98EAC5;
 }
-/* line 349, sass/main.scss */
+/* line 355, sass/main.scss */
 .savingFor .card-options .box .box-inner.is-active i {
   color: #98EAC5;
 }
 @media (min-width: 768px) {
-  /* line 354, sass/main.scss */
+  /* line 360, sass/main.scss */
   .savingFor .card-options .box .box-inner.is-active:hover {
     border-bottom: 5px solid #98EAC5;
   }
-  /* line 355, sass/main.scss */
+  /* line 361, sass/main.scss */
   .savingFor .card-options .box .box-inner.is-active:hover i {
     color: #98EAC5;
   }
 }
-/* line 363, sass/main.scss */
+/* line 369, sass/main.scss */
 .savingFor .card-options .box .box-inner {
   background: #fff;
   border-radius: 3px;
@@ -607,35 +608,35 @@ input[type='text'] {
   border: 1px solid #e5e5e5;
   border-bottom: 5px solid #e5e5e5;
 }
-/* line 364, sass/main.scss */
+/* line 370, sass/main.scss */
 .savingFor .card-options .box .box-inner i {
   font-size: 40px;
 }
-/* line 368, sass/main.scss */
+/* line 374, sass/main.scss */
 .savingFor .card-options .box .box-inner p {
   font-weight: 300;
   margin-top: 20px;
   font-size: 10px;
 }
 @media (min-width: 768px) {
-  /* line 368, sass/main.scss */
+  /* line 374, sass/main.scss */
   .savingFor .card-options .box .box-inner p {
     font-weight: 700;
     font-size: 14px;
   }
 }
 @media (min-width: 768px) {
-  /* line 383, sass/main.scss */
+  /* line 389, sass/main.scss */
   .savingFor .card-options .box .box-inner:hover {
     border-bottom: 5px solid #49C1B6;
   }
-  /* line 384, sass/main.scss */
+  /* line 390, sass/main.scss */
   .savingFor .card-options .box .box-inner:hover i {
     color: #49C1B6;
   }
 }
 
-/* line 395, sass/main.scss */
+/* line 401, sass/main.scss */
 .donations {
   padding: 20px;
   padding-top: 30px;
@@ -649,257 +650,257 @@ input[type='text'] {
   color: #fff;
 }
 @media (min-width: 768px) {
-  /* line 395, sass/main.scss */
+  /* line 401, sass/main.scss */
   .donations {
     padding: 15px 90px 90px;
   }
 }
 @media (min-width: 992px) {
-  /* line 395, sass/main.scss */
+  /* line 401, sass/main.scss */
   .donations {
     background: url("../images/donations.png");
     background-position: left;
   }
 }
-/* line 412, sass/main.scss */
+/* line 418, sass/main.scss */
 .donations h2 {
   font-size: 2.6em;
   font-weight: 700;
   margin-bottom: 50px;
 }
-/* line 418, sass/main.scss */
+/* line 424, sass/main.scss */
 .donations p {
   font-size: 18px;
   font-weight: 300;
 }
-/* line 423, sass/main.scss */
+/* line 429, sass/main.scss */
 .donations .btn {
   margin-top: 20px;
 }
 
-/* line 428, sass/main.scss */
+/* line 434, sass/main.scss */
 .robots {
   padding-left: 0 !important;
   padding-right: 0 !important;
 }
-/* line 431, sass/main.scss */
+/* line 437, sass/main.scss */
 .robots .text {
   padding: 5px 15px 15px;
 }
 @media (min-width: 992px) {
-  /* line 431, sass/main.scss */
+  /* line 437, sass/main.scss */
   .robots .text {
     padding: 30px;
   }
 }
 @media (min-width: 1800px) {
-  /* line 431, sass/main.scss */
+  /* line 437, sass/main.scss */
   .robots .text {
     padding: 90px;
   }
 }
-/* line 440, sass/main.scss */
+/* line 446, sass/main.scss */
 .robots .text h2 {
   font-size: 2.6em;
   font-weight: 700;
 }
-/* line 445, sass/main.scss */
+/* line 451, sass/main.scss */
 .robots .text hr {
   height: 1px;
   background-color: #333;
   border: none;
 }
-/* line 451, sass/main.scss */
+/* line 457, sass/main.scss */
 .robots .text p {
   font-size: 17px;
   font-weight: 300;
 }
 @media (min-width: 1600px) {
-  /* line 451, sass/main.scss */
+  /* line 457, sass/main.scss */
   .robots .text p {
     font-size: 22px;
     margin-top: 30px;
   }
 }
-/* line 460, sass/main.scss */
+/* line 466, sass/main.scss */
 .robots .text .btn {
   margin-top: 20px;
 }
-/* line 465, sass/main.scss */
+/* line 471, sass/main.scss */
 .robots .image {
   padding-left: 0 !important;
   padding-right: 0 !important;
 }
-/* line 468, sass/main.scss */
+/* line 474, sass/main.scss */
 .robots .image img {
   width: 100%;
 }
 
-/* line 474, sass/main.scss */
+/* line 480, sass/main.scss */
 .personalised {
   padding-left: 0 !important;
   padding-right: 0 !important;
 }
 @media (min-width: 992px) {
-  /* line 474, sass/main.scss */
+  /* line 480, sass/main.scss */
   .personalised {
     padding-bottom: 0;
   }
 }
-/* line 480, sass/main.scss */
+/* line 486, sass/main.scss */
 .personalised .text {
   padding: 30px;
 }
 @media (min-width: 1800px) {
-  /* line 480, sass/main.scss */
+  /* line 486, sass/main.scss */
   .personalised .text {
     padding: 90px;
   }
 }
-/* line 486, sass/main.scss */
+/* line 492, sass/main.scss */
 .personalised .text h2 {
   font-size: 2.6em;
   font-weight: 700;
 }
 @media (min-width: 768px) {
-  /* line 486, sass/main.scss */
+  /* line 492, sass/main.scss */
   .personalised .text h2 {
     margin-bottom: 50px;
   }
 }
-/* line 494, sass/main.scss */
+/* line 500, sass/main.scss */
 .personalised .text p {
   font-size: 18px;
   font-weight: 300;
 }
 @media (min-width: 1300px) {
-  /* line 494, sass/main.scss */
+  /* line 500, sass/main.scss */
   .personalised .text p {
     font-size: 22px;
     margin-top: 30px;
   }
 }
-/* line 503, sass/main.scss */
+/* line 509, sass/main.scss */
 .personalised .text .btn {
   margin-top: 20px;
 }
-/* line 508, sass/main.scss */
+/* line 514, sass/main.scss */
 .personalised .image {
   padding-left: 0 !important;
   padding-right: 0 !important;
 }
-/* line 511, sass/main.scss */
+/* line 517, sass/main.scss */
 .personalised .image img {
   width: 100%;
 }
 
-/* line 517, sass/main.scss */
+/* line 523, sass/main.scss */
 .service-title {
   padding-top: 30px;
 }
 
-/* line 521, sass/main.scss */
+/* line 527, sass/main.scss */
 .added-content {
   padding-bottom: 30px;
 }
 @media (min-width: 768px) {
-  /* line 521, sass/main.scss */
+  /* line 527, sass/main.scss */
   .added-content {
     padding: 45px 45px 0;
   }
 }
 
-/* line 528, sass/main.scss */
+/* line 534, sass/main.scss */
 .service {
   padding-bottom: 30px;
 }
 @media (min-width: 768px) {
-  /* line 528, sass/main.scss */
+  /* line 534, sass/main.scss */
   .service {
     padding: 30px;
   }
 }
-/* line 534, sass/main.scss */
+/* line 540, sass/main.scss */
 .service h3 {
   font-weight: 700;
 }
-/* line 538, sass/main.scss */
+/* line 544, sass/main.scss */
 .service table {
   margin-top: 30px;
 }
-/* line 541, sass/main.scss */
+/* line 547, sass/main.scss */
 .service table thead {
   background: #4A4A4A;
   color: #fff;
 }
-/* line 545, sass/main.scss */
+/* line 551, sass/main.scss */
 .service table thead th {
   color: #fff;
   padding: 7px;
   border-radius: 3px 3px 0 0;
 }
-/* line 552, sass/main.scss */
+/* line 558, sass/main.scss */
 .service table tbody {
   border-left: 1px solid #eee;
 }
-/* line 555, sass/main.scss */
+/* line 561, sass/main.scss */
 .service table tbody tr {
   border-bottom: 1px solid #eee;
 }
-/* line 558, sass/main.scss */
+/* line 564, sass/main.scss */
 .service table tbody tr.firstRow {
   font-weight: 700;
 }
-/* line 561, sass/main.scss */
+/* line 567, sass/main.scss */
 .service table tbody tr.firstRow i {
   cursor: pointer;
 }
-/* line 566, sass/main.scss */
+/* line 572, sass/main.scss */
 .service table tbody tr:nth-of-type(even) {
   background: #F2F2F2;
 }
-/* line 570, sass/main.scss */
+/* line 576, sass/main.scss */
 .service table tbody tr td {
   padding: 7px;
   border-right: 1px solid #eee;
 }
-/* line 574, sass/main.scss */
+/* line 580, sass/main.scss */
 .service table tbody tr td .fa-check {
   color: #72E270;
 }
-/* line 578, sass/main.scss */
+/* line 584, sass/main.scss */
 .service table tbody tr td .fa-times {
   color: #852525;
 }
 
-/* line 587, sass/main.scss */
+/* line 593, sass/main.scss */
 .clients {
   background: #eee;
   padding: 20px 0;
 }
-/* line 591, sass/main.scss */
+/* line 597, sass/main.scss */
 .clients h2 {
   font-weight: 700;
   padding-bottom: 20px;
 }
 @media (min-width: 768px) {
-  /* line 596, sass/main.scss */
+  /* line 602, sass/main.scss */
   .clients .clientbox-lower {
     opacity: 0.75;
     margin-top: 30px;
     transition: 0.1s;
   }
-  /* line 602, sass/main.scss */
+  /* line 608, sass/main.scss */
   .clients .clientbox-lower:hover {
     opacity: 1;
     margin-top: 20px;
   }
 }
-/* line 609, sass/main.scss */
+/* line 615, sass/main.scss */
 .clients .clientbox {
   margin-bottom: 20px;
 }
-/* line 612, sass/main.scss */
+/* line 618, sass/main.scss */
 .clients .clientbox .clientBoxInner {
   background: #fff;
   border-radius: 4px;
@@ -907,7 +908,7 @@ input[type='text'] {
   padding-top: 10px;
   padding-bottom: 10px;
 }
-/* line 619, sass/main.scss */
+/* line 625, sass/main.scss */
 .clients .clientbox .clientBoxInner .clientImage {
   width: 50px;
   height: 50px;
@@ -916,7 +917,7 @@ input[type='text'] {
   border-radius: 50%;
   background: #eee;
 }
-/* line 627, sass/main.scss */
+/* line 633, sass/main.scss */
 .clients .clientbox .clientBoxInner .clientImage img {
   display: inline;
   margin: 0 auto;
@@ -924,127 +925,127 @@ input[type='text'] {
   width: 55px;
   margin-left: -75%;
 }
-/* line 636, sass/main.scss */
+/* line 642, sass/main.scss */
 .clients .clientbox .clientBoxInner .nameRating {
   margin-top: -15px;
 }
-/* line 639, sass/main.scss */
+/* line 645, sass/main.scss */
 .clients .clientbox .clientBoxInner .nameRating i {
   color: #438787;
 }
-/* line 645, sass/main.scss */
+/* line 651, sass/main.scss */
 .clients .clientbox .clientBoxInner .reviewContent p {
   font-size: 10px;
 }
 @media (min-width: 1000px) {
-  /* line 645, sass/main.scss */
+  /* line 651, sass/main.scss */
   .clients .clientbox .clientBoxInner .reviewContent p {
     font-size: 14px;
   }
 }
 
-/* line 656, sass/main.scss */
+/* line 662, sass/main.scss */
 .steps {
   padding: 10px 20px 20px;
   margin-bottom: 20px;
 }
 @media (min-width: 768px) {
-  /* line 656, sass/main.scss */
+  /* line 662, sass/main.scss */
   .steps {
     padding: 10px 30px 30px;
   }
 }
-/* line 663, sass/main.scss */
+/* line 669, sass/main.scss */
 .steps h2 {
   font-weight: 700;
   margin-bottom: 20px;
 }
-/* line 668, sass/main.scss */
+/* line 674, sass/main.scss */
 .steps .image {
   text-align: center;
 }
-/* line 671, sass/main.scss */
+/* line 677, sass/main.scss */
 .steps .image img {
   width: 50%;
 }
 @media (max-width: 768px) {
-  /* line 676, sass/main.scss */
+  /* line 682, sass/main.scss */
   .steps .theSteps {
     padding-left: 0 !important;
     padding-right: 0 !important;
   }
 }
-/* line 681, sass/main.scss */
+/* line 687, sass/main.scss */
 .steps .theSteps ul {
   list-style-type: none;
 }
 @media (max-width: 768px) {
-  /* line 681, sass/main.scss */
+  /* line 687, sass/main.scss */
   .steps .theSteps ul {
     padding-left: 0 !important;
     padding-right: 0 !important;
   }
 }
-/* line 687, sass/main.scss */
+/* line 693, sass/main.scss */
 .steps .theSteps ul li {
   margin-bottom: 20px;
 }
 @media (max-width: 768px) {
-  /* line 690, sass/main.scss */
+  /* line 696, sass/main.scss */
   .steps .theSteps ul li .theNumber {
     text-align: left !important;
     padding-left: 0 !important;
     padding-right: 0 !important;
   }
 }
-/* line 697, sass/main.scss */
+/* line 703, sass/main.scss */
 .steps .theSteps ul li img {
   width: 100%;
   padding-top: 20px;
 }
 @media (max-width: 768px) {
-  /* line 697, sass/main.scss */
+  /* line 703, sass/main.scss */
   .steps .theSteps ul li img {
     width: 75%;
   }
 }
-/* line 705, sass/main.scss */
+/* line 711, sass/main.scss */
 .steps .theSteps ul li h3 {
   font-weight: 700;
 }
 
-/* line 713, sass/main.scss */
+/* line 719, sass/main.scss */
 .flowchart {
   padding-left: 0 !important;
   padding-right: 0 !important;
 }
-/* line 716, sass/main.scss */
+/* line 722, sass/main.scss */
 .flowchart h3 {
   background: #494949;
   color: #fff;
   padding: 10px 0;
   font-weight: 700;
 }
-/* line 723, sass/main.scss */
+/* line 729, sass/main.scss */
 .flowchart .flowbox {
   padding-left: 0 !important;
   padding-right: 0 !important;
 }
-/* line 726, sass/main.scss */
+/* line 732, sass/main.scss */
 .flowchart .flowbox h4 {
   padding: 10px 0;
   font-weight: 300;
   min-height: 40px;
 }
-/* line 732, sass/main.scss */
+/* line 738, sass/main.scss */
 .flowchart .flowbox img {
   width: 100%;
 }
-/* line 736, sass/main.scss */
+/* line 742, sass/main.scss */
 .flowchart .flowbox .para-holder {
   padding: 20px;
 }
-/* line 739, sass/main.scss */
+/* line 745, sass/main.scss */
 .flowchart .flowbox .para-holder p {
   padding: 10px;
   background: #eee;
@@ -1052,7 +1053,7 @@ input[type='text'] {
   min-height: 120px;
   position: relative;
 }
-/* line 746, sass/main.scss */
+/* line 752, sass/main.scss */
 .flowchart .flowbox .para-holder p:after, .flowchart .flowbox .para-holder p:before {
   bottom: 100%;
   left: 50%;
@@ -1064,14 +1065,14 @@ input[type='text'] {
   position: absolute;
   pointer-events: none;
 }
-/* line 759, sass/main.scss */
+/* line 765, sass/main.scss */
 .flowchart .flowbox .para-holder p:after {
   border-color: rgba(136, 183, 213, 0);
   border-bottom-color: #eee;
   border-width: 10px;
   margin-left: -10px;
 }
-/* line 766, sass/main.scss */
+/* line 772, sass/main.scss */
 .flowchart .flowbox .para-holder p:before {
   border-color: rgba(245, 245, 245, 0);
   border-bottom-color: #eee;
@@ -1079,48 +1080,48 @@ input[type='text'] {
   margin-left: -16px;
 }
 
-/* line 848, sass/main.scss */
+/* line 854, sass/main.scss */
 .charity {
   background: #fff;
   padding-left: 0;
   padding-right: 0;
 }
-/* line 853, sass/main.scss */
+/* line 859, sass/main.scss */
 .charity .logo {
   text-align: center;
 }
-/* line 856, sass/main.scss */
+/* line 862, sass/main.scss */
 .charity .logo img {
   width: 50%;
 }
 @media (min-width: 768px) {
-  /* line 856, sass/main.scss */
+  /* line 862, sass/main.scss */
   .charity .logo img {
     padding-bottom: 20px;
   }
 }
-/* line 865, sass/main.scss */
+/* line 871, sass/main.scss */
 .charity .tagline h2 {
   font-weight: 700;
   padding-bottom: 20px;
 }
 @media (max-width: 768px) {
-  /* line 865, sass/main.scss */
+  /* line 871, sass/main.scss */
   .charity .tagline h2 {
     text-align: center;
   }
 }
-/* line 874, sass/main.scss */
+/* line 880, sass/main.scss */
 .charity .charityInfo {
   padding: 0 30px;
 }
 @media (min-width: 768px) {
-  /* line 874, sass/main.scss */
+  /* line 880, sass/main.scss */
   .charity .charityInfo {
     font-size: 16px;
   }
 }
-/* line 881, sass/main.scss */
+/* line 887, sass/main.scss */
 .charity .charity-image {
   background: url("../images/chas-charity.jpg");
   background-size: cover;
@@ -1128,7 +1129,7 @@ input[type='text'] {
   padding: 15%;
 }
 
-/* line 889, sass/main.scss */
+/* line 895, sass/main.scss */
 .fscs {
   background: #C04848;
   /* fallback for old browsers */
@@ -1139,48 +1140,48 @@ input[type='text'] {
   padding: 30px;
 }
 @media (min-width: 768px) {
-  /* line 889, sass/main.scss */
+  /* line 895, sass/main.scss */
   .fscs {
     padding: 90px;
   }
 }
-/* line 901, sass/main.scss */
+/* line 907, sass/main.scss */
 .fscs img {
   width: 50%;
 }
-/* line 905, sass/main.scss */
+/* line 911, sass/main.scss */
 .fscs .fscs-text {
   margin-top: 30px;
   color: #fff;
 }
-/* line 909, sass/main.scss */
+/* line 915, sass/main.scss */
 .fscs .fscs-text a {
   color: #fff !important;
   text-decoration: underline;
 }
 @media (min-width: 1500px) {
-  /* line 914, sass/main.scss */
+  /* line 920, sass/main.scss */
   .fscs .fscs-text p {
     font-size: 22px;
   }
 }
 
 @media (min-width: 768px) {
-  /* line 921, sass/main.scss */
+  /* line 927, sass/main.scss */
   .articles {
     padding: 50px 50px 20px;
   }
 }
-/* line 926, sass/main.scss */
+/* line 932, sass/main.scss */
 .articles h3 {
   font-weight: 700;
   margin-bottom: 20px;
 }
-/* line 931, sass/main.scss */
+/* line 937, sass/main.scss */
 .articles .articleBox {
   margin-bottom: 40px;
 }
-/* line 935, sass/main.scss */
+/* line 941, sass/main.scss */
 .articles .articleCard {
   padding-left: 0 !important;
   padding-right: 0 !important;
@@ -1194,17 +1195,17 @@ input[type='text'] {
   border-top-left-radius: 4px;
 }
 @media (max-width: 768px) {
-  /* line 935, sass/main.scss */
+  /* line 941, sass/main.scss */
   .articles .articleCard {
     background: #eee;
   }
 }
-/* line 947, sass/main.scss */
+/* line 953, sass/main.scss */
 .articles .articleCard:hover {
   box-shadow: 1px 1px 2px #000;
   text-decoration: none;
 }
-/* line 954, sass/main.scss */
+/* line 960, sass/main.scss */
 .articles .articleCard .topImage {
   height: 30vh;
   background-size: cover;
@@ -1212,13 +1213,13 @@ input[type='text'] {
   border-top-left-radius: 4px;
 }
 @media (max-width: 768px) {
-  /* line 954, sass/main.scss */
+  /* line 960, sass/main.scss */
   .articles .articleCard .topImage {
     background-size: 100%;
   }
 }
 @media (max-width: 768px) {
-  /* line 964, sass/main.scss */
+  /* line 970, sass/main.scss */
   .articles .articleCard .bottomInfo {
     background: #eee;
     margin-top: -10px;
@@ -1226,26 +1227,26 @@ input[type='text'] {
   }
 }
 
-/* line 974, sass/main.scss */
+/* line 980, sass/main.scss */
 .charity-archive {
   padding-top: 10px !important;
 }
-/* line 977, sass/main.scss */
+/* line 983, sass/main.scss */
 .charity-archive .charities-info {
   margin-bottom: 20px;
   font-size: 16px;
 }
 
-/* line 983, sass/main.scss */
+/* line 989, sass/main.scss */
 .our-charities {
   text-align: center;
 }
-/* line 986, sass/main.scss */
+/* line 992, sass/main.scss */
 .our-charities h3 {
   font-weight: 700;
   padding-bottom: 20px;
 }
-/* line 991, sass/main.scss */
+/* line 997, sass/main.scss */
 .our-charities img {
   width: auto;
   max-width: 100%;
@@ -1253,54 +1254,54 @@ input[type='text'] {
   padding-bottom: 20px;
 }
 
-/* line 999, sass/main.scss */
+/* line 1005, sass/main.scss */
 .blog-post-list {
   padding-left: 0 !important;
   padding-right: 0 !important;
   margin-top: 100px;
 }
-/* line 1003, sass/main.scss */
+/* line 1009, sass/main.scss */
 .blog-post-list .header {
   height: 40vh;
   background-size: cover;
   background-position: center;
   margin-bottom: 20px;
 }
-/* line 1010, sass/main.scss */
+/* line 1016, sass/main.scss */
 .blog-post-list__title {
   font-weight: 700;
   width: 100%;
   text-align: center;
 }
 @media (min-width: 768px) {
-  /* line 1010, sass/main.scss */
+  /* line 1016, sass/main.scss */
   .blog-post-list__title {
     border-bottom: 1px solid #000;
     line-height: 0.1em;
     margin: 10px 0 20px;
   }
-  /* line 1019, sass/main.scss */
+  /* line 1025, sass/main.scss */
   .blog-post-list__title .lined {
     background: #fafafa;
     padding: 0 10px;
   }
 }
 @media (min-width: 768px) {
-  /* line 1026, sass/main.scss */
+  /* line 1032, sass/main.scss */
   .blog-post-list .articles {
     padding: 50px 50px 20px;
   }
 }
-/* line 1031, sass/main.scss */
+/* line 1037, sass/main.scss */
 .blog-post-list .articles h3 {
   font-weight: 700;
   margin-bottom: 20px;
 }
-/* line 1036, sass/main.scss */
+/* line 1042, sass/main.scss */
 .blog-post-list .articles .articleBox {
   margin-bottom: 40px;
 }
-/* line 1040, sass/main.scss */
+/* line 1046, sass/main.scss */
 .blog-post-list .articles .articleCard {
   padding-left: 0 !important;
   padding-right: 0 !important;
@@ -1314,17 +1315,17 @@ input[type='text'] {
   border-top-left-radius: 4px;
 }
 @media (max-width: 768px) {
-  /* line 1040, sass/main.scss */
+  /* line 1046, sass/main.scss */
   .blog-post-list .articles .articleCard {
     background: #eee;
   }
 }
-/* line 1052, sass/main.scss */
+/* line 1058, sass/main.scss */
 .blog-post-list .articles .articleCard:hover {
   box-shadow: 1px 1px 2px #000;
   text-decoration: none;
 }
-/* line 1059, sass/main.scss */
+/* line 1065, sass/main.scss */
 .blog-post-list .articles .articleCard .topImage {
   height: 30vh;
   background-size: cover;
@@ -1332,13 +1333,13 @@ input[type='text'] {
   border-top-left-radius: 4px;
 }
 @media (max-width: 768px) {
-  /* line 1059, sass/main.scss */
+  /* line 1065, sass/main.scss */
   .blog-post-list .articles .articleCard .topImage {
     background-size: 100%;
   }
 }
 @media (max-width: 768px) {
-  /* line 1069, sass/main.scss */
+  /* line 1075, sass/main.scss */
   .blog-post-list .articles .articleCard .bottomInfo {
     background: #eee;
     margin-top: -10px;
@@ -1346,46 +1347,46 @@ input[type='text'] {
   }
 }
 
-/* line 1088, sass/main.scss */
+/* line 1094, sass/main.scss */
 .the-page {
   padding-left: 0 !important;
   padding-right: 0 !important;
   margin-top: 100px;
 }
-/* line 1092, sass/main.scss */
+/* line 1098, sass/main.scss */
 .the-page .header {
   height: 40vh;
   background-size: cover;
   background-position: center;
   margin-bottom: 20px;
 }
-/* line 1099, sass/main.scss */
+/* line 1105, sass/main.scss */
 .the-page__title {
   font-weight: 700;
   width: 100%;
   text-align: center;
 }
 @media (min-width: 768px) {
-  /* line 1099, sass/main.scss */
+  /* line 1105, sass/main.scss */
   .the-page__title {
     border-bottom: 1px solid #000;
     line-height: 0.1em;
     margin: 10px 0 20px;
   }
-  /* line 1108, sass/main.scss */
+  /* line 1114, sass/main.scss */
   .the-page__title .lined {
     background: #fafafa;
     padding: 0 10px;
   }
 }
-/* line 1115, sass/main.scss */
+/* line 1121, sass/main.scss */
 .the-page__content {
   padding-bottom: 30px;
   padding-left: 0 !important;
   padding-right: 0 !important;
 }
 @media (max-width: 768px) {
-  /* line 1119, sass/main.scss */
+  /* line 1125, sass/main.scss */
   .the-page__content form,
   .the-page__content h1,
   .the-page__content h2,
@@ -1399,35 +1400,35 @@ input[type='text'] {
     padding-right: 15px;
   }
 }
-/* line 1134, sass/main.scss */
+/* line 1140, sass/main.scss */
 .the-page__content p {
   font-size: 1.2em;
 }
-/* line 1138, sass/main.scss */
+/* line 1144, sass/main.scss */
 .the-page__content a {
   font-weight: 500;
   color: #49C1B6;
 }
-/* line 1143, sass/main.scss */
+/* line 1149, sass/main.scss */
 .the-page__content img {
   width: 100%;
   height: auto;
 }
-/* line 1148, sass/main.scss */
+/* line 1154, sass/main.scss */
 .the-page__content form {
   width: 100%;
   text-align: center;
 }
-/* line 1152, sass/main.scss */
+/* line 1158, sass/main.scss */
 .the-page__content form label {
   text-align: left;
 }
-/* line 1156, sass/main.scss */
+/* line 1162, sass/main.scss */
 .the-page__content form input,
 .the-page__content form textarea {
   width: 100% !important;
 }
-/* line 1161, sass/main.scss */
+/* line 1167, sass/main.scss */
 .the-page__content form input[type=submit] {
   width: 50% !important;
   background: #49C1B6;
@@ -1437,44 +1438,44 @@ input[type='text'] {
   padding: 15px;
 }
 @media (min-width: 768px) {
-  /* line 1161, sass/main.scss */
+  /* line 1167, sass/main.scss */
   .the-page__content form input[type=submit] {
     padding: 10px 20px;
   }
 }
-/* line 1172, sass/main.scss */
+/* line 1178, sass/main.scss */
 .the-page__content form input[type=submit]:hover {
   background: #98EAC5;
   color: #fff;
 }
 
-/* line 1181, sass/main.scss */
+/* line 1187, sass/main.scss */
 .servicePage {
   margin-top: 0;
 }
-/* line 1184, sass/main.scss */
+/* line 1190, sass/main.scss */
 .servicePage .header {
   height: 50vh;
 }
-/* line 1188, sass/main.scss */
+/* line 1194, sass/main.scss */
 .servicePage .the-page__content {
   padding: 30px !important !important;
 }
 
-/* line 1193, sass/main.scss */
+/* line 1199, sass/main.scss */
 .last-cta {
   padding: 50px;
   background: url("../images/kelpies-grad.jpg");
   background-size: cover;
   background-position: center;
 }
-/* line 1199, sass/main.scss */
+/* line 1205, sass/main.scss */
 .last-cta h3 {
   font-weight: 700;
   margin-bottom: 40px;
   color: #FFF;
 }
-/* line 1205, sass/main.scss */
+/* line 1211, sass/main.scss */
 .last-cta .btn-iw-b, .last-cta .pager li a, .pager li .last-cta a {
   background: #49C1B6;
   /* fallback for old browsers */
@@ -1486,27 +1487,27 @@ input[type='text'] {
   border: 2px #FFF solid;
 }
 
-/* line 1217, sass/main.scss */
+/* line 1223, sass/main.scss */
 .not-found-message {
   padding: 75px 15px;
 }
 @media (min-width: 768px) {
-  /* line 1217, sass/main.scss */
+  /* line 1223, sass/main.scss */
   .not-found-message {
     padding: 100px;
   }
 }
-/* line 1223, sass/main.scss */
+/* line 1229, sass/main.scss */
 .not-found-message img {
   width: 50%;
 }
 @media (min-width: 768px) {
-  /* line 1223, sass/main.scss */
+  /* line 1229, sass/main.scss */
   .not-found-message img {
     width: 10%;
   }
 }
-/* line 1230, sass/main.scss */
+/* line 1236, sass/main.scss */
 .not-found-message .goBack {
   color: #49C1B6;
   font-weight: 500;
@@ -1514,89 +1515,89 @@ input[type='text'] {
   text-decoration: underline;
 }
 
-/* line 1238, sass/main.scss */
+/* line 1244, sass/main.scss */
 .footer {
   padding-left: 0 !important;
   padding-right: 0 !important;
 }
-/* line 1241, sass/main.scss */
+/* line 1247, sass/main.scss */
 .footer .navbar-collapse.collapse {
   display: block;
 }
-/* line 1245, sass/main.scss */
+/* line 1251, sass/main.scss */
 .footer .navbar-nav,
 .footer .navbar-nav > li {
   float: left;
 }
-/* line 1250, sass/main.scss */
+/* line 1256, sass/main.scss */
 .footer .navbar-nav.navbar-right:last-child {
   margin-right: -15px;
 }
-@media (min-width: 768px) {
-  /* line 1254, sass/main.scss */
+@media (min-width: 851px) {
+  /* line 1260, sass/main.scss */
   .footer .navbar-right {
     float: right !important;
   }
 }
-@media (max-width: 768px) {
-  /* line 1259, sass/main.scss */
+@media (max-width: 850px) {
+  /* line 1265, sass/main.scss */
   .footer .navbar .navbar-nav {
     display: inline-block !important;
     float: none !important;
     vertical-align: top;
   }
-  /* line 1260, sass/main.scss */
+  /* line 1266, sass/main.scss */
   .footer .navbar .navbar-nav li {
     display: inline-block !important;
     float: none !important;
   }
-  /* line 1269, sass/main.scss */
+  /* line 1275, sass/main.scss */
   .footer .navbar .navbar-collapse {
     text-align: center;
   }
 }
-/* line 1274, sass/main.scss */
+/* line 1280, sass/main.scss */
 .footer .navbar {
   border-radius: 0;
   margin-bottom: 0;
   background-color: #eee;
   border: none;
 }
-/* line 1282, sass/main.scss */
+/* line 1288, sass/main.scss */
 .footer .navbar .navbar-right li a {
   font-size: 18px;
 }
-/* line 1289, sass/main.scss */
+/* line 1295, sass/main.scss */
 .footer .footer-content {
   padding: 30px 30px 10px;
 }
-/* line 1292, sass/main.scss */
+/* line 1298, sass/main.scss */
 .footer .footer-content .contact-info {
   padding-bottom: 20px;
 }
 @media (min-width: 768px) {
-  /* line 1292, sass/main.scss */
+  /* line 1298, sass/main.scss */
   .footer .footer-content .contact-info {
     padding-left: 90px;
   }
 }
-/* line 1299, sass/main.scss */
+/* line 1305, sass/main.scss */
 .footer .footer-content .contact-info table tr {
   cursor: pointer;
 }
-/* line 1302, sass/main.scss */
+/* line 1308, sass/main.scss */
 .footer .footer-content .contact-info table tr td {
   padding: 5px;
 }
-/* line 1305, sass/main.scss */
+/* line 1311, sass/main.scss */
 .footer .footer-content .contact-info table tr td:nth-child(1) {
   padding-left: 0;
 }
-/* line 1309, sass/main.scss */
+/* line 1315, sass/main.scss */
 .footer .footer-content .contact-info table tr td i {
   color: #49C1B6;
 }
-/* line 1318, sass/main.scss */
+/* line 1324, sass/main.scss */
 .footer .footer-content .disclaimer p {
   font-size: 14px;
 }
