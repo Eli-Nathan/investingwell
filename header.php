@@ -35,6 +35,7 @@
      <meta name="author" content="Elijah Nathan - Eli's Web">
      <meta name="description" content="">
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link href="https://fonts.googleapis.com/css?family=rubik:400,500,900,300,700" rel="stylesheet">
      <?php wp_head(); ?>
      <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
      <!--[if lt IE 9]>
@@ -52,6 +53,9 @@
                          <span class="sr-only">Toggle navigation</span>
                          <i class="fa fa-bars"></i>
                     </button>
+                    <a type="button" class="navbar-toggle collapsed" href='/'>
+                         <i class="fa fa-user"></i>
+                    </a>
                     <a class='navbar-brand' href='/'>
                          <img src='<?php bloginfo('stylesheet_directory');?>/images/iw-logo-long-newer.png' alt="Investing Well">
                     </a>

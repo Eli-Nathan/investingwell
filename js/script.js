@@ -132,13 +132,13 @@ $(document).ready(function() {
     return false; // stop event propagation and browser default event
 }
 $('.navbar-collapse').on('shown.bs.collapse', function() {
-  $('.navbar-toggle i').removeClass('fa-bars');
-  $('.navbar-toggle i').addClass('fa-times');
+  $('.navbar-toggle i.fa-bars').addClass('fa-times');
+  $('.navbar-toggle i.fa-bars').removeClass('fa-bars');
+
 });
 $('.navbar-collapse').on('hide.bs.collapse', function() {
-  $('.navbar-toggle i').removeClass('fa-times');
-  $('.navbar-toggle i').addClass('fa-bars');
-  $('.navbar-toggle i').addClass('fa-bars-spin');
+  $('.navbar-toggle i.fa-times').addClass('fa-bars');
+  $('.navbar-toggle i.fa-times').removeClass('fa-times');
 });
 
 });
