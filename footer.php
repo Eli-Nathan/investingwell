@@ -92,7 +92,7 @@
           <div class='col-sm-6 disclaimer'>
                <p>Investing Well is a trading name of Killermont Investments Ltd which is an Appointed Representative of Network Direct Ltd, which is authorised and regulated by the Finacial Conduct Authority 217218.</p>
 
-               <p>All Rights Reserved 2017</p>
+               <p>All Rights Reserved <?php echo date('Y'); ?></p>
 
                <p>The value of investments can go down as well as up an you may get back less than you invested.</p>
           </div>

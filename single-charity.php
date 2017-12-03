@@ -1,5 +1,5 @@
 <?php
-     get_header();
+get_header();
 ?>
 
      <!-- Header Ends (Includes navigation bar) -->
@@ -8,7 +8,7 @@
           <?php if( get_field('header_text') ): ?>
           <p><?php the_field('header_text'); ?></p>
           <?php endif; ?>
-          <p>We all have goals and dreams, but how do we get there? Investing Well can help you save towards future goals from childrens education to retirment. This is acheived in a low cost way and can help a charity close to your heart as well.</p>
+          <p> We all have goals and dreams, but how do we get there? Investing Well can help you save towards future goals from childrens education to retirment. This is acheived in a low cost way and can help a charity close to your heart as well.</p>
           <div class='btnDiv text-center'>
                <a class='btn btn-default btn-iw-b'>
                     Let's Start &nbsp; <i class='fa fa-angle-right'></i>
