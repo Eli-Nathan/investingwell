@@ -19,8 +19,8 @@
 
      $phonelink = "tel:01419463000";
      $phonenumber = "0141 946 3000";
-     $emaillink = "mailto:advisor@investingwell.co.uk";
-     $emailaddress = "advisor@investingwell.co.uk";
+     $emaillink = "mailto:hello@investingwell.co.uk";
+     $emailaddress = "hello@investingwell.co.uk";
      $linkedinlink = "https://www.linkedin.com/in/investing-well-4a491388/";
      $twitterlink = "https://twitter.com/BeGoodWithMoney";
      $twittertext = "@BeGoodWithMoney";
@@ -36,7 +36,7 @@
      }
      if( !( current_user_can('editor') || current_user_can('administrator') ) && is_home() ) {
        if( isset($_COOKIE['charityPref']) ) {
-         header( "Location: http://localhost:8888/" . $_COOKIE['charityPref']  );
+         header( "Location: http://www.investingwell.co.uk/" . $_COOKIE['charityPref']  );
        }
      }
 ?>
@@ -57,15 +57,33 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
     <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-110545988-1"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-111453723-1"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
-      function gtag(){
-        dataLayer.push(arguments);
-      }
+      function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
-      gtag('config', 'UA-110545988-1');
+      gtag('config', 'UA-111453723-1');
     </script>
+    <script id="mcjs">!function(c,h,i,m,p){m=c.createElement(h),p=c.getElementsByTagName(h)[0],m.async=1,m.src=i,p.parentNode.insertBefore(m,p)}(document,"script","https://chimpstatic.com/mcjs-connected/js/users/fc39d6e13c06d794efcd53b5d/eea7aa871bd0285fd001fc356.js");</script>
+
+    <!-- Facebook Pixel Code -->
+<script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '1309156109112943');
+  fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=1309156109112943&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Facebook Pixel Code -->
+
 
 </head>
 <body>

@@ -14,11 +14,7 @@ function include_investingwell_scripts() {
 	wp_enqueue_script( 'script', get_template_directory_uri() . '/js/script.js', '', '1.0', true);
 }
 add_action( 'wp_enqueue_scripts', 'include_investingwell_scripts' );
-// Add Google font
-function wpb_add_google_fonts() {
- 	wp_enqueue_style( 'wpb-google-fonts', 'https://fonts.googleapis.com/css?family=rubik:400,500,900,300,700', false );
-}
-add_action( 'wp_enqueue_scripts', 'wpb_add_google_fonts' );
+
 // Register Custom Navigation Walker
 require_once('wp-bootstrap-navwalker.php');
 // Bootstrap navigation

@@ -17,7 +17,7 @@
          <form class='question' action='' method='post'>
              <label for='question'>Ask us a question</label>
              <div class="input-group">
-                 <input type="text" class="form-control" name='question' id='question' placeholder="Tell me about corporate bonds" required>
+                 <input type="text" class="form-control" name='question' id='question' placeholder="What is my ISA allowance?" required>
                  <span class="input-group-btn">
                     <button class="btn btn-default" id='ask' type="submit">Ask!</button>
                  </span>

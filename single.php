@@ -2,8 +2,8 @@
      get_header();
      if (have_posts()) : while (have_posts()) : the_post(); ?>
      <div class='article col-md-offset-3 col-md-6 col-sm-12' id="post-<?php the_ID(); ?>">
-       <h1 class='text-center article__title'>
-         <span><?php the_title(); ?></span>
+       <h1 class='text-center the-page__title'>
+         <span class='lined'><span class='investingwell-well'><?php the_title(); ?></span>
        </h1>
        <p class='article__info text-center'> <?php the_time('jS \of F, Y') ?> | Posted in <?php the_category(', ') ?> </p>
      <?php
