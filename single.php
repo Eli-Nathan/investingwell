@@ -1,5 +1,11 @@
 <?php
      get_header();
+?>
+<script>
+  fbq('track', 'ViewContent');
+</script>
+
+<?php
      if (have_posts()) : while (have_posts()) : the_post(); ?>
      <div class='article col-md-offset-3 col-md-6 col-sm-12' id="post-<?php the_ID(); ?>">
        <h1 class='text-center the-page__title'>

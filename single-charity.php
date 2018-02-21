@@ -1,6 +1,9 @@
 <?php
 get_header();
 ?>
+<script>
+  fbq('track', 'ViewContent');
+</script>
 
      <!-- Header Ends (Includes navigation bar) -->
      <div class='header col-sm-12'>
