@@ -5,6 +5,10 @@ $dark: #494949!important;
 $light: #EEE!important;
 $blue: #49C1B6;
 $green: #98EAC5;
+
+h1,h2,h3,h4,h5,h6,p,li {
+  color:#324A5E;
+}
 @mixin change-nav-break {
   @media (max-width: 1000px) {
     .navbar-fixed-top {

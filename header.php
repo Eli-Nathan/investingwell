@@ -117,7 +117,7 @@
                          <i class="fa fa-user"></i>
                     </a>
                     <a class='navbar-brand' href='/'>
-                         <img src='<?php bloginfo('stylesheet_directory');?>/images/iw-logo-long-newer.png' alt="Investing Well">
+                         <img src='<?php bloginfo('stylesheet_directory');?>/images/logo-new.png' alt="Investing Well">
                     </a>
                </div>
 
